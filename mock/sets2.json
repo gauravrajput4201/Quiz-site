@@ -1,0 +1,2415 @@
+{
+  "questions": [
+    {
+      "question_number": 1,
+      "question": "Convert the Boolean function F(A, B, C) = Σ(2, 4, 5, 6) to its simplified SOP form.",
+      "options": [
+        "(A) A + B + C",
+        "(B) AB + AC",
+        "(C) AC' + AB' + BC'",
+        "(D) AB'C",
+        "(E) AB' + AC' + BC'"
+      ],
+      "correct_option": "E",
+      "correct_answer": "AB' + AC' + BC'",
+      "explanation": {
+        "correct_answer": [
+          "For F(A,B,C)=Σ(2,4,5,6), the required minterms are 010, 100, 101 and 110.",
+          "Using Boolean simplification or a Karnaugh map, the required groups produce AB' + AC' + BC'.",
+          "Each product term covers required minterms while avoiding the remaining unwanted combinations.",
+          "Therefore the simplified SOP is AB' + AC' + BC'."
+        ],
+        "options": {
+          "A": "A + B + C is much broader and becomes 1 for many extra input combinations. It is not the minimal SOP for the given minterms.",
+          "B": "AB + AC does not cover the required minterm set 2, 4, 5 and 6. It therefore cannot represent the given function.",
+          "C": "AC' + AB' + BC' contains extra minterms, so it is not the simplified expression for exactly Σ(2,4,5,6).",
+          "D": "AB'C represents only one minterm, not all four required minterms."
+        }
+      }
+    },
+    {
+      "question_number": 2,
+      "question": "What is the significant advantage of using EEPROM over EPROM in terms of data erasing and reprogramming?",
+      "options": [
+        "(A) EEPROM is faster than EPROM.",
+        "(B) UV light is not required to erase EEPROM.",
+        "(C) EEPROM has more capacity than EPROM.",
+        "(D) EEPROM is volatile, while EPROM is non-volatile."
+      ],
+      "correct_option": "B",
+      "correct_answer": "UV light is not required to erase EEPROM.",
+      "explanation": {
+        "correct_answer": [
+          "EEPROM stands for Electrically Erasable Programmable Read-Only Memory.",
+          "Its contents can be erased electrically, so a UV lamp is not required.",
+          "EEPROM can be reprogrammed while installed in the system in many applications.",
+          "EPROM normally requires ultraviolet light for erasing."
+        ],
+        "options": {
+          "A": "EEPROM is not defined by being faster than EPROM. Speed depends on the specific memory technology and operation.",
+          "C": "Capacity is not the main advantage described here. EEPROM and EPROM can have different capacities depending on the device.",
+          "D": "EEPROM is non-volatile, so its data is retained when power is removed."
+        }
+      }
+    },
+    {
+      "question_number": 3,
+      "question": "Which flip flop type is known to have the prohibited position, where both inputs are set to '1'?",
+      "options": [
+        "(A) S-R Flip Flop",
+        "(B) J-K Flip Flop",
+        "(C) D Flip Flop",
+        "(D) T Flip Flop"
+      ],
+      "correct_option": "A",
+      "correct_answer": "S-R Flip Flop",
+      "explanation": {
+        "correct_answer": [
+          "The S-R latch/flip-flop has an invalid or prohibited input combination in the basic implementation.",
+          "For an active-high NOR-based S-R circuit, S=1 and R=1 produces an invalid state.",
+          "J-K flip-flop removes this problem by using feedback.",
+          "D and T flip-flops also do not have the same S=R=1 prohibited input condition."
+        ],
+        "options": {
+          "B": "J-K flip-flop is designed to avoid the S-R invalid state.",
+          "C": "D flip-flop has a single data input, so there is no separate S=R=1 combination.",
+          "D": "T flip-flop has a single toggle input and does not use separate S and R inputs."
+        }
+      }
+    },
+    {
+      "question_number": 4,
+      "question": "In Johnson counter, how many possible states can be represented by the 'N' flip flop?",
+      "options": ["(A) n", "(B) 2n", "(C) 2^n", "(D) 2^(n-1)"],
+      "correct_option": "B",
+      "correct_answer": "2n",
+      "explanation": {
+        "correct_answer": [
+          "A Johnson counter with n flip-flops has 2n distinct states.",
+          "It is also called a twisted-ring counter.",
+          "The complemented output of the last flip-flop is fed back to the first.",
+          "This differs from a normal ring counter, which has n states."
+        ],
+        "options": {
+          "A": "n states describes a basic ring counter, not a Johnson counter.",
+          "C": "2^n is the number of possible binary combinations for n independent flip-flops, not the Johnson sequence length.",
+          "D": "2^(n-1) is not the standard state count for a Johnson counter."
+        }
+      }
+    },
+    {
+      "question_number": 5,
+      "question": "Which logic family uses both deceleration and surge mode MOSFETs for its operation?",
+      "options": ["(A) TTL", "(B) ECL", "(C) PMOS", "(D) CMOS"],
+      "correct_option": "D",
+      "correct_answer": "CMOS",
+      "explanation": {
+        "correct_answer": [
+          "CMOS stands for Complementary Metal-Oxide-Semiconductor.",
+          "It uses complementary NMOS and PMOS transistors.",
+          "Using both transistor types gives CMOS low static power consumption.",
+          "CMOS is widely used in digital integrated circuits."
+        ],
+        "options": {
+          "A": "TTL uses bipolar transistor technology rather than complementary MOSFET pairs.",
+          "B": "ECL is an emitter-coupled bipolar logic family designed for high speed.",
+          "C": "PMOS uses p-channel MOS devices; it is not the complementary PMOS/NMOS family."
+        }
+      }
+    },
+    {
+      "question_number": 6,
+      "question": "In which application is the Gray code commonly used?",
+      "options": [
+        "(A) Digital communication",
+        "(B) Data encryption",
+        "(C) Analog-to-digital conversion",
+        "(D) Error detection"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Analog-to-digital conversion",
+      "explanation": {
+        "correct_answer": [
+          "Gray code changes only one bit between adjacent code values.",
+          "This property reduces transition errors in position encoders and conversion systems.",
+          "Gray code is commonly used in analog-to-digital conversion and rotary encoders.",
+          "It is not primarily an encryption or error-detection code."
+        ],
+        "options": {
+          "A": "Digital communication can use many line and coding schemes, but Gray code is not primarily known for this use.",
+          "B": "Gray code is not an encryption algorithm and does not provide cryptographic security.",
+          "D": "Gray code reduces transition ambiguity but is not itself a general error-detection code."
+        }
+      }
+    },
+    {
+      "question_number": 7,
+      "question": "An example of a binary-to-gray code converter is-",
+      "options": [
+        "(A) Encoder",
+        "(B) Decoder",
+        "(C) Comparator",
+        "(D) Multiplexer"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Encoder",
+      "explanation": {
+        "correct_answer": [
+          "A binary-to-Gray converter converts binary input bits into Gray-code bits.",
+          "The conversion uses XOR operations between adjacent binary bits.",
+          "An encoder can perform a code conversion when designed for that mapping.",
+          "Therefore an encoder is the best option here."
+        ],
+        "options": {
+          "B": "A decoder generally expands coded input into one-of-many outputs.",
+          "C": "A comparator compares two values; it does not normally perform code conversion.",
+          "D": "A multiplexer selects one input from many inputs; it does not inherently convert binary to Gray code."
+        }
+      }
+    },
+    {
+      "question_number": 8,
+      "question": "In binary multiplication using the simple method, what is the first step after aligning the digits and proper multiplication?",
+      "options": [
+        "(A) Multiply the least significant bit (LSB) by the multiplicand.",
+        "(B) Multiply the most significant bit (MSB) by the multiplicand.",
+        "(C) Multiply the least significant bit (LSB) by the multiplier.",
+        "(D) Multiply the most significant bit (MSB) by the multiplier."
+      ],
+      "correct_option": "A",
+      "correct_answer": "Multiply the least significant bit (LSB) by the multiplicand.",
+      "explanation": {
+        "correct_answer": [
+          "In ordinary binary multiplication, the multiplier bits are processed from the least significant bit first in the simple method.",
+          "The LSB of the multiplier determines whether the multiplicand is added at the first step.",
+          "Each following multiplier bit produces a shifted partial product.",
+          "The partial products are then added to obtain the result."
+        ],
+        "options": {
+          "B": "The MSB is processed later in the usual right-to-left procedure.",
+          "C": "The LSB belongs to the multiplier; the multiplicand is the value being multiplied.",
+          "D": "The MSB of the multiplier is not the first bit used in the simple method."
+        }
+      }
+    },
+    {
+      "question_number": 9,
+      "question": "In Hamming code, how are parity bits positioned within a data unit?",
+      "options": [
+        "(A) At the beginning of the data unit",
+        "(B) At the end of the data unit",
+        "(C) At specific positions based on powers of 2",
+        "(D) Within the data unit or in random positions"
+      ],
+      "correct_option": "C",
+      "correct_answer": "At specific positions based on powers of 2",
+      "explanation": {
+        "correct_answer": [
+          "Hamming code places parity bits at positions that are powers of two.",
+          "Typical parity positions are 1, 2, 4, 8, 16 and so on.",
+          "Each parity bit checks a selected group of bit positions.",
+          "This arrangement allows detection and, for standard single-error Hamming code, correction of one-bit errors."
+        ],
+        "options": {
+          "A": "Parity bits are not placed only at the beginning of the data unit.",
+          "B": "They are not placed only at the end.",
+          "D": "The positions follow a defined rule rather than being random."
+        }
+      }
+    },
+    {
+      "question_number": 10,
+      "question": "Which component of an ideal microcomputer is responsible for temporarily holding data and instructions during processing?",
+      "options": ["(A) CPU", "(B) ALU", "(C) Memory", "(D) Output device"],
+      "correct_option": "C",
+      "correct_answer": "Memory",
+      "explanation": {
+        "correct_answer": [
+          "Main memory temporarily stores programs, instructions and data being processed.",
+          "The CPU fetches instructions and data from memory during execution.",
+          "The ALU performs arithmetic and logical operations but does not serve as the main storage area.",
+          "Therefore memory is the correct component."
+        ],
+        "options": {
+          "A": "The CPU executes instructions and controls processing; it is not the temporary storage component asked for.",
+          "B": "The ALU performs arithmetic and logic operations.",
+          "D": "An output device presents results to the user rather than temporarily storing processing data."
+        }
+      }
+    },
+    {
+      "question_number": 11,
+      "question": "What does the term microcomputer usually refer to in the context of computing?",
+      "options": [
+        "(A) A computer system that is larger than a mainframe.",
+        "(B) A computer system that is also known as a small computer.",
+        "(C) A computer system that is used exclusively by large corporations.",
+        "(D) A computer system that is part of a network."
+      ],
+      "correct_option": "B",
+      "correct_answer": "A computer system that is also known as a small computer.",
+      "explanation": {
+        "correct_answer": [
+          "A microcomputer is a relatively small computer built around a microprocessor.",
+          "Personal computers are common examples of microcomputers.",
+          "The term contrasts historically with larger systems such as mainframes and minicomputers.",
+          "The key idea is a small computer system, not a specific network role."
+        ],
+        "options": {
+          "A": "A mainframe is a large computer system, so this is the opposite of the usual meaning.",
+          "C": "Microcomputers are not restricted to large corporations.",
+          "D": "A computer can be networked without being a microcomputer; networking is not the definition."
+        }
+      }
+    },
+    {
+      "question_number": 12,
+      "question": "The microprocessor was first introduced by Intel. After the 8008 was introduced, it was followed by the Intel 8080. When was the Intel 8008 introduced?",
+      "options": ["(A) 1965", "(B) 1975", "(C) 1985", "(D) 1995", "(E) 1972"],
+      "correct_option": "E",
+      "correct_answer": "1972",
+      "explanation": {
+        "correct_answer": [
+          "The Intel 8008 was introduced in 1972.",
+          "It was an early 8-bit microprocessor developed by Intel.",
+          "The 8008 preceded the Intel 8080 in Intel's early microprocessor lineup.",
+          "Therefore the correct year is 1972."
+        ],
+        "options": {
+          "A": "1965 is too early; the Intel 8008 had not yet been introduced.",
+          "B": "1975 is later than the 8008 introduction.",
+          "C": "1985 is much later and does not match the 8008 generation.",
+          "D": "1995 is far later than the 8008."
+        }
+      }
+    },
+    {
+      "question_number": 13,
+      "question": "What is the Gray code equivalent to the binary number 1101?",
+      "options": ["(A) 1110", "(B) 1011", "(C) 1010", "(D) 1001"],
+      "correct_option": "B",
+      "correct_answer": "1011",
+      "explanation": {
+        "correct_answer": [
+          "Gray conversion starts by keeping the most significant binary bit unchanged.",
+          "Each following Gray bit is obtained by XORing two adjacent binary bits.",
+          "For 1101: 1, 1⊕1=0, 1⊕0=1, 0⊕1=1.",
+          "The resulting Gray code is 1011."
+        ],
+        "options": {
+          "A": "1110 does not follow the adjacent-bit XOR conversion rule for 1101.",
+          "C": "1010 has incorrect Gray bits for the given binary value.",
+          "D": "1001 also does not result from the required XOR sequence."
+        }
+      }
+    },
+    {
+      "question_number": 14,
+      "question": "What is the main advantage of using algorithm analysis for comparing algorithms? This is particularly useful when-",
+      "options": [
+        "(A) Analysis of the algorithm with constant time complexity",
+        "(B) The input size is fixed.",
+        "(C) The input size is small.",
+        "(D) Comparing algorithms depending on certain input characteristics."
+      ],
+      "correct_option": "D",
+      "correct_answer": "Comparing algorithms depending on certain input characteristics.",
+      "explanation": {
+        "correct_answer": [
+          "Algorithm analysis helps compare algorithms independently of a particular implementation.",
+          "It is especially useful when input characteristics can affect running time or resource use.",
+          "Complexity analysis describes how performance changes as input size or structure changes.",
+          "Therefore comparison based on input characteristics is the best option."
+        ],
+        "options": {
+          "A": "Constant-time analysis alone does not capture the main purpose of comparing different algorithms.",
+          "B": "If input size is fixed, asymptotic comparison is less useful because growth behavior is not being examined.",
+          "C": "Very small inputs may hide differences that become important for larger inputs."
+        }
+      }
+    },
+    {
+      "question_number": 15,
+      "question": "Conditional asymptotic notation is used to analyze the behavior of an algorithm under specific conditions. When the conditions for Θ(f(n)) are expressed using upper and lower bounds, what notation is obtained?",
+      "options": [
+        "(A) Θ(f(n)) = O(f(n))",
+        "(B) Θ(f(n)) = O(f(n)) ∩ Ω(f(n))",
+        "(C) Θ(f(n)) = O(f(n)) + O(f(n))",
+        "(D) Θ(f(n)) = O(f(n)) + Ω(f(n))"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Θ(f(n)) = O(f(n)) ∩ Ω(f(n))",
+      "explanation": {
+        "correct_answer": [
+          "Θ(f(n)) gives both an asymptotic upper bound and an asymptotic lower bound.",
+          "Therefore a function in Θ(f(n)) is also in O(f(n)) and Ω(f(n)).",
+          "This can be expressed as the intersection O(f(n)) ∩ Ω(f(n)).",
+          "The intersection means both conditions must hold."
+        ],
+        "options": {
+          "A": "O(f(n)) gives only an upper bound, so it does not fully describe Θ(f(n)).",
+          "C": "Adding two O terms is not the standard definition of Θ.",
+          "D": "Using a sum here is not the standard set-based relationship; both upper and lower bounds must simultaneously hold."
+        }
+      }
+    },
+    {
+      "question_number": 16,
+      "question": "When analyzing the time complexity of an algorithm using the Big-O notation, does the property allow us to ignore lower-order words?",
+      "options": [
+        "(A) Recursive relationship",
+        "(B) Matrix multiplication",
+        "(C) Multiplication",
+        "(D) Ignoring the significance of constants"
+      ],
+      "correct_option": "D",
+      "correct_answer": "Ignoring the significance of constants",
+      "explanation": {
+        "correct_answer": [
+          "Big-O notation describes an asymptotic upper bound on growth.",
+          "Constant factors are ignored because they do not change the growth class.",
+          "Lower-order terms are also normally ignored when determining the dominant asymptotic term.",
+          "Among the supplied options, ignoring constants is the intended property."
+        ],
+        "options": {
+          "A": "A recurrence relation is a way to express recursive running time; it is not the property being asked about.",
+          "B": "Matrix multiplication is an algorithmic operation, not a Big-O simplification property.",
+          "C": "Multiplication itself is not the property that allows asymptotic constants to be ignored."
+        }
+      }
+    },
+    {
+      "question_number": 17,
+      "question": "The recurrence equation T(n) = 2T(n/2) + Θ(n) represents the complexity of an algorithm. Using the master theorem, what is the value of 'A', 'B' and 'F(n)' in the theorem?",
+      "options": [
+        "(A) Divide and conquer, a = 2, b = 2, f(n) = n",
+        "(B) Divide and conquer, a = 2, b = 2, f(n) = n^2",
+        "(C) Divide and conquer, a = 2, b = 2, f(n) = log n",
+        "(D) Divide and conquer, a = 2, b = 2, f(n) = n - 1"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Divide and conquer, a = 2, b = 2, f(n) = n",
+      "explanation": {
+        "correct_answer": [
+          "The recurrence is T(n)=2T(n/2)+Θ(n).",
+          "There are a=2 recursive subproblems.",
+          "Each subproblem has size n/b, so b=2.",
+          "The non-recursive work is f(n)=Θ(n)."
+        ],
+        "options": {
+          "B": "f(n)=n² is not the non-recursive term in the given recurrence.",
+          "C": "f(n)=log n is not the given additive term.",
+          "D": "f(n)=n−1 is not the stated Θ(n) term."
+        }
+      }
+    },
+    {
+      "question_number": 18,
+      "question": "What is the worst-case complexity of the linear search algorithm for an array of size 'n'?",
+      "options": ["(A) O(log n)", "(B) O(n)", "(C) O(n^2)", "(D) O(1)"],
+      "correct_option": "B",
+      "correct_answer": "O(n)",
+      "explanation": {
+        "correct_answer": [
+          "Linear search checks elements one by one.",
+          "In the worst case, the target is at the last position or is absent.",
+          "This can require checking all n elements.",
+          "Therefore the worst-case time complexity is O(n)."
+        ],
+        "options": {
+          "A": "O(log n) is typical of binary search on suitable sorted data, not linear search.",
+          "C": "O(n²) is larger than necessary for a single linear scan.",
+          "D": "O(1) would mean the work does not grow with n, which is not true for linear search."
+        }
+      }
+    },
+    {
+      "question_number": 19,
+      "question": "The first problem to prove to be NP-complete was:",
+      "options": [
+        "(A) Travel salesman problem",
+        "(B) Hamiltonian bicycle problem",
+        "(C) Boolean satisfiability problem",
+        "(D) Knapsack problem"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Boolean satisfiability problem",
+      "explanation": {
+        "correct_answer": [
+          "The Boolean satisfiability problem (SAT) was the first problem proved NP-complete.",
+          "Cook's theorem established SAT as NP-complete in 1971.",
+          "Other famous NP-complete problems were later shown to be NP-complete through reductions from SAT.",
+          "Therefore Boolean satisfiability is the correct choice."
+        ],
+        "options": {
+          "A": "The travelling salesman decision problem is NP-complete, but it was not the first problem proved NP-complete.",
+          "B": "Hamiltonian cycle is NP-complete, but it was proved after SAT's NP-completeness result.",
+          "D": "Knapsack is NP-complete in its decision form, but not the first."
+        }
+      }
+    },
+    {
+      "question_number": 20,
+      "question": "In a biconnected graph, the number of biconnected components is equal to-",
+      "options": [
+        "(A) Number of corners",
+        "(B) Number of edges",
+        "(C) Number of cut vertices",
+        "(D) One less than the number of vertices",
+        "(E) 1"
+      ],
+      "correct_option": "E",
+      "correct_answer": "1",
+      "explanation": {
+        "correct_answer": [
+          "A biconnected graph is itself one biconnected component.",
+          "A biconnected component is a maximal subgraph with the required biconnectivity property.",
+          "Because the entire graph is biconnected, no decomposition into multiple biconnected components is needed.",
+          "Therefore the number of biconnected components is 1."
+        ],
+        "options": {
+          "A": "The number of corners/vertices is not the definition of biconnected components.",
+          "B": "The number of edges is not generally equal to the number of biconnected components in a biconnected graph.",
+          "C": "A biconnected graph has no cut vertices, so this cannot be the component count.",
+          "D": "One less than the number of vertices is not the general component count."
+        }
+      }
+    },
+    {
+      "question_number": 21,
+      "question": "In an extended binary tree, the internal nodes represent-",
+      "options": [
+        "(A) Leaf nodes",
+        "(B) Arithmetic operators",
+        "(C) Operand",
+        "(D) Numbers"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Arithmetic operators",
+      "explanation": {
+        "correct_answer": [
+          "In an extended binary tree, external/null positions are represented explicitly by external nodes.",
+          "Internal nodes correspond to the actual elements of the expression tree.",
+          "When the tree represents an arithmetic expression, internal nodes commonly contain operators.",
+          "Leaves contain operands."
+        ],
+        "options": {
+          "A": "Leaf nodes are normally external nodes or operands, depending on the representation.",
+          "C": "Operands are normally placed at leaves, not internal nodes.",
+          "D": "Numbers are operands and are generally represented by leaves."
+        }
+      }
+    },
+    {
+      "question_number": 22,
+      "question": "In the array representation of a binary tree, if the node 'i' is in index zero, its left child is in the index will be-",
+      "options": ["(A) 2i", "(B) 2i + 1", "(C) 2i - 1", "(D) i + 1"],
+      "correct_option": "B",
+      "correct_answer": "2i + 1",
+      "explanation": {
+        "correct_answer": [
+          "With zero-based array indexing, the root is stored at index 0.",
+          "For a node at index i, the left child is stored at 2i+1.",
+          "The right child is stored at 2i+2.",
+          "For i=0, the left child is therefore at index 1."
+        ],
+        "options": {
+          "A": "2i would give index 0 for the root's left child, which conflicts with the zero-based child formula.",
+          "C": "2i−1 is not the standard zero-based child formula.",
+          "D": "i+1 works only for a particular sequential layout, not the binary-tree array formula."
+        }
+      }
+    },
+    {
+      "question_number": 23,
+      "question": "A connected component in an indirect graph is a subset of vertices that are connected by-",
+      "options": ["(A) Edges", "(B) Paths", "(C) Vertices", "(D) Weight"],
+      "correct_option": "B",
+      "correct_answer": "Paths",
+      "explanation": {
+        "correct_answer": [
+          "A connected component contains vertices that are mutually reachable through paths within the component.",
+          "The connection is established through paths, which may contain multiple edges.",
+          "An edge is one direct connection, while a path can contain several edges.",
+          "Therefore paths is the best answer."
+        ],
+        "options": {
+          "A": "Edges connect pairs of vertices directly, but the definition of connectedness uses paths.",
+          "C": "Vertices are the objects being connected; they are not the connecting relation.",
+          "D": "Weight is a numerical property of an edge and does not define connectivity."
+        }
+      }
+    },
+    {
+      "question_number": 24,
+      "question": "Which graph representation is more memory efficient for sparse graphs?",
+      "options": [
+        "(A) Adjacency matrix",
+        "(B) Adjacency list",
+        "(C) Edge list",
+        "(D) Event matrix"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Adjacency list",
+      "explanation": {
+        "correct_answer": [
+          "An adjacency list stores only the edges that actually exist.",
+          "For a sparse graph, the number of edges is much smaller than the maximum possible number.",
+          "Its typical space usage is O(V+E), making it efficient for sparse graphs.",
+          "An adjacency matrix uses O(V²) space regardless of how few edges exist."
+        ],
+        "options": {
+          "A": "An adjacency matrix uses O(V²) space, so it is inefficient for very sparse graphs.",
+          "C": "An edge list can also be compact, but adjacency lists are the standard graph representation for efficient neighbor access.",
+          "D": "Event matrix is not the standard representation used for this purpose."
+        }
+      }
+    },
+    {
+      "question_number": 25,
+      "question": "The process of deleting recursion involves replacing recursive function calls-",
+      "options": [
+        "(A) Before recursive function calls",
+        "(B) By loops",
+        "(C) After recursive function calls",
+        "(D) Non-recursive function calls"
+      ],
+      "correct_option": "B",
+      "correct_answer": "By loops",
+      "explanation": {
+        "correct_answer": [
+          "Removing recursion means replacing recursive calls with an iterative or explicitly managed process.",
+          "Loops are the common way to replace simple recursive control flow.",
+          "An explicit stack can also simulate recursive calls when needed.",
+          "Therefore replacing recursive calls by loops is the intended answer."
+        ],
+        "options": {
+          "A": "Putting something before a recursive call does not remove recursion.",
+          "C": "Putting something after the call still leaves the recursive call in place.",
+          "D": "The phrase 'non-recursive function calls' is not the standard technique; the key idea is iteration or an explicit stack."
+        }
+      }
+    },
+    {
+      "question_number": 26,
+      "question": "Which of the following is an example of a problem that can be solved using backtracking?",
+      "options": [
+        "(A) Computation of the factorial of a number.",
+        "(B) Finding the minimum value in an array.",
+        "(C) Solving the Sudoku puzzle.",
+        "(D) Sorting an array using QuickSort."
+      ],
+      "correct_option": "C",
+      "correct_answer": "Solving the Sudoku puzzle",
+      "explanation": {
+        "correct_answer": [
+          "Backtracking explores a candidate solution step by step.",
+          "When a choice cannot lead to a valid solution, the algorithm reverses that choice and tries another.",
+          "Sudoku naturally fits this pattern because candidate numbers can be tried and undone.",
+          "Therefore Sudoku is a standard backtracking example."
+        ],
+        "options": {
+          "A": "Factorial can be computed recursively, but it does not require backtracking.",
+          "B": "Finding a minimum in an array is normally a simple linear scan.",
+          "D": "Quicksort uses divide-and-conquer partitioning, not backtracking."
+        }
+      }
+    },
+    {
+      "question_number": 27,
+      "question": "Which representation is best suited for a matrix with a small number of non-zero elements in each row and column?",
+      "options": [
+        "(A) Triple representation",
+        "(B) Compressed sparse line format",
+        "(C) Compressed sparse column format",
+        "(D) Array representation"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Compressed sparse column format",
+      "explanation": {
+        "correct_answer": [
+          "Sparse matrices contain many zero values and relatively few non-zero values.",
+          "Compressed sparse column (CSC) stores non-zero values column by column along with their row indices and column pointers.",
+          "It saves space compared with a full two-dimensional array.",
+          "The exact best format can depend on whether row or column operations dominate."
+        ],
+        "options": {
+          "A": "Triple representation stores row, column and value for each non-zero element and is useful, but CSC is specifically optimized for column-oriented sparse storage.",
+          "B": "The wording 'compressed sparse line format' is not the standard name of a common sparse-matrix format.",
+          "D": "A normal array stores zero entries too, wasting memory for a sparse matrix."
+        }
+      }
+    },
+    {
+      "question_number": 28,
+      "question": "The purpose of a firewall in an operating system is-",
+      "options": [
+        "(A) To control the flow of information between processes.",
+        "(B) To prevent viruses from entering and sharing system information.",
+        "(C) To manage the allocation of CPU time for processes.",
+        "(D) To protect a network by filtering incoming and outgoing traffic."
+      ],
+      "correct_option": "D",
+      "correct_answer": "To protect a network by filtering incoming and outgoing traffic.",
+      "explanation": {
+        "correct_answer": [
+          "A firewall controls network traffic according to security rules.",
+          "It can inspect incoming and outgoing traffic and allow or block packets/connections.",
+          "Its main purpose is network protection rather than CPU or process scheduling.",
+          "Modern firewalls can operate at different network layers and use different filtering rules."
+        ],
+        "options": {
+          "A": "Controlling communication between processes is an IPC or process-management concern, not the main purpose of a firewall.",
+          "B": "Firewalls can block some malware-related traffic, but preventing viruses is not their primary definition.",
+          "C": "CPU allocation is handled by the operating-system scheduler."
+        }
+      }
+    },
+    {
+      "question_number": 29,
+      "question": "File Organization Method: Which uses a table to map the logical file address to the physical block address, is known as-",
+      "options": [
+        "(A) Contiguous allocation",
+        "(B) Linked allocation",
+        "(C) Indexed allocation",
+        "(D) Variable allocation"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Indexed allocation",
+      "explanation": {
+        "correct_answer": [
+          "Indexed allocation stores a separate index block containing pointers to the file's data blocks.",
+          "The logical file block can be mapped through this index to a physical disk block.",
+          "This avoids requiring all file blocks to be contiguous.",
+          "Therefore indexed allocation matches the description."
+        ],
+        "options": {
+          "A": "Contiguous allocation requires file blocks to occupy consecutive disk blocks.",
+          "B": "Linked allocation follows pointers from one file block to the next rather than using an index table.",
+          "D": "Variable allocation is not the standard file-allocation method described here."
+        }
+      }
+    },
+    {
+      "question_number": 30,
+      "question": "Which storage allocation strategy allows multiple processes to reside in memory simultaneously without the need for contiguous memory blocks?",
+      "options": [
+        "(A) Best fit",
+        "(B) Worst fit",
+        "(C) First fit",
+        "(D) Paging"
+      ],
+      "correct_option": "D",
+      "correct_answer": "Paging",
+      "explanation": {
+        "correct_answer": [
+          "Paging divides logical memory into fixed-size pages and physical memory into fixed-size frames.",
+          "A process's pages can be placed in non-contiguous frames.",
+          "This allows multiple processes to reside in memory without requiring one contiguous physical block per process.",
+          "Therefore paging is the correct answer."
+        ],
+        "options": {
+          "A": "Best fit is a contiguous memory-allocation strategy that chooses the smallest suitable free block.",
+          "B": "Worst fit is also a contiguous allocation strategy and selects a large free block.",
+          "C": "First fit chooses the first suitable contiguous free block."
+        }
+      }
+    },
+    {
+      "question_number": 31,
+      "question": "Which of the following is a solution to the deadlock problem that involves ensuring that all the necessary resources are in place before starting the execution?",
+      "options": [
+        "(A) Avoidance",
+        "(B) Detection",
+        "(C) Prevention",
+        "(D) Termination"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Prevention",
+      "explanation": {
+        "correct_answer": [
+          "Deadlock prevention works by ensuring at least one necessary deadlock condition cannot hold.",
+          "Requiring resources to be secured or ordered before execution can prevent a process from waiting indefinitely while holding other resources.",
+          "Deadlock avoidance instead makes allocation decisions based on whether the resulting state is safe.",
+          "Among the given choices, prevention is the intended answer."
+        ],
+        "options": {
+          "A": "Avoidance dynamically checks whether resource allocation keeps the system in a safe state.",
+          "B": "Detection allows deadlocks to occur and then detects them.",
+          "D": "Termination is a recovery technique that may be used after a deadlock is detected."
+        }
+      }
+    },
+    {
+      "question_number": 32,
+      "question": "Priority scheduling involves assigning a priority value for each process. Which scheduling algorithm is closely related to this concept?",
+      "options": [
+        "(A) FCFS",
+        "(B) SJN",
+        "(C) Multilevel Queue Scheduling",
+        "(D) Preemptive and non-preemptive scheduling with priority-based selection (FCFS)"
+      ],
+      "correct_option": "D",
+      "correct_answer": "Preemptive and non-preemptive priority scheduling",
+      "explanation": {
+        "correct_answer": [
+          "Priority scheduling assigns each process a priority value.",
+          "The scheduler selects a process according to priority, with variants that may be preemptive or non-preemptive.",
+          "A higher-priority process may run before a lower-priority one depending on the policy.",
+          "Therefore priority-based preemptive/non-preemptive scheduling is the closest match."
+        ],
+        "options": {
+          "A": "FCFS schedules according to arrival order, not an explicit priority value.",
+          "B": "SJN/SJF selects the shortest job rather than directly using a priority value.",
+          "C": "Multilevel queue uses separate queues and scheduling policies; it is not simply the definition of priority scheduling."
+        }
+      }
+    },
+    {
+      "question_number": 33,
+      "question": "The term 'race condition' in parallel programming refers to-",
+      "options": [
+        "(A) A competition between procedures to eliminate the first B operation.",
+        "(B) A competition between processes to access shared resources.",
+        "(C) A situation where a process gets stuck in a loop.",
+        "(D) A situation where processes are going sequentially."
+      ],
+      "correct_option": "B",
+      "correct_answer": "A competition between processes to access shared resources.",
+      "explanation": {
+        "correct_answer": [
+          "A race condition occurs when concurrent processes or threads access shared data and the result depends on timing.",
+          "Different execution orders can produce different results.",
+          "Proper synchronization such as locks, semaphores or atomic operations can prevent races.",
+          "Therefore competition for shared resources is the intended answer."
+        ],
+        "options": {
+          "A": "This wording does not describe the standard definition of a race condition.",
+          "C": "Getting stuck in a loop describes an infinite loop or liveness problem, not a race condition.",
+          "D": "Sequential execution normally removes the concurrent timing issue that creates a race."
+        }
+      }
+    },
+    {
+      "question_number": 34,
+      "question": "What does RDBMS consist of?",
+      "options": [
+        "(A) Collection of records",
+        "(B) Collection of keys",
+        "(C) Collection of tables",
+        "(D) Collection of areas"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Collection of tables",
+      "explanation": {
+        "correct_answer": [
+          "RDBMS stands for Relational Database Management System.",
+          "A relational database organizes data into tables.",
+          "Tables contain rows and columns and can be related through keys.",
+          "Therefore a collection of tables is the correct option."
+        ],
+        "options": {
+          "A": "Records are rows within tables, but an RDBMS is not defined simply as a collection of records.",
+          "B": "Keys are used to identify or relate records; they are not the whole database structure.",
+          "D": "Areas are not the standard basic unit of a relational database."
+        }
+      }
+    },
+    {
+      "question_number": 35,
+      "question": "The lines of a connection are known as _____.",
+      "options": ["(A) Degree", "(B) Tuples", "(C) Unit", "(D) All of them"],
+      "correct_option": "B",
+      "correct_answer": "Tuples",
+      "explanation": {
+        "correct_answer": [
+          "In the relational model, a row of a relation is called a tuple.",
+          "A tuple contains attribute values for one record.",
+          "A column is called an attribute, while the number of attributes is the degree.",
+          "Therefore tuple is the correct answer."
+        ],
+        "options": {
+          "A": "Degree is the number of attributes/columns in a relation.",
+          "C": "Unit is not the standard relational-model term for a row.",
+          "D": "Option D is 'All of them', which would be correct only if Degree, Tuples, and Unit all described the lines/rows of a relation. They do not: a tuple is a row and degree is the number of attributes, so D is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 36,
+      "question": "Which one of the following commands is used to restore the data base to the last committed state?",
+      "options": [
+        "(A) Savepoint",
+        "(B) Rollback",
+        "(C) Committed",
+        "(D) Both 'Savepoint' and 'Rollback'"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Rollback",
+      "explanation": {
+        "correct_answer": [
+          "ROLLBACK reverses uncommitted changes in a transaction.",
+          "It can return the database to the state associated with the transaction's last commit, depending on the transaction context.",
+          "SAVEPOINT creates a point to which a partial rollback can be performed.",
+          "Therefore ROLLBACK is the intended command."
+        ],
+        "options": {
+          "A": "SAVEPOINT marks a point for partial rollback; it does not itself restore the database.",
+          "C": "COMMITTED is not the SQL command used to undo changes.",
+          "D": "Option D says both SAVEPOINT and ROLLBACK are the answer. They are not equivalent: SAVEPOINT only creates a rollback point, while ROLLBACK performs the undo operation. Therefore D is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 37,
+      "question": "What is known as a vast collection of accumulated information or data from many different _____ sources?",
+      "options": [
+        "(A) Data Management",
+        "(B) Data mining",
+        "(C) Data Warehouse",
+        "(D) Both Data Mining and Data Warehouse"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Data Warehouse",
+      "explanation": {
+        "correct_answer": [
+          "A data warehouse is a large repository of integrated historical data.",
+          "It collects data from multiple sources for reporting and analysis.",
+          "It is designed mainly for analytical processing rather than routine transaction processing.",
+          "Therefore Data Warehouse is the correct option."
+        ],
+        "options": {
+          "A": "Data management is the broader practice of collecting, storing and governing data; it is not the specific repository described.",
+          "B": "Data mining discovers patterns and knowledge from data; it is not the repository itself.",
+          "D": "Option D says both Data Mining and Data Warehouse are the answer. A data warehouse is the repository described in the question, while data mining is the process of finding patterns in data. Therefore D is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 38,
+      "question": "Which SQL command is used to remove a database object such as a table?",
+      "options": ["(A) DELETE", "(B) DROP", "(C) REMOVE", "(D) All of them"],
+      "correct_option": "B",
+      "correct_answer": "DROP",
+      "explanation": {
+        "correct_answer": [
+          "DROP is a DDL command used to remove database objects such as tables.",
+          "For example, DROP TABLE removes a table definition and its data.",
+          "DELETE removes rows from a table but does not remove the table object itself.",
+          "Therefore DROP is the intended answer."
+        ],
+        "options": {
+          "A": "DELETE removes selected rows from a table; it does not normally remove the table object.",
+          "C": "REMOVE is not the standard SQL command for dropping a table.",
+          "D": "Option D says all of the listed commands can remove a database object. DELETE removes rows and REMOVE is not the standard SQL command for this purpose; only DROP is the appropriate command here. Therefore D is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 39,
+      "question": "A database management system is a type of-",
+      "options": [
+        "(A) It is a type of application software.",
+        "(B) It is a type of general software.",
+        "(C) It is a type of system software.",
+        "(D) None of the above"
+      ],
+      "correct_option": "A",
+      "correct_answer": "It is a type of application software.",
+      "explanation": {
+        "correct_answer": [
+          "A DBMS is generally classified as application software because it provides database-management services to users and applications.",
+          "Examples include database systems that allow users to create, query and manage data.",
+          "It runs on top of an operating system rather than being the operating system itself.",
+          "Therefore application software is the intended classification in this question."
+        ],
+        "options": {
+          "B": "General software is too vague and is not the standard classification.",
+          "C": "System software manages the computer's basic resources; a DBMS is normally classified separately as application software.",
+          "D": "Option D is 'None of the above'. This type of option is correct only when every preceding option is incorrect. Here option A correctly classifies a DBMS as application software, so 'None of the above' is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 40,
+      "question": "Which of the following is a type of data manipulation command?",
+      "options": ["(A) Erase", "(B) Update", "(C) Creating", "(D) All of them"],
+      "correct_option": "B",
+      "correct_answer": "Update",
+      "explanation": {
+        "correct_answer": [
+          "DML stands for Data Manipulation Language.",
+          "UPDATE changes values in existing rows.",
+          "INSERT adds rows and DELETE removes rows; these are also DML operations.",
+          "Therefore UPDATE is a valid DML command."
+        ],
+        "options": {
+          "A": "ERASE is not the standard SQL DML command.",
+          "C": "CREATING is not the standard SQL DML command; CREATE belongs to DDL.",
+          "D": "Option D says all of the listed choices are data-manipulation commands. UPDATE is DML, but ERASE is not a standard SQL DML command and CREATE belongs to DDL. Therefore 'All of them' is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 41,
+      "question": "What is the primary function of routing in the network layer?",
+      "options": [
+        "(A) Error framing",
+        "(B) Error correction",
+        "(C) Finding the best path for data",
+        "(D) Finding the frame"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Finding the best path for data",
+      "explanation": {
+        "correct_answer": [
+          "Routing is the process of selecting a path through a network for packets.",
+          "Network-layer routers use addressing and routing information to make forwarding decisions.",
+          "The selected path aims to deliver packets toward the destination efficiently according to the routing protocol.",
+          "Therefore finding the best path is the primary function."
+        ],
+        "options": {
+          "A": "Framing is mainly associated with the data-link layer.",
+          "B": "Error correction is not the primary routing function.",
+          "D": "Frames are data-link-layer units; the network layer primarily works with packets/datagrams."
+        }
+      }
+    },
+    {
+      "question_number": 42,
+      "question": "What is a socket in terms of process-to-process communication?",
+      "options": [
+        "(A) A hardware device for data transmission",
+        "(B) A software interface for network communication",
+        "(C) A type of cable that is used for high-speed data transmission",
+        "(D) A software unit that is used for high-speed network topology"
+      ],
+      "correct_option": "B",
+      "correct_answer": "A software interface for network communication",
+      "explanation": {
+        "correct_answer": [
+          "A socket is a software endpoint used for communication between processes, commonly across a network.",
+          "It combines an address and communication endpoint information used by the transport/network stack.",
+          "Applications use sockets for protocols such as TCP and UDP.",
+          "Therefore a software interface for network communication is correct."
+        ],
+        "options": {
+          "A": "A socket in networking is a software abstraction, not a physical hardware device.",
+          "C": "A cable is a physical transmission medium, not a socket abstraction.",
+          "D": "The wording about network topology is not the definition of a socket."
+        }
+      }
+    },
+    {
+      "question_number": 43,
+      "question": "What is the primary function of SNMP (Simple Network Management Protocol)?",
+      "options": [
+        "(A) File Transfer",
+        "(B) Remote Terminal Access",
+        "(C) Network Management and Monitoring",
+        "(D) Web Browsing"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Network Management and Monitoring",
+      "explanation": {
+        "correct_answer": [
+          "SNMP stands for Simple Network Management Protocol.",
+          "It is used to monitor and manage network devices.",
+          "Network administrators can collect information such as interface status, traffic counters and device health.",
+          "Therefore network management and monitoring is correct."
+        ],
+        "options": {
+          "A": "File transfer is normally handled by protocols such as FTP or SFTP.",
+          "B": "Remote terminal access is associated with protocols such as SSH or Telnet.",
+          "D": "Web browsing normally uses HTTP/HTTPS, not SNMP."
+        }
+      }
+    },
+    {
+      "question_number": 44,
+      "question": "What is data transmission known as using multiple routes simultaneously?",
+      "options": [
+        "(A) Parallel transmission",
+        "(B) Serial transmission",
+        "(C) Duplex transmission",
+        "(D) Half duplex transmission"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Parallel transmission",
+      "explanation": {
+        "correct_answer": [
+          "Parallel transmission sends multiple bits simultaneously over multiple communication lines or channels.",
+          "It contrasts with serial transmission, which sends bits sequentially.",
+          "The question describes multiple routes/channels being used at the same time.",
+          "Therefore parallel transmission is the intended answer."
+        ],
+        "options": {
+          "B": "Serial transmission sends bits one after another over a serial channel.",
+          "C": "Duplex describes direction of communication, not the number of parallel routes.",
+          "D": "Half-duplex allows communication in both directions but not simultaneously."
+        }
+      }
+    },
+    {
+      "question_number": 45,
+      "question": "Flow control is used for-",
+      "options": [
+        "(A) Prevent data loss during transmission.",
+        "(B) Increase the data rate of transmission.",
+        "(C) Enable simultaneous transmission in both directions.",
+        "(D) Improve error correction capabilities."
+      ],
+      "correct_option": "A",
+      "correct_answer": "Prevent data loss during transmission.",
+      "explanation": {
+        "correct_answer": [
+          "Flow control prevents a fast sender from overwhelming a slower receiver.",
+          "It regulates the amount or rate of data sent so receiver buffers do not overflow.",
+          "Mechanisms such as stop-and-wait and sliding-window flow control provide this regulation.",
+          "Therefore preventing data loss caused by receiver overload is the intended answer."
+        ],
+        "options": {
+          "B": "Increasing transmission rate is not the purpose of flow control.",
+          "C": "Simultaneous two-way communication is a duplex property.",
+          "D": "Error correction belongs to error-control mechanisms, not the primary purpose of flow control."
+        }
+      }
+    },
+    {
+      "question_number": 46,
+      "question": "Which sublayer of the layer manages access to the shared communication medium?",
+      "options": [
+        "(A) Logical link control (LLC)",
+        "(B) Media access control (MAC)",
+        "(C) Flow control sublayer",
+        "(D) Error control sublayer"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Media Access Control (MAC)",
+      "explanation": {
+        "correct_answer": [
+          "The Data Link layer is commonly divided into LLC and MAC sublayers.",
+          "MAC controls access to the shared transmission medium.",
+          "It handles functions related to medium access and hardware addressing.",
+          "Therefore MAC is correct."
+        ],
+        "options": {
+          "A": "LLC provides logical link-control functions above the MAC sublayer.",
+          "C": "Flow control is a function, not the standard name of this sublayer.",
+          "D": "Error control is also a function, not the MAC/LLC sublayer name."
+        }
+      }
+    },
+    {
+      "question_number": 47,
+      "question": "Routing includes-",
+      "options": [
+        "(A) Dividing the data into frames.",
+        "(B) Determining the best path for the data packet.",
+        "(C) Correcting errors in data transmission.",
+        "(D) Correcting errors in data transmission."
+      ],
+      "correct_option": "B",
+      "correct_answer": "Determining the best path for the data packet.",
+      "explanation": {
+        "correct_answer": [
+          "Routing determines where a packet should be forwarded next.",
+          "Routers use routing tables and routing protocols to select paths toward destinations.",
+          "This decision occurs at the network layer.",
+          "Therefore determining the best path for the packet is correct."
+        ],
+        "options": {
+          "A": "Dividing data into frames is a data-link-layer function.",
+          "C": "Error correction is not the primary purpose of routing.",
+          "D": "This is also an error-control description, not routing; the source contains a duplicated option."
+        }
+      }
+    },
+    {
+      "question_number": 48,
+      "question": "What are the key features of software engineering?",
+      "options": [
+        "(A) Reliability, adaptability, and convertibility.",
+        "(B) Hardware-centric, one-time development, individual effort.",
+        "(C) Work with hardware-centric quality, specific testing.",
+        "(D) Rapid development, subjective decision-making, informal communication."
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reliability, adaptability, and convertibility.",
+      "explanation": {
+        "correct_answer": [
+          "Software engineering emphasizes systematic development and maintenance of software.",
+          "Important quality attributes include reliability, adaptability and maintainability/convertibility.",
+          "It uses defined processes, documentation and engineering practices rather than one-time informal development.",
+          "Therefore the first option best represents the intended characteristics."
+        ],
+        "options": {
+          "B": "Software engineering is software-focused, not hardware-centric, and is not a one-time individual activity.",
+          "C": "It is not limited to hardware-centric development or a narrow testing approach.",
+          "D": "Software engineering favors systematic and measurable processes, not purely subjective decisions and informal communication."
+        }
+      }
+    },
+    {
+      "question_number": 49,
+      "question": "Which of the following is not a software metric?",
+      "options": [
+        "(A) Lines of Code (LOC)",
+        "(B) Number of defects",
+        "(C) Processor speed",
+        "(D) Function Point (FP)"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Processor speed",
+      "explanation": {
+        "correct_answer": [
+          "Software metrics measure properties of software or its development process.",
+          "Examples include lines of code, number of defects and function points.",
+          "Processor speed measures hardware performance.",
+          "Therefore processor speed is not a software metric."
+        ],
+        "options": {
+          "A": "Lines of Code is a common size-oriented software metric.",
+          "B": "Defect count is a software quality metric.",
+          "D": "Function points are a standard software size/functional measurement."
+        }
+      }
+    },
+    {
+      "question_number": 50,
+      "question": "Which design is based on creating modular, functional components?",
+      "options": [
+        "(A) Object-oriented design",
+        "(B) Function-oriented design",
+        "(C) Prototype design",
+        "(D) Waterfall design"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Function-oriented design",
+      "explanation": {
+        "correct_answer": [
+          "Function-oriented design decomposes a system into functions or modules that perform specific tasks.",
+          "The design emphasizes functional decomposition and modular processing.",
+          "Object-oriented design instead centers on objects, classes and their interactions.",
+          "Therefore function-oriented design is the intended answer."
+        ],
+        "options": {
+          "A": "Object-oriented design focuses on objects, classes, encapsulation and interactions.",
+          "C": "Prototype design is an iterative model for exploring requirements/design, not the defining decomposition style here.",
+          "D": "Waterfall is a software development life-cycle model, not a component-design approach."
+        }
+      }
+    },
+    {
+      "question_number": 51,
+      "question": "White box test is also known as-",
+      "options": [
+        "(A) Functional test",
+        "(B) Black box test",
+        "(C) Glass box test",
+        "(D) Unit testing"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Glass box test",
+      "explanation": {
+        "correct_answer": [
+          "White-box testing focuses on the internal structure and logic of the program.",
+          "Glass-box and white-box refer to the same idea of visibility into implementation.",
+          "It is commonly used with code coverage and path/branch testing.",
+          "Therefore Glass box test is the correct option."
+        ],
+        "options": {
+          "A": "Functional testing focuses on required behavior rather than internal implementation.",
+          "B": "Black-box testing tests behavior without looking at internal code.",
+          "D": "Unit testing tests individual units; it is not another name for white-box testing."
+        }
+      }
+    },
+    {
+      "question_number": 52,
+      "question": "What is the main goal of system testing?",
+      "options": [
+        "(A) Testing of individual components in isolation",
+        "(B) Testing of integration between different software components",
+        "(C) Testing of software functionality from the user's point of view",
+        "(D) Identifying defects in the source code"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Testing of software functionality from the user's point of view",
+      "explanation": {
+        "correct_answer": [
+          "System testing evaluates the complete integrated software system.",
+          "It checks whether the system satisfies its specified functional requirements.",
+          "It is performed at the system level rather than on isolated components.",
+          "Therefore testing functionality from the user's point of view is the intended answer."
+        ],
+        "options": {
+          "A": "Component testing checks individual units/components in isolation.",
+          "B": "Integration testing focuses on interactions between components.",
+          "D": "Source-code defect identification is not the main definition of system testing."
+        }
+      }
+    },
+    {
+      "question_number": 53,
+      "question": "Software maintenance refers to-",
+      "options": [
+        "(A) Developing new software from scratch.",
+        "(B) Enhancing the performance of the software.",
+        "(C) Correcting defects and updating existing software.",
+        "(D) Examination of the software before release."
+      ],
+      "correct_option": "C",
+      "correct_answer": "Correcting defects and updating existing software.",
+      "explanation": {
+        "correct_answer": [
+          "Maintenance happens after software has been delivered.",
+          "Corrective maintenance fixes discovered defects.",
+          "Adaptive and perfective changes can update or improve existing software.",
+          "Therefore correcting defects and updating existing software is the best option."
+        ],
+        "options": {
+          "A": "Developing a new system from scratch is software development, not maintenance.",
+          "B": "Performance improvement can be a maintenance activity, but it is only one type of maintenance.",
+          "D": "Testing before release is part of development/testing, not software maintenance."
+        }
+      }
+    },
+    {
+      "question_number": 54,
+      "question": "Which maintenance process involves documenting the structure and functionality of the software?",
+      "options": [
+        "(A) Reverse engineering",
+        "(B) Preventive maintenance",
+        "(C) Perfect maintenance",
+        "(D) Adaptive maintenance"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reverse engineering",
+      "explanation": {
+        "correct_answer": [
+          "Reverse engineering starts with an existing software system.",
+          "It analyzes the system to recover design, structure, or behavior information.",
+          "The recovered information can be documented for maintenance or modernization.",
+          "Therefore reverse engineering matches the question."
+        ],
+        "options": {
+          "B": "Preventive maintenance tries to reduce future problems; it is not primarily documentation through system analysis.",
+          "C": "Perfect maintenance is not a standard software-maintenance category.",
+          "D": "Adaptive maintenance changes software to work in a changed environment."
+        }
+      }
+    },
+    {
+      "question_number": 55,
+      "question": "What is the purpose of the keyword \"super\" in Java and other similar languages?",
+      "options": [
+        "(A) It refers to the superclass in inheritance.",
+        "(B) It creates a new object instance.",
+        "(C) It defines a new class.",
+        "(D) It handles exceptions."
+      ],
+      "correct_option": "A",
+      "correct_answer": "It refers to the superclass in inheritance.",
+      "explanation": {
+        "correct_answer": [
+          "super is used in an inheritance relationship.",
+          "It refers to the immediate superclass of the current class.",
+          "It can be used to access superclass members and constructors.",
+          "Therefore referring to the superclass is correct."
+        ],
+        "options": {
+          "B": "new is used to create an object instance.",
+          "C": "A class is defined with class, not super.",
+          "D": "Exceptions are handled with try/catch/finally and related constructs."
+        }
+      }
+    },
+    {
+      "question_number": 56,
+      "question": "What is the polymorphism in OOP?",
+      "options": [
+        "(A) Using only abstract classes.",
+        "(B) Ability to take many forms of objects.",
+        "(C) A type of inheritance.",
+        "(D) A method without any implementation."
+      ],
+      "correct_option": "B",
+      "correct_answer": "Ability to take many forms of objects.",
+      "explanation": {
+        "correct_answer": [
+          "Polymorphism literally means having many forms.",
+          "The same interface or method call can produce different behavior for different objects.",
+          "Method overriding is a common way to achieve runtime polymorphism.",
+          "Therefore the ability to take many forms is correct."
+        ],
+        "options": {
+          "A": "Polymorphism does not require using only abstract classes.",
+          "C": "Inheritance is a separate OOP mechanism, although it can support runtime polymorphism.",
+          "D": "A method without implementation is an abstract method, not polymorphism itself."
+        }
+      }
+    },
+    {
+      "question_number": 57,
+      "question": "What are Abstract Methods?",
+      "options": [
+        "(A) Methods which are inaccessible to the outside world.",
+        "(B) Methods containing implementation details.",
+        "(C) Methods without a body, defined in an abstract class",
+        "(D) Methods which cannot be inherited."
+      ],
+      "correct_option": "C",
+      "correct_answer": "Methods without a body, defined in an abstract class",
+      "explanation": {
+        "correct_answer": [
+          "An abstract method declares what a method should do without supplying its body.",
+          "A concrete subclass normally provides the implementation.",
+          "Abstract methods are associated with abstraction and abstract classes/interfaces.",
+          "Therefore a method without a body is the intended answer."
+        ],
+        "options": {
+          "A": "An inaccessible method is usually private or otherwise access-restricted; that is not the definition of abstract.",
+          "B": "An implemented method contains a method body, so it is not abstract merely because it has details.",
+          "D": "Abstract methods can be inherited and implemented by subclasses."
+        }
+      }
+    },
+    {
+      "question_number": 58,
+      "question": "What keywords are used to catch and handle exceptions in the try-catch block?",
+      "options": [
+        "(A) Throw-away",
+        "(B) Catch",
+        "(C) Exceptions",
+        "(D) Handle"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Catch",
+      "explanation": {
+        "correct_answer": [
+          "try contains code that may produce an exception.",
+          "catch receives and handles the exception.",
+          "A try block can be followed by one or more catch blocks.",
+          "Therefore Catch is the correct keyword among the options."
+        ],
+        "options": {
+          "A": "Throw is related to explicitly throwing an exception; 'throw-away' is not the Java keyword.",
+          "C": "Exception is the object/type being handled, not the keyword used to catch it.",
+          "D": "Handle is not the Java keyword for exception handling."
+        }
+      }
+    },
+    {
+      "question_number": 59,
+      "question": "What is the term for creating a new class that inherits qualities and behaviors from an existing class?",
+      "options": [
+        "(A) Polymorphism",
+        "(B) Encapsulation",
+        "(C) Abstraction",
+        "(D) Etymology",
+        "(E) Inheritance"
+      ],
+      "correct_option": "E",
+      "correct_answer": "Inheritance",
+      "explanation": {
+        "correct_answer": [
+          "Inheritance creates a relationship between a base class and a derived class.",
+          "The derived class receives accessible properties and behavior from the base class.",
+          "It supports code reuse and hierarchical modeling in OOP.",
+          "Therefore Inheritance is the correct answer; it was added because the source options do not contain it."
+        ],
+        "options": {
+          "A": "Polymorphism allows different forms of the same interface or operation.",
+          "B": "Encapsulation bundles data and methods and controls access to internal state.",
+          "C": "Abstraction hides unnecessary implementation details.",
+          "D": "Etymology is unrelated to creating a derived class."
+        }
+      }
+    },
+    {
+      "question_number": 60,
+      "question": "What does the term \"method overriding\" in OOP represent?",
+      "options": [
+        "(A) Creating multiple methods with the same name in a class.",
+        "(B) Defining a method in a derived class with the same name as in the base class.",
+        "(C) Re-enforcing all methods in the class hierarchy.",
+        "(D) Defining private methods in a class."
+      ],
+      "correct_option": "B",
+      "correct_answer": "Defining a method in a derived class with the same name as in the base class.",
+      "explanation": {
+        "correct_answer": [
+          "Overriding occurs between a base class and a derived class.",
+          "The derived class supplies a new implementation for an inherited method.",
+          "The overriding method normally follows the same method signature.",
+          "Therefore defining the method again in the derived class is correct."
+        ],
+        "options": {
+          "A": "Multiple same-named methods with different parameters is method overloading.",
+          "C": "Re-enforcing all methods is not the definition of overriding.",
+          "D": "Private methods are not overridden in the normal Java sense."
+        }
+      }
+    },
+    {
+      "question_number": 61,
+      "question": "What is the function of DNS (Domain Name System)?",
+      "options": [
+        "(A) Sending emails.",
+        "(B) Translating domain names into IP addresses.",
+        "(C) Managing the database.",
+        "(D) Providing website security."
+      ],
+      "correct_option": "B",
+      "correct_answer": "Translating domain names into IP addresses.",
+      "explanation": {
+        "correct_answer": [
+          "DNS stands for Domain Name System.",
+          "It resolves human-readable domain names into IP addresses.",
+          "This allows users to access services using names instead of numeric addresses.",
+          "Therefore translating domain names into IP addresses is correct."
+        ],
+        "options": {
+          "A": "Email sending is handled by mail protocols such as SMTP.",
+          "C": "Database management is not the primary function of DNS.",
+          "D": "DNS does not itself provide website security."
+        }
+      }
+    },
+    {
+      "question_number": 62,
+      "question": "What is the primary purpose of XML?",
+      "options": [
+        "(A) Creating complex animations.",
+        "(B) Styling web pages.",
+        "(C) Storing and transporting structured data.",
+        "(D) Displaying images."
+      ],
+      "correct_option": "C",
+      "correct_answer": "Storing and transporting structured data.",
+      "explanation": {
+        "correct_answer": [
+          "XML stands for Extensible Markup Language.",
+          "It represents data using user-defined tags and a structured hierarchy.",
+          "XML can be used to store and exchange structured data between systems.",
+          "Therefore storing and transporting structured data is correct."
+        ],
+        "options": {
+          "A": "Complex animations are handled by graphics/web technologies, not XML's primary purpose.",
+          "B": "CSS is used to style web pages.",
+          "D": "Displaying images is not XML's primary purpose."
+        }
+      }
+    },
+    {
+      "question_number": 63,
+      "question": "What is a unit in DTD?",
+      "options": [
+        "(A) Reference to an external resource",
+        "(B) A mathematical equation",
+        "(C) A special XML tag",
+        "(D) A function in JavaScript"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Reference to an external resource",
+      "explanation": {
+        "correct_answer": [
+          "A DTD defines the allowed structure of an XML document.",
+          "An entity can represent reusable content or external content.",
+          "External entities can reference content outside the main XML document.",
+          "Therefore the external-resource reference is the intended answer."
+        ],
+        "options": {
+          "B": "A mathematical equation is not what a DTD entity means.",
+          "C": "An entity is not simply a special XML tag.",
+          "D": "A JavaScript function is unrelated to a DTD entity."
+        }
+      }
+    },
+    {
+      "question_number": 64,
+      "question": "What is the full form of SQL?",
+      "options": [
+        "(A) Structured Query Language",
+        "(B) Simple Query Language",
+        "(C) Systematic Query Logic",
+        "(D) Standard Query Level"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Structured Query Language",
+      "explanation": {
+        "correct_answer": [
+          "SQL is used with relational database systems.",
+          "The standard expansion is Structured Query Language.",
+          "It supports operations such as SELECT, INSERT, UPDATE, and DELETE.",
+          "Therefore Structured Query Language is correct."
+        ],
+        "options": {
+          "B": "Simple Query Language is not the standard expansion.",
+          "C": "Systematic Query Logic is not the expansion.",
+          "D": "Standard Query Level is not the expansion."
+        }
+      }
+    },
+    {
+      "question_number": 65,
+      "question": "Which statement is used to retrieve data from a database in SQL?",
+      "options": ["(A) SELECT", "(B) UPDATE", "(C) DELETE", "(D) INSERT"],
+      "correct_option": "A",
+      "correct_answer": "SELECT",
+      "explanation": {
+        "correct_answer": [
+          "SELECT is used to read data from database tables.",
+          "It can retrieve selected columns and rows using conditions.",
+          "It does not modify the stored rows by itself.",
+          "Therefore SELECT is the correct statement."
+        ],
+        "options": {
+          "B": "UPDATE changes existing data.",
+          "C": "DELETE removes rows.",
+          "D": "INSERT adds new rows."
+        }
+      }
+    },
+    {
+      "question_number": 66,
+      "question": "How can you prevent SQL injection vulnerabilities in your PHP code?",
+      "options": [
+        "(A) Using short and simple SQL queries.",
+        "(B) By not using user input in queries.",
+        "(C) By removing error handling from the code.",
+        "(D) By disabling database privileges.",
+        "(E) Use prepared statements/parameterized queries."
+      ],
+      "correct_option": "E",
+      "correct_answer": "Use prepared statements/parameterized queries",
+      "explanation": {
+        "correct_answer": [
+          "SQL injection occurs when untrusted input changes the meaning of an SQL statement.",
+          "Prepared statements keep SQL code separate from user-supplied values.",
+          "Parameter binding treats input as data instead of executable SQL.",
+          "Therefore prepared statements or parameterized queries are the correct security practice."
+        ],
+        "options": {
+          "A": "Short queries do not prevent malicious input from changing query meaning.",
+          "B": "Avoiding user input entirely is usually impractical and is not the standard defensive technique.",
+          "C": "Removing error handling does not prevent SQL injection.",
+          "D": "Disabling privileges can reduce impact but does not prevent injection."
+        }
+      }
+    },
+    {
+      "question_number": 67,
+      "question": "Which SQL statement is used to update the data in the database?",
+      "options": ["(A) Replace", "(B) Changes", "(C) Update", "(D) Improve"],
+      "correct_option": "C",
+      "correct_answer": "UPDATE",
+      "explanation": {
+        "correct_answer": [
+          "UPDATE is a DML statement.",
+          "It modifies existing rows in a table.",
+          "A WHERE clause can restrict which rows are changed.",
+          "Therefore UPDATE is the correct answer."
+        ],
+        "options": {
+          "A": "REPLACE is not the standard general SQL command for updating rows.",
+          "B": "CHANGES is not the standard SQL command.",
+          "D": "IMPROVE is not a standard SQL command."
+        }
+      }
+    },
+    {
+      "question_number": 68,
+      "question": "A language for which DFA exists is a _________.",
+      "options": [
+        "(A) Regular language",
+        "(B) Non-regular language",
+        "(C) Any language",
+        "(D) Can't be said"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Regular language",
+      "explanation": {
+        "correct_answer": [
+          "A DFA is a deterministic finite automaton.",
+          "DFA-recognizable languages are exactly the regular languages.",
+          "Regular languages can also be described by regular expressions and finite automata.",
+          "Therefore the language is regular."
+        ],
+        "options": {
+          "B": "A DFA cannot recognize every non-regular language.",
+          "C": "Not every formal language has a DFA.",
+          "D": "It can be determined from the DFA criterion."
+        }
+      }
+    },
+    {
+      "question_number": 69,
+      "question": "For a DFA to accept binary numbers whose decimal equivalent is divisible by 3, what are all the possible residues?",
+      "options": ["(A) 0", "(B) 0, 2", "(C) 0, 1, 2", "(D) 0, 1, 2, 3"],
+      "correct_option": "C",
+      "correct_answer": "0, 1, 2",
+      "explanation": {
+        "correct_answer": [
+          "Divisibility by 3 can be tracked using remainders modulo 3.",
+          "The possible remainders are 0, 1, and 2.",
+          "A DFA can use these remainder classes as states.",
+          "Therefore 0, 1, 2 is correct."
+        ],
+        "options": {
+          "A": "Remainder 0 is one possible state, but not the only possible remainder.",
+          "B": "Remainder 1 is missing from this set.",
+          "D": "Remainder 3 is equivalent to remainder 0, so it is not a separate modulo-3 state."
+        }
+      }
+    },
+    {
+      "question_number": 70,
+      "question": "The regular expression for all strings begins with B and ends with BBA.",
+      "options": [
+        "(A) aba*b*bba",
+        "(B) ab(ab)*bba",
+        "(C) b(a + b)*bba",
+        "(D) All mentioned"
+      ],
+      "correct_option": "C",
+      "correct_answer": "b(a + b)*bba",
+      "explanation": {
+        "correct_answer": [
+          "The expression must begin with b.",
+          "The middle portion can contain any sequence of a and b.",
+          "The suffix bba guarantees that the string ends with bba.",
+          "Therefore b(a + b)*bba matches the stated requirement."
+        ],
+        "options": {
+          "A": "This expression starts with a, so it does not satisfy the required initial b.",
+          "B": "This expression starts with a, so it does not satisfy the required initial b.",
+          "D": "The listed expressions are not all valid for the stated requirement."
+        }
+      }
+    },
+    {
+      "question_number": 71,
+      "question": "If an NFA of 5 states excluding the initial state is converted to DFA, then the maximum possible number of states for DFA is the number of states?",
+      "options": ["(A) 64", "(B) 32", "(C) 128", "(D) 187"],
+      "correct_option": "A",
+      "correct_answer": "64",
+      "explanation": {
+        "correct_answer": [
+          "The initial state plus five other states gives six NFA states.",
+          "Subset construction can create up to 2^n DFA states.",
+          "For six states, 2^6 equals 64.",
+          "Therefore 64 is the maximum possible number."
+        ],
+        "options": {
+          "B": "32 would be 2^5 and ignores the initial state mentioned separately.",
+          "C": "128 corresponds to 2^7, which would require seven NFA states.",
+          "D": "187 is not the subset-construction maximum for six states."
+        }
+      }
+    },
+    {
+      "question_number": 72,
+      "question": "Not closed under the class of CFG-",
+      "options": [
+        "(A) Combination",
+        "(B) Intersection",
+        "(C) Union",
+        "(D) Repeated combination"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Intersection",
+      "explanation": {
+        "correct_answer": [
+          "CFGs are closed under union.",
+          "CFGs are also closed under concatenation and Kleene star.",
+          "They are not closed under intersection in general.",
+          "Therefore Intersection is the correct non-closure operation."
+        ],
+        "options": {
+          "A": "The wording 'combination' is vague; standard closure properties include union and concatenation.",
+          "C": "Correctly, CFLs are closed under union.",
+          "D": "Repeated concatenation/combination is not the standard non-closure result here."
+        }
+      }
+    },
+    {
+      "question_number": 73,
+      "question": "PDA may be represented:",
+      "options": [
+        "(A) Instantaneous Details",
+        "(B) Transition diagram",
+        "(C) Transition Table",
+        "(D) All of them"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All of them",
+      "explanation": {
+        "correct_answer": [
+          "A PDA has states, an input alphabet, a stack alphabet, and transitions.",
+          "Its transitions can be shown in a transition diagram or table.",
+          "An instantaneous description represents its current configuration.",
+          "Therefore all listed representations are valid."
+        ],
+        "options": {
+          "A": "Correct as a representation of a PDA's instantaneous configuration.",
+          "B": "A transition diagram can represent PDA transitions.",
+          "C": "A transition table can specify PDA transitions."
+        }
+      }
+    },
+    {
+      "question_number": 74,
+      "question": "The Turing machine can be represented using the-",
+      "options": [
+        "(A) Transition Table",
+        "(B) Transition diagram",
+        "(C) Instantaneous Details",
+        "(D) All of them"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All of them",
+      "explanation": {
+        "correct_answer": [
+          "A Turing machine can be specified by its transition function/table.",
+          "A state diagram can visualize its transitions.",
+          "An instantaneous description represents its current state, tape contents, and head position.",
+          "Therefore all listed representations are valid."
+        ],
+        "options": {
+          "A": "The transition function can be represented as a table.",
+          "B": "A state-transition diagram can represent the machine.",
+          "C": "An instantaneous description represents a current machine configuration."
+        }
+      }
+    },
+    {
+      "question_number": 75,
+      "question": "Who used the term \"IoT\"?",
+      "options": [
+        "(A) Steve Jobs",
+        "(B) Bill Simpson",
+        "(C) Kevin Ashton",
+        "(D) None of these"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Kevin Ashton",
+      "explanation": {
+        "correct_answer": [
+          "The term Internet of Things is credited to Kevin Ashton.",
+          "He used the term in 1999 while discussing RFID and connected objects.",
+          "IoT describes physical objects connected to networks and capable of exchanging data.",
+          "Therefore Kevin Ashton is correct."
+        ],
+        "options": {
+          "A": "Steve Jobs was an Apple co-founder, not the person credited with coining IoT.",
+          "B": "Bill Simpson is not credited with coining the term IoT.",
+          "D": "This is incorrect because the correct person is listed as option C."
+        }
+      }
+    },
+    {
+      "question_number": 76,
+      "question": "Which of the following is not correct about IoT?",
+      "options": [
+        "(A) Uses IoT microcontrollers.",
+        "(B) IoT is completely secure.",
+        "(C) Uses IoT sensors and actuators.",
+        "(D) IoT uses wireless technology."
+      ],
+      "correct_option": "B",
+      "correct_answer": "IoT is completely secure.",
+      "explanation": {
+        "correct_answer": [
+          "IoT devices can contain hardware, software, communication, and security vulnerabilities.",
+          "Using sensors and actuators is common in IoT.",
+          "Wireless communication is also common in many IoT deployments.",
+          "Therefore saying IoT is completely secure is the incorrect statement."
+        ],
+        "options": {
+          "A": "IoT devices commonly use microcontrollers.",
+          "C": "Sensors and actuators are common IoT components.",
+          "D": "Many IoT systems use wireless communication technologies."
+        }
+      }
+    },
+    {
+      "question_number": 77,
+      "question": "____ is a light weight IoT protocol.",
+      "options": ["(A) IP", "(B) CoAP", "(C) HTTP", "(D) MQTT"],
+      "correct_option": "D",
+      "correct_answer": "MQTT",
+      "explanation": {
+        "correct_answer": [
+          "MQTT is designed for lightweight messaging.",
+          "It commonly uses a publish/subscribe communication model.",
+          "It is widely used where devices have limited bandwidth or resources.",
+          "Therefore MQTT is the intended lightweight IoT protocol."
+        ],
+        "options": {
+          "A": "IP is a network-layer protocol, not specifically a lightweight IoT messaging protocol.",
+          "B": "CoAP is also lightweight and designed for constrained devices, but the intended answer here is MQTT.",
+          "C": "HTTP is heavier than MQTT for many constrained IoT scenarios."
+        }
+      }
+    },
+    {
+      "question_number": 78,
+      "question": "The term for WSN is-",
+      "options": [
+        "(A) Wireless Standard Protocol",
+        "(B) Wireless sensor protocol",
+        "(C) Wireless Serial Protocol",
+        "(D) Wireless Single Protocol",
+        "(E) Wireless Sensor Network"
+      ],
+      "correct_option": "E",
+      "correct_answer": "Wireless Sensor Network",
+      "explanation": {
+        "correct_answer": [
+          "WSN stands for Wireless Sensor Network.",
+          "A WSN consists of sensor nodes that communicate to collect environmental or physical data.",
+          "The term describes a network, not a protocol.",
+          "Therefore Wireless Sensor Network is correct; it was added because none of the source options gives the standard expansion."
+        ],
+        "options": {
+          "A": "Wireless Standard Protocol is not the expansion of WSN.",
+          "B": "Wireless Sensor Protocol is not the standard expansion.",
+          "C": "Wireless Serial Protocol is not the standard expansion.",
+          "D": "Wireless Single Protocol is not the standard expansion."
+        }
+      }
+    },
+    {
+      "question_number": 79,
+      "question": "What is the word for IIoT?",
+      "options": [
+        "(A) Industrial Internet of Things",
+        "(B) Intelligent Internet of Things",
+        "(C) Internal Internet of Things",
+        "(D) Institutional Internet of Things"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Industrial Internet of Things",
+      "explanation": {
+        "correct_answer": [
+          "IIoT stands for Industrial Internet of Things.",
+          "It applies connected sensors, devices, and systems to industrial environments.",
+          "Common uses include manufacturing, monitoring, and predictive maintenance.",
+          "Therefore Industrial Internet of Things is correct."
+        ],
+        "options": {
+          "B": "Intelligent Internet of Things is not the standard expansion.",
+          "C": "Internal Internet of Things is not the standard expansion.",
+          "D": "Institutional Internet of Things is not the standard expansion."
+        }
+      }
+    },
+    {
+      "question_number": 80,
+      "question": "What is the default value of the transaction identifier in a Modbus TCP packet?",
+      "options": ["(A) 0", "(B) 1", "(C) 2", "(D) 3"],
+      "correct_option": "A",
+      "correct_answer": "0",
+      "explanation": {
+        "correct_answer": [
+          "Modbus TCP uses a transaction identifier in its application protocol header.",
+          "The identifier helps associate a response with the corresponding request.",
+          "The stated default/initial value is 0 for this question.",
+          "Therefore option A is the intended answer."
+        ],
+        "options": {
+          "B": "1 is not the standard default value.",
+          "C": "2 is not the standard default value.",
+          "D": "3 is not the standard default value."
+        }
+      }
+    },
+    {
+      "question_number": 81,
+      "question": "The component specialist system is/are-",
+      "options": [
+        "(A) Knowledge base",
+        "(B) Estimation engine",
+        "(C) User interface",
+        "(D) All of them"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All of them",
+      "explanation": {
+        "correct_answer": [
+          "An expert/specialist system typically contains a knowledge base.",
+          "It also uses an inference engine to reason from stored knowledge.",
+          "A user interface allows interaction with the user.",
+          "Therefore the intended answer is All of them."
+        ],
+        "options": {
+          "A": "A knowledge base stores domain knowledge and rules.",
+          "B": "An inference engine, not an 'estimation engine', performs reasoning; the source wording is imprecise.",
+          "C": "A user interface allows users to interact with the system."
+        }
+      }
+    },
+    {
+      "question_number": 82,
+      "question": "The algorithm used in the game tree to make win/lose decisions is ___.",
+      "options": [
+        "(A) Heuristic search algorithm",
+        "(B) DFS/BFL algorithm",
+        "(C) Greedy search algorithm",
+        "(D) Minimum/Maximum Algorithm"
+      ],
+      "correct_option": "D",
+      "correct_answer": "Minimum/Maximum Algorithm",
+      "explanation": {
+        "correct_answer": [
+          "Minimax is an adversarial search algorithm for game trees.",
+          "It evaluates moves from the perspective of competing players.",
+          "One player tries to maximize the outcome while the opponent tries to minimize it.",
+          "Therefore the Minimum/Maximum (Minimax) algorithm is correct."
+        ],
+        "options": {
+          "A": "Heuristic search can guide search, but it is not the specific win/lose decision algorithm intended here.",
+          "B": "DFS/BFL describes search traversal rather than the standard adversarial decision rule.",
+          "C": "Greedy search chooses locally promising choices and is not the standard game-tree decision algorithm."
+        }
+      }
+    },
+    {
+      "question_number": 83,
+      "question": "Forward chaining systems are ____ where backward chaining systems are ____.",
+      "options": [
+        "(A) Goal-driven, goal-driven",
+        "(B) Goal-driven, data-driven",
+        "(C) Data-driven, goal-driven",
+        "(D) Data-driven, data-driven"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Data-driven, goal-driven",
+      "explanation": {
+        "correct_answer": [
+          "Forward chaining starts from known facts and applies rules to derive new facts.",
+          "It is therefore data-driven.",
+          "Backward chaining starts from a goal and works backward toward supporting facts.",
+          "Therefore the correct pair is data-driven, goal-driven."
+        ],
+        "options": {
+          "A": "Forward chaining is not goal-driven in the standard classification.",
+          "B": "The two labels are reversed.",
+          "D": "Backward chaining is not normally data-driven."
+        }
+      }
+    },
+    {
+      "question_number": 84,
+      "question": "The input segment of AI programming includes:",
+      "options": ["(A) Sound", "(B) Smell", "(C) Touch", "(D) None of these"],
+      "correct_option": "D",
+      "correct_answer": "None of these",
+      "explanation": {
+        "correct_answer": [
+          "The source wording about an AI programming input segment is ambiguous.",
+          "Sound, smell, and touch can all be input modalities in some AI systems.",
+          "However, none of the listed senses matches the intended classification represented by the question.",
+          "Therefore the source's intended answer is None of these."
+        ],
+        "options": {
+          "A": "Sound can be an input modality, but it is not the standard answer to this specific 'input segment' classification.",
+          "B": "Smell is not normally treated as the standard AI programming input segment in this context.",
+          "C": "Touch can be an input modality but is not the intended classification here."
+        }
+      }
+    },
+    {
+      "question_number": 85,
+      "question": "Which of the following is not the capability of specialist systems?",
+      "options": [
+        "(A) Advising",
+        "(B) Performance",
+        "(C) Interpret",
+        "(D) Expansion"
+      ],
+      "correct_option": "D",
+      "correct_answer": "Expansion",
+      "explanation": {
+        "correct_answer": [
+          "Expert systems commonly provide advice or recommendations.",
+          "They can also explain or interpret conclusions derived from their rules.",
+          "Expansion is not a standard expert-system capability.",
+          "Therefore Expansion is the correct 'not a capability' option."
+        ],
+        "options": {
+          "A": "Advising is a common expert-system capability.",
+          "B": "Performance can describe system performance, but the wording is not as standard as advising/interpretation.",
+          "C": "Interpreting or explaining conclusions is a capability of expert systems."
+        }
+      }
+    },
+    {
+      "question_number": 86,
+      "question": "Which of the following are the capabilities of specialist systems?",
+      "options": [
+        "(A) Having human abilities.",
+        "(B) To suggest alternative options for a problem.",
+        "(C) Refining your knowledge.",
+        "(D) Replacement of human decision makers."
+      ],
+      "correct_option": "B",
+      "correct_answer": "To suggest alternative options for a problem.",
+      "explanation": {
+        "correct_answer": [
+          "Expert systems use stored knowledge and inference rules.",
+          "They can recommend possible solutions or alternatives for a problem.",
+          "They assist human decision making rather than possessing every human ability.",
+          "Therefore suggesting alternative options is the clearest correct capability."
+        ],
+        "options": {
+          "A": "Expert systems can emulate some expert reasoning, but they do not literally possess all human abilities.",
+          "C": "The system may update/refine knowledge through maintenance, but this is not the clearest capability listed.",
+          "D": "Expert systems assist decision makers rather than universally replacing human decision makers."
+        }
+      }
+    },
+    {
+      "question_number": 87,
+      "question": "What is the full form of Jess in Specialist Systems Technology?",
+      "options": [
+        "(A) Java Expert System Shell",
+        "(B) JavaScript Expert System Shell",
+        "(C) Java expert subsystem",
+        "(D) JavaScript Expert Subsystem"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Java Expert System Shell",
+      "explanation": {
+        "correct_answer": [
+          "Jess is an expert-system shell based on Java.",
+          "The name is commonly expanded as Java Expert System Shell.",
+          "It provides rule-based reasoning facilities for building expert systems.",
+          "Therefore Java Expert System Shell is correct."
+        ],
+        "options": {
+          "B": "Jess is not JavaScript Expert System Shell.",
+          "C": "This is not the standard expansion.",
+          "D": "This is not the standard expansion."
+        }
+      }
+    },
+    {
+      "question_number": 88,
+      "question": "Which type of e-commerce focuses on consumers dealing with each other?",
+      "options": ["(A) B2B", "(B) B2C", "(C) C2C", "(D) C2B"],
+      "correct_option": "C",
+      "correct_answer": "C2C",
+      "explanation": {
+        "correct_answer": [
+          "B2B means business-to-business.",
+          "B2C means business-to-consumer.",
+          "C2C means consumer-to-consumer, where consumers deal with other consumers.",
+          "Therefore C2C is correct."
+        ],
+        "options": {
+          "A": "B2B is business-to-business commerce.",
+          "B": "B2C is business-to-consumer commerce.",
+          "D": "C2B is consumer-to-business commerce."
+        }
+      }
+    },
+    {
+      "question_number": 89,
+      "question": "Which of the following is a useful security mechanism when considering business strategy and IT?",
+      "options": [
+        "(A) Encryption",
+        "(B) Decryption",
+        "(C) Firewall",
+        "(D) All of them"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All of them",
+      "explanation": {
+        "correct_answer": [
+          "Encryption helps protect information from unauthorized reading.",
+          "A firewall controls network traffic according to security rules.",
+          "Decryption is used to recover protected data when authorized.",
+          "Therefore the source's 'All of them' answer treats all three as security-related mechanisms."
+        ],
+        "options": {
+          "A": "Encryption protects information from unauthorized reading.",
+          "B": "Decryption is part of the process of accessing encrypted information securely, although by itself it is not a protective control.",
+          "C": "A firewall filters network traffic according to security rules."
+        }
+      }
+    },
+    {
+      "question_number": 90,
+      "question": "During e-commerce transactions we must ensure.",
+      "options": [
+        "(A) Integrity",
+        "(B) Privacy",
+        "(C) Security",
+        "(D) All of them"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All of them",
+      "explanation": {
+        "correct_answer": [
+          "Integrity protects data from unauthorized or improper modification.",
+          "Privacy protects personal and sensitive information.",
+          "Overall security protects transactions and systems from unauthorized access and attacks.",
+          "Therefore all three are important, making All of them correct."
+        ],
+        "options": {
+          "A": "Integrity ensures data is not improperly altered.",
+          "B": "Privacy protects personal and sensitive user information.",
+          "C": "Security covers protection against unauthorized access and attacks."
+        }
+      }
+    },
+    {
+      "question_number": 91,
+      "question": "Legal protection What is the expression of an idea, such as a song, video game, and some type of proprietary document?",
+      "options": [
+        "(A) Ethics",
+        "(B) Copyright",
+        "(C) Intellectual Property",
+        "(D) Fair Use Principle"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Copyright",
+      "explanation": {
+        "correct_answer": [
+          "Copyright is a legal protection for qualifying original creative expression.",
+          "Examples can include songs, videos, software, and other original works.",
+          "Intellectual property is the broader category that includes copyright.",
+          "Therefore Copyright is the specific answer."
+        ],
+        "options": {
+          "A": "Ethics concerns principles of right and wrong, not the legal protection described.",
+          "C": "Intellectual property is the broader category that includes copyright, but the specific protection here is copyright.",
+          "D": "Fair use is a limitation/defense in some copyright contexts, not the general protection itself."
+        }
+      }
+    },
+    {
+      "question_number": 92,
+      "question": "What is in CIA-",
+      "options": ["(A) Assurance", "(B) Actual", "(C) Availability", "(D) Any"],
+      "correct_option": "C",
+      "correct_answer": "Availability",
+      "explanation": {
+        "correct_answer": [
+          "CIA is the information-security triad.",
+          "C means Confidentiality.",
+          "I means Integrity and A means Availability.",
+          "Therefore Availability is the option representing A in CIA."
+        ],
+        "options": {
+          "A": "Assurance is not one of the three letters in the CIA triad.",
+          "B": "Actual is not a CIA triad component.",
+          "D": "Any is not a CIA triad component."
+        }
+      }
+    },
+    {
+      "question_number": 93,
+      "question": "What is a program that, when installed on a computer, records every keystroke and mouse click?",
+      "options": [
+        "(A) Key Logger System",
+        "(B) Hardware Key Logger",
+        "(C) Cookie",
+        "(D) Add loggers"
+      ],
+      "correct_option": "A",
+      "correct_answer": "Key Logger System",
+      "explanation": {
+        "correct_answer": [
+          "A keylogger records keyboard input.",
+          "Software keyloggers can run as programs on a computer.",
+          "Hardware keyloggers are physical devices and are different from the program described.",
+          "Therefore Key Logger System is the intended answer."
+        ],
+        "options": {
+          "B": "A hardware keylogger is a physical device rather than a program installed on the computer.",
+          "C": "A cookie stores web-related data and does not record every keystroke.",
+          "D": "Add loggers is not the standard term."
+        }
+      }
+    },
+    {
+      "question_number": 94,
+      "question": "In audio and video compression, the word RBG expresses-",
+      "options": [
+        "(A) Red, Black, Grey",
+        "(B) Blue, Grey, White",
+        "(C) Red, Blue, Green",
+        "(D) Red, blue, brown"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Red, Blue, Green",
+      "explanation": {
+        "correct_answer": [
+          "RGB is the standard abbreviation for Red, Green, Blue.",
+          "These three components are used to represent colors in many digital imaging systems.",
+          "The source option lists the same three colors in a different order.",
+          "Therefore the source's intended answer is the option containing Red, Blue, Green."
+        ],
+        "options": {
+          "A": "Black and grey are not the three components represented by RGB.",
+          "B": "Blue, grey, and white are not RGB components.",
+          "D": "Brown is not an RGB component name in the standard expansion."
+        }
+      }
+    },
+    {
+      "question_number": 95,
+      "question": "We may .................... audio and video services Divide into.",
+      "options": [
+        "(A) 2 broad categories",
+        "(B) 1 Broad Category",
+        "(C) 4 broad categories",
+        "(D) 3 broad categories"
+      ],
+      "correct_option": "A",
+      "correct_answer": "2 broad categories",
+      "explanation": {
+        "correct_answer": [
+          "Audio and video services can be broadly classified into two categories in the intended context.",
+          "The two broad categories distinguish how the media is delivered/used.",
+          "The question asks for the broad classification rather than detailed subcategories.",
+          "Therefore 2 broad categories is the intended answer."
+        ],
+        "options": {
+          "B": "One category is too few for the common classification.",
+          "C": "Four broad categories is not the standard classification intended here.",
+          "D": "Three broad categories is not the standard classification intended here."
+        }
+      }
+    },
+    {
+      "question_number": 96,
+      "question": "Moffing is-",
+      "options": [
+        "(A) Picture enhancer technique",
+        "(B) Picture manipulation",
+        "(C) Changes from one image to another",
+        "(D) None of the above"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Changes from one image to another",
+      "explanation": {
+        "correct_answer": [
+          "Morphing creates a gradual visual transformation.",
+          "It can generate intermediate images between a starting image and a target image.",
+          "This is different from ordinary enhancement, which improves an existing image without changing it into another image.",
+          "Therefore Changes from one image to another is correct."
+        ],
+        "options": {
+          "A": "Picture enhancement improves visual quality; it is not the definition of morphing.",
+          "B": "Picture manipulation is broad and can include many operations, but it is not the specific definition.",
+          "D": "This is incorrect because option C gives the intended definition."
+        }
+      }
+    },
+    {
+      "question_number": 97,
+      "question": "Which of the following is an example of digital image processing?",
+      "options": [
+        "(A) Computer Graphics",
+        "(B) Pixels",
+        "(C) Camera system",
+        "(D) All mentioned"
+      ],
+      "correct_option": "D",
+      "correct_answer": "All mentioned",
+      "explanation": {
+        "correct_answer": [
+          "Digital image processing operates on digital image data.",
+          "Computer graphics and camera systems are closely related to digital image creation and processing.",
+          "Pixels are the fundamental units of digital images.",
+          "Therefore the source treats all listed items as related and selects All mentioned."
+        ],
+        "options": {
+          "A": "Computer graphics is related to digital image creation and manipulation.",
+          "B": "Pixels are the basic picture elements used to represent digital images.",
+          "C": "A camera system can capture images that are then processed digitally."
+        }
+      }
+    },
+    {
+      "question_number": 98,
+      "question": "Which of the following image processing vision angle is the fastest, most accurate and flexible?",
+      "options": [
+        "(A) Photographic",
+        "(B) Electronic",
+        "(C) Digital",
+        "(D) Optical"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Digital",
+      "explanation": {
+        "correct_answer": [
+          "Digital image processing is performed on digital representations of images.",
+          "It supports programmable operations such as enhancement, restoration, segmentation, and analysis.",
+          "Digital methods are highly flexible and can be implemented precisely by software.",
+          "Therefore Digital is the intended answer."
+        ],
+        "options": {
+          "A": "Photographic processing is less flexible than digital processing for automated manipulation.",
+          "B": "Electronic processing is a broader category and is not the intended image-processing approach.",
+          "D": "Optical processing uses physical/optical methods and is less flexible for general digital manipulation."
+        }
+      }
+    },
+    {
+      "question_number": 99,
+      "question": "Which of the following devices is used in tasks such as zooming, shrinking, rotating, etc.?",
+      "options": [
+        "(A) Filter",
+        "(B) Sampling",
+        "(C) Interpolation",
+        "(D) None of these"
+      ],
+      "correct_option": "C",
+      "correct_answer": "Interpolation",
+      "explanation": {
+        "correct_answer": [
+          "Zooming and shrinking change an image's spatial resolution.",
+          "Rotation and geometric transformations often require estimating pixel values at new coordinates.",
+          "Interpolation estimates these new pixel values from neighboring samples.",
+          "Therefore Interpolation is correct."
+        ],
+        "options": {
+          "A": "A filter modifies image values according to a kernel or rule; it is not the primary operation for creating missing pixels during resizing.",
+          "B": "Sampling selects measurements/pixels from a signal or image; interpolation estimates values between samples.",
+          "D": "An appropriate answer is present, so None of these is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 100,
+      "question": "Which gray-level change increases the gray-level dynamic range in the image?",
+      "options": [
+        "(A) Negative changes",
+        "(B) Contrast stretching",
+        "(C) Power-law change",
+        "(D) None of these"
+      ],
+      "correct_option": "B",
+      "correct_answer": "Contrast stretching",
+      "explanation": {
+        "correct_answer": [
+          "Dynamic range is the range between the darkest and brightest represented gray levels.",
+          "Contrast stretching expands this range to use more of the available intensity scale.",
+          "This generally improves the visible contrast of an image.",
+          "Therefore Contrast stretching is correct."
+        ],
+        "options": {
+          "A": "Negative transformation reverses intensity relationships rather than specifically expanding the dynamic range.",
+          "C": "Power-law transformation changes intensity nonlinearly but is not specifically the standard dynamic-range expansion operation here.",
+          "D": "An appropriate answer is present, so None of these is incorrect."
+        }
+      }
+    }
+  ]
+}

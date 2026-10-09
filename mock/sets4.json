@@ -1,0 +1,2516 @@
+{
+  "questions": [
+    {
+      "question_number": 1,
+      "question": "The minimum number of edges in a spanning tree of a connected graph with n vertices is:",
+      "options": {
+        "a": "n",
+        "b": "n-1",
+        "c": "n+1",
+        "d": "n(n-1)/2"
+      },
+      "correct_option": "b",
+      "correct_answer": "n-1",
+      "explanation": {
+        "correct_answer": [
+          "A spanning tree includes every vertex of a connected graph and contains no cycle.",
+          "Every tree with n vertices has exactly n−1 edges.",
+          "Fewer than n−1 edges cannot connect all n vertices without leaving a component disconnected.",
+          "Therefore, the minimum is n−1 edges."
+        ],
+        "options": {
+          "a": "n edges would create at least one cycle in a connected tree with n vertices.",
+          "c": "n+1 edges cannot be part of a tree because a tree has exactly n−1 edges.",
+          "d": "This is the number of edges in a complete simple graph, not a spanning tree."
+        }
+      }
+    },
+    {
+      "question_number": 2,
+      "question": "Which technology is used to carry phone calls over the internet?",
+      "options": {
+        "a": "PPP",
+        "b": "FTP",
+        "c": "HTTP",
+        "d": "VoIP"
+      },
+      "correct_option": "d",
+      "correct_answer": "VoIP",
+      "explanation": {
+        "correct_answer": [
+          "VoIP means Voice over Internet Protocol and carries voice calls over IP networks.",
+          "It is a technology/service category rather than one specific signaling protocol.",
+          "PPP provides point-to-point links, FTP transfers files, and HTTP transfers web resources.",
+          "Thus VoIP is the intended answer, though the question is more precise if it asks which technology carries internet phone calls."
+        ],
+        "options": {
+          "a": "PPP establishes a point-to-point data link; it is not a voice-calling technology.",
+          "b": "FTP transfers files; it is not the general technology for internet voice calls.",
+          "c": "HTTP transfers web resources and is not the technology meant for internet voice calls."
+        }
+      }
+    },
+    {
+      "question_number": 3,
+      "question": "ISO 9000 and SEI CMM are both frameworks related to:",
+      "options": {
+        "a": "Network protocols",
+        "b": "Software architecture",
+        "c": "Software quality standards and process improvement",
+        "d": "Software development languages"
+      },
+      "correct_option": "c",
+      "correct_answer": "Software quality standards and process improvement",
+      "explanation": {
+        "correct_answer": [
+          "ISO 9000 is a family of quality-management standards.",
+          "SEI's Capability Maturity Model assesses and improves the maturity of software-development processes.",
+          "Both are concerned with quality practices and process improvement, not network protocols or programming languages.",
+          "Therefore, software quality standards and process improvement is the best answer."
+        ],
+        "options": {
+          "a": "Network protocols govern communication rules; ISO 9000 and CMM concern quality and process maturity.",
+          "b": "Software architecture describes system structure, not quality-management standards and process maturity.",
+          "d": "Programming languages are not the subject of ISO 9000 or SEI CMM."
+        }
+      }
+    },
+    {
+      "question_number": 4,
+      "question": "Which programming language is often used for server-side web development?",
+      "options": {
+        "a": "HTML",
+        "b": "CSS",
+        "c": "JavaScript",
+        "d": "PHP"
+      },
+      "correct_option": "d",
+      "correct_answer": "PHP",
+      "explanation": {
+        "correct_answer": [
+          "PHP is a server-side scripting language commonly used to generate dynamic web pages.",
+          "PHP code normally runs on the web server before a response is sent to the browser.",
+          "HTML structures page content and CSS styles it; neither is a server-side programming language.",
+          "JavaScript can also run server-side with runtimes such as Node.js, but PHP is the intended option here."
+        ],
+        "options": {
+          "a": "HTML structures web content; it does not itself execute server-side application logic.",
+          "b": "CSS styles presentation and is not a server-side programming language.",
+          "c": "JavaScript is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 5,
+      "question": "Which HTTP method is used for retrieving data from a server?",
+      "options": {
+        "a": "GET",
+        "b": "POST",
+        "c": "PUT",
+        "d": "DELETE"
+      },
+      "correct_option": "a",
+      "correct_answer": "GET",
+      "explanation": {
+        "correct_answer": [
+          "GET requests a representation of a resource from a server.",
+          "It is the standard HTTP method for retrieving data.",
+          "POST submits data for processing, PUT creates or replaces a resource, and DELETE requests removal.",
+          "Therefore, GET is the correct method for retrieval."
+        ],
+        "options": {
+          "b": "POST submits data for processing or resource creation; it is not the standard retrieval method.",
+          "c": "PUT creates or replaces a resource at a known URI; it is not the usual retrieval method.",
+          "d": "DELETE requests removal of a resource rather than retrieving it."
+        }
+      }
+    },
+    {
+      "question_number": 6,
+      "question": "Divide and Conquer is an algorithmic paradigm that solves problems by:",
+      "options": {
+        "a": "Iteratively solving subproblems",
+        "b": "Recursively solving subproblems",
+        "c": "Using heuristics to find solutions",
+        "d": "Greedily combining solutions"
+      },
+      "correct_option": "b",
+      "correct_answer": "Recursively solving subproblems",
+      "explanation": {
+        "correct_answer": [
+          "Divide and Conquer breaks a problem into smaller subproblems.",
+          "The subproblems are commonly solved recursively until reaching simple base cases.",
+          "Their results are then combined to solve the original problem.",
+          "Merge sort and quicksort are classic examples of this paradigm."
+        ],
+        "options": {
+          "a": "Iteration can be used in algorithms, but the standard Divide and Conquer description solves subproblems and combines results, commonly recursively.",
+          "c": "Heuristics guide approximate search and are not the defining Divide and Conquer strategy.",
+          "d": "Greedy algorithms make locally optimal choices; this is different from dividing and recursively solving subproblems."
+        }
+      }
+    },
+    {
+      "question_number": 7,
+      "question": "In the minimum spanning tree context, what does the cut property state?",
+      "options": {
+        "a": "The algorithm always cuts the maximum-weight edge",
+        "b": "The algorithm always cuts the minimum-weight edge",
+        "c": "The minimum-weight edge crossing a cut is safe to select",
+        "d": "The algorithm always cuts the maximum-weight edge crossing a cut"
+      },
+      "correct_option": "c",
+      "correct_answer": "The minimum-weight edge crossing a cut is safe to select",
+      "explanation": {
+        "correct_answer": [
+          "A cut divides a graph's vertices into two nonempty sets.",
+          "The cut property says a minimum-weight edge crossing a cut that respects the chosen MST edges is safe to add.",
+          "Choosing a maximum-weight crossing edge is not the general rule for constructing a minimum spanning tree.",
+          "This property underlies algorithms such as Prim's and Kruskal's."
+        ],
+        "options": {
+          "a": "The algorithm always cuts the maximum-weight edge is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "The algorithm always cuts the minimum-weight edge is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "The algorithm always cuts the maximum-weight edge crossing a cut is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 8,
+      "question": "Which computer file is called a perpetual file?",
+      "options": {
+        "a": "Specialized File",
+        "b": "Master File",
+        "c": "Log File",
+        "d": "Update File"
+      },
+      "correct_option": "b",
+      "correct_answer": "Master File",
+      "explanation": {
+        "correct_answer": [
+          "A master file stores relatively persistent records about entities such as customers or products.",
+          "It is updated over time using transactions or update records.",
+          "An update file contains changes to apply, while a log file records events or operations.",
+          "In traditional file-processing terminology, a master file may be called a perpetual file."
+        ],
+        "options": {
+          "a": "This is not the standard term for a persistent file of current records updated over time.",
+          "c": "A log records events or operations; it is not the primary persistent record set described here.",
+          "d": "An update file contains changes to apply to the master file rather than the long-lived master records."
+        }
+      }
+    },
+    {
+      "question_number": 9,
+      "question": "What is the output of the Python code N=\"5\"; try: print(\"WORD\"+N, end=\"#\"); except: print(\"ERROR\", end=\"#\"); finally: print(\"OVER\")?",
+      "options": {
+        "a": "ERROR#",
+        "b": "WORD5#OVER",
+        "c": "WORD5#",
+        "d": "ERROR#OVER"
+      },
+      "correct_option": "b",
+      "correct_answer": "WORD5#OVER",
+      "explanation": {
+        "correct_answer": [
+          "N is the string \"5\", so \"WORD\" + N performs valid string concatenation.",
+          "The try block prints WORD5 followed by # because end=\"#\" suppresses the normal newline.",
+          "No exception occurs, so the except block is skipped.",
+          "The finally block always runs and prints OVER, producing WORD5#OVER."
+        ],
+        "options": {
+          "a": "The concatenation succeeds because both operands are strings, so the except block does not run.",
+          "c": "This omits OVER, which is printed by the finally block.",
+          "d": "The ERROR output would require an exception, but string concatenation is valid here."
+        }
+      }
+    },
+    {
+      "question_number": 10,
+      "question": "Which is a communication-channel security protocol?",
+      "options": {
+        "a": "SSL",
+        "b": "SET",
+        "c": "S-HTTP",
+        "d": "All of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer": [
+          "SSL, SET, and S-HTTP are historical security technologies associated with protecting communications or online transactions.",
+          "SSL secured client-server connections; modern deployments use its successor, TLS.",
+          "SET was designed to secure card-payment transactions, while S-HTTP provided HTTP message-level security.",
+          "Because all three fit the broad historical description, the combined option is intended."
+        ],
+        "options": {
+          "a": "SSL is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "SET is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "S-HTTP is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 11,
+      "question": "Which of the following is not an e-reservation portal in India?",
+      "options": {
+        "a": "https://www.amazon.in",
+        "b": "https://www.yatra.com",
+        "c": "https://www.makemytrip.com",
+        "d": "https://www.irctc.co.in"
+      },
+      "correct_option": "a",
+      "correct_answer": "https://www.amazon.in",
+      "explanation": {
+        "correct_answer": [
+          "Amazon India is primarily an e-commerce marketplace for buying goods.",
+          "Yatra and MakeMyTrip provide travel booking services.",
+          "IRCTC provides railway ticket reservation services in India.",
+          "Therefore, Amazon is the option that is not an e-reservation portal."
+        ],
+        "options": {
+          "b": "https://www.yatra.com is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "https://www.makemytrip.com is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "https://www.irctc.co.in is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 12,
+      "question": "What does the acronym HTTP stand for?",
+      "options": {
+        "a": "Hyper Text Transmission Protocol",
+        "b": "Hyper Text Transfer Protocol",
+        "c": "High-Tech Text Protocol",
+        "d": "Hyper Transfer Text Protocol"
+      },
+      "correct_option": "b",
+      "correct_answer": "Hyper Text Transfer Protocol",
+      "explanation": {
+        "correct_answer": [
+          "HTTP stands for Hypertext Transfer Protocol.",
+          "It defines request-response communication between clients and servers for web resources.",
+          "A browser commonly sends an HTTP request and receives a response from a web server.",
+          "The word is conventionally written as one word, Hypertext, although the option separates it."
+        ],
+        "options": {
+          "a": "HTTP expands to Hypertext Transfer Protocol, not Transmission.",
+          "c": "This is not the expansion of HTTP.",
+          "d": "This rearranges the words and is not the expansion of HTTP."
+        }
+      }
+    },
+    {
+      "question_number": 13,
+      "question": "Assertion: MySQL can retrieve records from more than one table. Reason: A foreign key establishes a relationship between two tables. Choose the correct statement.",
+      "options": {
+        "a": "Both are true and the reason correctly explains the assertion",
+        "b": "Both are true but the reason does not correctly explain the assertion",
+        "c": "Assertion is true but reason is false",
+        "d": "Assertion is false but reason is true"
+      },
+      "correct_option": "b",
+      "correct_answer": "Both are true but the reason does not correctly explain the assertion",
+      "explanation": {
+        "correct_answer": [
+          "MySQL can retrieve data from multiple tables in a single query, commonly using joins.",
+          "A foreign key can establish a referential relationship between tables.",
+          "A foreign key is not required simply to query two tables; joins can use other matching conditions.",
+          "Therefore both statements are true, but the reason does not explain the assertion."
+        ],
+        "options": {
+          "a": "Both are true and the reason correctly explains the assertion is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Assertion is true but reason is false is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Assertion is false but reason is true is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 14,
+      "question": "In recursion, what is the purpose of the stack data structure?",
+      "options": {
+        "a": "To store variables and function calls for backtracking",
+        "b": "To store only variables",
+        "c": "To store only function calls",
+        "d": "To store loop counters"
+      },
+      "correct_option": "a",
+      "correct_answer": "To store variables and function calls for backtracking",
+      "explanation": {
+        "correct_answer": [
+          "Each recursive function call creates a stack frame on the call stack.",
+          "A frame stores call state such as parameters, local variables, and the return address.",
+          "Frames are removed in last-in, first-out order as calls return.",
+          "This stack behavior lets recursion resume the correct caller after a deeper call finishes."
+        ],
+        "options": {
+          "b": "To store only variables is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "To store only function calls is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "To store loop counters is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 15,
+      "question": "Given F(A,B,C)=Σ(0,1,2,3,5), what is a simplified SOP expression?",
+      "options": {
+        "a": "A'B'+AB'+AB+AC",
+        "b": "A+B+C",
+        "c": "AB'+C'",
+        "d": "A'B'C'",
+        "e": "A' + B'C"
+      },
+      "correct_option": "e",
+      "correct_answer": "A' + B'C",
+      "explanation": {
+        "correct_answer": [
+          "The minterms 0, 1, 2, and 3 all have A=0, so they combine to A′.",
+          "Minterms 1 and 5 differ only in A and combine to B′C.",
+          "Combining these groups covers exactly the listed minterms without covering the excluded minterms.",
+          "The simplified sum-of-products expression is A′ + B′C."
+        ],
+        "options": {
+          "a": "A'B'+AB'+AB+AC is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A+B+C is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "AB'+C' is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "A'B'C' is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 16,
+      "question": "Which notation represents a strict asymptotic upper bound on f(n)?",
+      "options": {
+        "a": "o(f(n))",
+        "b": "o(g(n))",
+        "c": "o(f(n)+g(n))",
+        "d": "o(f(n)*g(n))"
+      },
+      "correct_option": "a",
+      "correct_answer": "o(f(n))",
+      "explanation": {
+        "correct_answer": [
+          "Little-o notation o(f(n)) describes a function that grows strictly more slowly than f(n), asymptotically.",
+          "The definition requires that the ratio of the compared function to f(n) tends to zero, under the usual positive-denominator assumptions.",
+          "The wording about removing condition g(n) is unclear because no formal conditional-bound definition is supplied.",
+          "To make the intended answer unambiguous, the question should ask which notation represents a strict asymptotic upper bound on f(n); that is o(f(n))."
+        ],
+        "options": {
+          "b": "o(g(n)) is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "o(f(n)+g(n)) is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "o(f(n)*g(n)) is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 17,
+      "question": "What technique was developed to determine whether a machine could demonstrate artificial intelligence?",
+      "options": {
+        "a": "Algorithm",
+        "b": "Logarithm",
+        "c": "Turing Test",
+        "d": "Boolean algebra"
+      },
+      "correct_option": "c",
+      "correct_answer": "Turing Test",
+      "explanation": {
+        "correct_answer": [
+          "The Turing Test was proposed by Alan Turing as a test of machine behavior.",
+          "In its classic form, a human judge communicates through text with a human and a machine.",
+          "The test asks whether the judge can reliably distinguish the machine from the human based on the conversation.",
+          "It is a historical proposal for evaluating human-like conversational behavior, not a proof of general intelligence."
+        ],
+        "options": {
+          "a": "Algorithm is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Logarithm is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Boolean algebra is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 18,
+      "question": "What is the main advantage of exception handling in programming?",
+      "options": {
+        "a": "It prevents code from running",
+        "b": "It improves code readability",
+        "c": "It handles unexpected errors and allows graceful program termination",
+        "d": "It eliminates the need for classes and objects"
+      },
+      "correct_option": "c",
+      "correct_answer": "It handles unexpected errors and allows graceful program termination",
+      "explanation": {
+        "correct_answer": [
+          "Exception handling provides a structured way to respond to exceptional runtime conditions.",
+          "A program may catch an exception, report it, recover, or clean up resources.",
+          "The finally block can run cleanup code whether or not an exception occurs.",
+          "Exception handling does not eliminate the need for classes or guarantee that all errors can be recovered from."
+        ],
+        "options": {
+          "a": "It prevents code from running is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "It improves code readability is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "It eliminates the need for classes and objects is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 19,
+      "question": "What does first-order predicate logic contain?",
+      "options": {
+        "a": "Predicate and a subject",
+        "b": "Predicate and a preposition",
+        "c": "Subject and an object",
+        "d": "None of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "None of the above",
+      "explanation": {
+        "correct_answer": [
+          "First-order predicate logic represents objects, predicates, variables, constants, functions, connectives, and quantifiers.",
+          "Predicates express properties or relations involving terms.",
+          "Quantifiers such as ∀ and ∃ express statements about all or some objects in a domain.",
+          "None of the listed pairs adequately describes the contents of first-order logic."
+        ],
+        "options": {
+          "a": "First-order logic is not defined by a grammatical subject-predicate pair alone.",
+          "b": "A preposition is a grammatical category and is not a core component of predicate logic.",
+          "c": "This does not describe the formal symbols and quantifiers used in first-order logic."
+        }
+      }
+    },
+    {
+      "question_number": 20,
+      "question": "A: A knowledge base consists of a set of statements. B: Inference derives a new sentence from the knowledge base. Choose the correct option.",
+      "options": {
+        "a": "A true, B true",
+        "b": "A false, B false",
+        "c": "A true, B false",
+        "d": "A false, B true"
+      },
+      "correct_option": "a",
+      "correct_answer": "A true, B true",
+      "explanation": {
+        "correct_answer": [
+          "A knowledge base stores facts or logical sentences representing what a system knows.",
+          "Inference applies rules to known sentences to derive conclusions.",
+          "The derived sentence may be new even though it follows logically from existing statements.",
+          "Both statements are true."
+        ],
+        "options": {
+          "b": "A false, B false is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A true, B false is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "A false, B true is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 21,
+      "question": "Which regular expression represents all strings that start with b and end with bba over {a,b}?",
+      "options": {
+        "a": "aba*b*bba",
+        "b": "ab(ab)*bba",
+        "c": "b(a+b)*bba",
+        "d": "All of the mentioned"
+      },
+      "correct_option": "c",
+      "correct_answer": "b(a+b)*bba",
+      "explanation": {
+        "correct_answer": [
+          "The regular expression must begin with the literal symbol b.",
+          "The middle expression (a+b)* permits any sequence of a and b, including the empty sequence.",
+          "The suffix bba forces the string to end with bba.",
+          "Therefore b(a+b)*bba describes exactly the required pattern."
+        ],
+        "options": {
+          "a": "aba*b*bba is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "ab(ab)*bba is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Not every preceding option satisfies the stated property, so the combined option is not correct."
+        }
+      }
+    },
+    {
+      "question_number": 22,
+      "question": "What is the default date format commonly used by MySQL DATE values?",
+      "options": {
+        "a": "DD-MM-YYYY",
+        "b": "MM-DD-YYYY",
+        "c": "YYYY-MM-DD",
+        "d": "YYYY-DD-MM"
+      },
+      "correct_option": "c",
+      "correct_answer": "YYYY-MM-DD",
+      "explanation": {
+        "correct_answer": [
+          "MySQL DATE values use the year-month-day order, written YYYY-MM-DD.",
+          "The year has four digits and the month and day normally have two digits each.",
+          "For example, 2026-10-09 represents 9 October 2026.",
+          "The other options place the fields in a different order."
+        ],
+        "options": {
+          "a": "DD-MM-YYYY is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "MM-DD-YYYY is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "YYYY-DD-MM is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 23,
+      "question": "In Hamming code, which property of a code determines its error-detection and error-correction capability?",
+      "options": {
+        "a": "Closer parity bits provide higher error correction capability",
+        "b": "Closer parity bits provide lower error correction capability",
+        "c": "Distance between parity bits has no impact",
+        "d": "Parity-bit positions are irrelevant",
+        "e": "Minimum Hamming distance between valid codewords"
+      },
+      "correct_option": "e",
+      "correct_answer": "Minimum Hamming distance between valid codewords",
+      "explanation": {
+        "correct_answer": [
+          "The minimum Hamming distance is the smallest number of bit positions in which any two valid codewords differ.",
+          "A code with minimum distance d can detect up to d−1 bit errors.",
+          "It can correct up to floor((d−1)/2) bit errors.",
+          "Physical spacing between parity bits is not the property that determines the code's error capability."
+        ],
+        "options": {
+          "a": "Closer parity bits provide higher error correction capability is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Closer parity bits provide lower error correction capability is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Distance between parity bits has no impact is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Parity-bit positions are irrelevant is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 24,
+      "question": "In software project management, what does LOC stand for?",
+      "options": {
+        "a": "Line of Change",
+        "b": "Level of Complexity",
+        "c": "Lines of Code",
+        "d": "List of Components"
+      },
+      "correct_option": "c",
+      "correct_answer": "Lines of Code",
+      "explanation": {
+        "correct_answer": [
+          "LOC stands for Lines of Code.",
+          "It measures the amount of source code in a software product.",
+          "LOC may be used in rough size estimation, although it does not directly measure quality or complexity.",
+          "The expansion is Lines of Code, not Line of Change or List of Components."
+        ],
+        "options": {
+          "a": "Line of Change is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Level of Complexity is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "List of Components is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 25,
+      "question": "Which tag creates a line break in an HTML document?",
+      "options": {
+        "a": "<lb>",
+        "b": "<break>",
+        "c": "<br>",
+        "d": "<newline>"
+      },
+      "correct_option": "c",
+      "correct_answer": "<br>",
+      "explanation": {
+        "correct_answer": [
+          "The HTML br element inserts a line break within text.",
+          "It is a void element and does not require a closing tag.",
+          "It starts a new line without creating a new paragraph block.",
+          "The valid tag is <br>; the other listed tag names are not standard HTML line-break elements."
+        ],
+        "options": {
+          "a": "<lb> is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "<break> is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "<newline> is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 26,
+      "question": "When adding two positive binary numbers using two’s complement, what should be done with a carry-out from the MSB?",
+      "options": {
+        "a": "Ignore the carry",
+        "b": "Add the carry to the LSB",
+        "c": "Add the carry to the sign bit",
+        "d": "Subtract the carry from the MSB"
+      },
+      "correct_option": "a",
+      "correct_answer": "Ignore the carry",
+      "explanation": {
+        "correct_answer": [
+          "In fixed-width two's-complement addition, a carry beyond the most significant bit is discarded.",
+          "Signed overflow is checked separately by examining the operands' signs and the result's sign.",
+          "A carry-out does not get added to the least significant bit in ordinary two's-complement arithmetic.",
+          "Therefore, the carry-out is ignored."
+        ],
+        "options": {
+          "b": "Add the carry to the LSB is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Add the carry to the sign bit is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Subtract the carry from the MSB is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 27,
+      "question": "To capture data from the real world, IoT uses:",
+      "options": {
+        "a": "Sensors",
+        "b": "Actuators",
+        "c": "Microprocessor",
+        "d": "Microcontroller"
+      },
+      "correct_option": "a",
+      "correct_answer": "Sensors",
+      "explanation": {
+        "correct_answer": [
+          "Sensors measure physical conditions such as temperature, light, pressure, or motion.",
+          "They convert physical measurements into signals or data that an IoT system can process.",
+          "Actuators perform actions, such as switching a relay or moving a motor.",
+          "Microprocessors and microcontrollers process data; sensors are the primary devices for capturing real-world measurements."
+        ],
+        "options": {
+          "b": "Actuators is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Microprocessor is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Microcontroller is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 28,
+      "question": "What is the primary purpose of an interface in OOP?",
+      "options": {
+        "a": "Provide a blueprint for creating objects",
+        "b": "Define methods that implementing classes must provide",
+        "c": "Define constructors for classes",
+        "d": "Create static methods"
+      },
+      "correct_option": "b",
+      "correct_answer": "Define methods that implementing classes must provide",
+      "explanation": {
+        "correct_answer": [
+          "An interface defines a contract that implementing classes must satisfy.",
+          "The contract commonly specifies method signatures and sometimes constants or properties, depending on the language.",
+          "A class provides the concrete method implementations required by the interface.",
+          "An interface is not primarily a constructor definition or a tool for creating objects directly."
+        ],
+        "options": {
+          "a": "Provide a blueprint for creating objects is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Define constructors for classes is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Create static methods is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 29,
+      "question": "Which sorting technique compares neighbouring elements and swaps them when necessary?",
+      "options": {
+        "a": "Selection Sort",
+        "b": "Bubble Sort",
+        "c": "Insertion Sort",
+        "d": "Quick Sort"
+      },
+      "correct_option": "b",
+      "correct_answer": "Bubble Sort",
+      "explanation": {
+        "correct_answer": [
+          "Bubble sort compares adjacent elements in a sequence.",
+          "When adjacent elements are out of order, it swaps them.",
+          "Repeated passes move large or small elements toward their final positions.",
+          "Selection sort selects an extreme element, insertion sort inserts into a sorted prefix, and quicksort partitions around a pivot."
+        ],
+        "options": {
+          "a": "Selection Sort is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Insertion Sort is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Quick Sort is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 30,
+      "question": "Can a DFA recognize the language of palindromes over a general alphabet?",
+      "options": {
+        "a": "Yes",
+        "b": "No",
+        "c": "Yes, with input alphabet Σ",
+        "d": "Cannot be determined"
+      },
+      "correct_option": "b",
+      "correct_answer": "No",
+      "explanation": {
+        "correct_answer": [
+          "For an alphabet containing at least two symbols, the language of all palindromes is not regular.",
+          "A DFA has only finitely many states and cannot remember an arbitrarily long prefix to compare it with the suffix.",
+          "The pumping lemma can be used to prove that the palindrome language is not regular.",
+          "Therefore, a DFA cannot recognize the full palindrome language over a general alphabet with at least two symbols."
+        ],
+        "options": {
+          "a": "Yes is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Yes, with input alphabet Σ is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Cannot be determined is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 31,
+      "question": "For S=\"an apple. a toy.\", what does S.find(\"a\", 2) return?",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "3",
+        "d": "a"
+      },
+      "correct_option": "c",
+      "correct_answer": "3",
+      "explanation": {
+        "correct_answer": [
+          "Python string indices start at zero.",
+          "S.find(\"a\", 2) begins searching at index 2 and returns the first matching index at or after that position.",
+          "In the given string, the next lowercase a occurs at index 3.",
+          "The method returns the integer 3, not the character itself."
+        ],
+        "options": {
+          "a": "0 is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "1 is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "a is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 32,
+      "question": "What does Structured Analysis focus on?",
+      "options": {
+        "a": "Hardware components",
+        "b": "Database management",
+        "c": "Data flow and processes",
+        "d": "User interfaces"
+      },
+      "correct_option": "c",
+      "correct_answer": "Data flow and processes",
+      "explanation": {
+        "correct_answer": [
+          "Structured analysis focuses on system functions, processes, and the movement of data.",
+          "Data-flow diagrams are commonly used to model inputs, processes, data stores, and outputs.",
+          "This approach emphasizes what a system does rather than the physical hardware it uses.",
+          "Therefore, data flow and processes is the best answer."
+        ],
+        "options": {
+          "a": "Hardware components is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Database management is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "User interfaces is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 33,
+      "question": "Which programming medium can help create the appearance of a desktop application inside a browser?",
+      "options": {
+        "a": "HTML",
+        "b": "DHTML",
+        "c": "jQuery",
+        "d": "All of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer": [
+          "HTML provides the structure of a page, while CSS and JavaScript can make it interactive and application-like.",
+          "DHTML is a historical term for dynamic pages created using HTML, CSS, and scripting.",
+          "jQuery is a JavaScript library that simplifies DOM manipulation and browser events.",
+          "All listed technologies can contribute to a desktop-like interface in a browser, so the combined option is intended."
+        ],
+        "options": {
+          "a": "HTML structures web content; it does not itself execute server-side application logic.",
+          "b": "DHTML is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "jQuery is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 34,
+      "question": "The hexadecimal number F4 is equivalent to which binary number?",
+      "options": {
+        "a": "11111001",
+        "b": "11110100",
+        "c": "11111100",
+        "d": "11111010"
+      },
+      "correct_option": "b",
+      "correct_answer": "11110100",
+      "explanation": {
+        "correct_answer": [
+          "Each hexadecimal digit corresponds to exactly four binary bits.",
+          "F represents decimal 15 and therefore binary 1111.",
+          "4 represents binary 0100.",
+          "Joining the groups gives F4 = 11110100."
+        ],
+        "options": {
+          "a": "11111001 is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "11111100 is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "11111010 is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 35,
+      "question": "Assertion: A search engine returns content relevant to a query. Reason: Information retrieval aims to find and present information matching user criteria.",
+      "options": {
+        "a": "Both true and reason correctly explains assertion",
+        "b": "Both true but reason does not explain assertion",
+        "c": "Assertion true, reason false",
+        "d": "Assertion false, reason true"
+      },
+      "correct_option": "a",
+      "correct_answer": "Both true and reason correctly explains assertion",
+      "explanation": {
+        "correct_answer": [
+          "Search engines retrieve and rank resources in response to a user's query.",
+          "Information retrieval is the process of finding information relevant to a user's information need.",
+          "The reason describes the goal that explains the assertion.",
+          "Both statements are true, and the reason correctly explains the assertion."
+        ],
+        "options": {
+          "b": "Both true but reason does not explain assertion is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Assertion true, reason false is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Assertion false, reason true is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 36,
+      "question": "The producer-consumer problem is a classic synchronization problem involving:",
+      "options": {
+        "a": "Two processes competing for the same resources",
+        "b": "Two processes exchanging data through shared buffers",
+        "c": "Two processes competing for CPU time",
+        "d": "Two processes communicating over a network"
+      },
+      "correct_option": "b",
+      "correct_answer": "Two processes exchanging data through shared buffers",
+      "explanation": {
+        "correct_answer": [
+          "The producer creates or places items in a shared buffer.",
+          "The consumer removes items from that buffer.",
+          "Synchronization controls access and prevents race conditions, buffer overflow, and buffer underflow.",
+          "The classic problem concerns processes exchanging data through shared buffers, not network communication."
+        ],
+        "options": {
+          "a": "Two processes competing for the same resources is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Two processes competing for CPU time is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Two processes communicating over a network is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 37,
+      "question": "What makes a card a smart card?",
+      "options": {
+        "a": "Memory",
+        "b": "Money",
+        "c": "Microchip",
+        "d": "MQTT"
+      },
+      "correct_option": "c",
+      "correct_answer": "Microchip",
+      "explanation": {
+        "correct_answer": [
+          "A smart card contains an embedded integrated-circuit chip.",
+          "The chip can store data and may perform processing or cryptographic operations.",
+          "Memory is a capability a chip can provide, but the embedded chip is the defining hardware feature.",
+          "Therefore, microchip is the best answer."
+        ],
+        "options": {
+          "a": "Memory is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Money is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "MQTT is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 38,
+      "question": "Which of the following is done by Secure Sockets Layer (SSL)?",
+      "options": {
+        "a": "Creates a secure, private connection to a web server",
+        "b": "Encrypts information",
+        "c": "Sends information over the internet",
+        "d": "All of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer": [
+          "SSL was designed to protect client-server communication over a network.",
+          "It negotiates security parameters and uses cryptographic mechanisms to protect data in transit.",
+          "Modern web security uses TLS, the successor to SSL.",
+          "The broad historical question treats secure connection, encryption, and sending protected information as covered by the combined option."
+        ],
+        "options": {
+          "a": "Creates a secure, private connection to a web server is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Encrypts information is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Sends information over the internet is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 39,
+      "question": "What is the term for creating a new class based on an existing class?",
+      "options": {
+        "a": "Overriding",
+        "b": "Implementing",
+        "c": "Inheriting",
+        "d": "Overloading"
+      },
+      "correct_option": "c",
+      "correct_answer": "Inheriting",
+      "explanation": {
+        "correct_answer": [
+          "Inheritance derives a class from an existing class.",
+          "The derived class can reuse or extend accessible members of the base class.",
+          "Overriding replaces an inherited method implementation; overloading defines same-named methods with different parameter lists.",
+          "The act of deriving a class from another is inheritance, or inheriting."
+        ],
+        "options": {
+          "a": "Overriding is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Implementing is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Overloading is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 40,
+      "question": "Open systems tend to evolve more quickly than proprietary systems in which area?",
+      "options": {
+        "a": "Hardware",
+        "b": "Software",
+        "c": "Hardware and software",
+        "d": "None of these"
+      },
+      "correct_option": "b",
+      "correct_answer": "Software",
+      "explanation": {
+        "correct_answer": [
+          "Open software can be inspected, modified, and redistributed under its licence.",
+          "Community participation can allow many developers to identify and contribute improvements.",
+          "The question's intended contrast is the evolution of software, not necessarily hardware.",
+          "Therefore, software is the best answer."
+        ],
+        "options": {
+          "a": "Hardware is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Hardware and software is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "None of these is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 41,
+      "question": "Resource management in IoT can be done by implementing:",
+      "options": {
+        "a": "Protocols",
+        "b": "Algorithms",
+        "c": "Networks",
+        "d": "Protocols and algorithms"
+      },
+      "correct_option": "d",
+      "correct_answer": "Protocols and algorithms",
+      "explanation": {
+        "correct_answer": [
+          "IoT devices often have limited energy, memory, processing power, and network capacity.",
+          "Protocols define communication rules between devices and services.",
+          "Algorithms allocate, schedule, or optimize the use of constrained resources.",
+          "Using protocols together with algorithms supports IoT resource management."
+        ],
+        "options": {
+          "a": "Protocols is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Algorithms is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Networks is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 42,
+      "question": "Which statement is false?",
+      "options": {
+        "a": "A recursive language is also a regular language",
+        "b": "A context-free language is also a regular language",
+        "c": "A context-free language is also recursively enumerable",
+        "d": "Both (a) and (b)"
+      },
+      "correct_option": "d",
+      "correct_answer": "Both (a) and (b)",
+      "explanation": {
+        "correct_answer": [
+          "Every regular language is recursive, but not every recursive language is regular.",
+          "Every context-free language is recursively enumerable, but not every context-free language is regular.",
+          "Thus statement (a), read as every recursive language is regular, is false; statement (b), every context-free language is regular, is also false.",
+          "The combined option 'Both (a) and (b)' is correct."
+        ],
+        "options": {
+          "a": "A recursive language is also a regular language is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A context-free language is also a regular language is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A context-free language is also recursively enumerable is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 43,
+      "question": "Cat-5, Cat-5E and Cat-6 are examples of which cable?",
+      "options": {
+        "a": "Coaxial cable",
+        "b": "Shielded twisted pair cable",
+        "c": "Fiber-optic cable",
+        "d": "Unshielded twisted pair cable"
+      },
+      "correct_option": "d",
+      "correct_answer": "Unshielded twisted pair cable",
+      "explanation": {
+        "correct_answer": [
+          "Cat-5, Cat-5e, and Cat-6 are categories of twisted-pair Ethernet cabling.",
+          "Common installations use unshielded twisted pair (UTP), though shielded variants also exist in some product categories.",
+          "Coaxial cable and fiber-optic cable use different physical constructions.",
+          "The expected textbook answer is unshielded twisted-pair cable."
+        ],
+        "options": {
+          "a": "Coaxial cable is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Shielded twisted pair cable is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Fiber-optic cable is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 44,
+      "question": "Which of the following SQL operators represents “not equal to” in a WHERE clause?",
+      "options": {
+        "a": ">",
+        "b": "<=",
+        "c": ">",
+        "d": "<>"
+      },
+      "correct_option": "d",
+      "correct_answer": "<>",
+      "explanation": {
+        "correct_answer": [
+          "The SQL standard not-equal operator is <>.",
+          "Many database systems also accept != as an alternative.",
+          "> means greater than, while <= means less than or equal to.",
+          "Therefore, <> represents not equal to."
+        ],
+        "options": {
+          "a": "> is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "<= is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "> is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 45,
+      "question": "In OOP, which term refers to a mechanism by which a class inherits properties and behavior from another class?",
+      "options": {
+        "a": "Polymorphism",
+        "b": "Abstraction",
+        "c": "Encapsulation",
+        "d": "Inheritance"
+      },
+      "correct_option": "d",
+      "correct_answer": "Inheritance",
+      "explanation": {
+        "correct_answer": [
+          "Inheritance lets a class acquire accessible properties and methods from another class.",
+          "Polymorphism allows one interface or operation to have different implementations.",
+          "Encapsulation bundles state with methods and controls access to internal state.",
+          "The inheritance mechanism is the one that transfers properties and behavior from a base class to a derived class."
+        ],
+        "options": {
+          "a": "Polymorphism is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Abstraction is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Encapsulation is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 46,
+      "question": "Which method could be used to transfer money to another person via the internet?",
+      "options": {
+        "a": "Financial cybermediary",
+        "b": "E-bill presentation and payment",
+        "c": "E-check",
+        "d": "Any of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "Any of the above",
+      "explanation": {
+        "correct_answer": [
+          "A financial cybermediary can facilitate online financial transactions.",
+          "Electronic bill presentment and payment supports viewing and paying bills online.",
+          "An e-check is an electronic form of a cheque used to initiate payment.",
+          "Because each listed method can support internet-based money transfer or payment in a broad sense, the intended answer is 'Any of the above'."
+        ],
+        "options": {
+          "a": "Financial cybermediary is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "E-bill presentation and payment is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "E-check is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 47,
+      "question": "Which concept allows a class to inherit properties and behavior from multiple classes?",
+      "options": {
+        "a": "Encapsulation",
+        "b": "Inheritance",
+        "c": "Polymorphism",
+        "d": "Multiple inheritance"
+      },
+      "correct_option": "d",
+      "correct_answer": "Multiple inheritance",
+      "explanation": {
+        "correct_answer": [
+          "Multiple inheritance allows a class to inherit from more than one parent class.",
+          "It can combine behavior from several base classes, though languages differ in their support and conflict-resolution rules.",
+          "Encapsulation hides or controls access to implementation details; polymorphism supports interchangeable behavior.",
+          "Therefore, multiple inheritance is the correct term."
+        ],
+        "options": {
+          "a": "Encapsulation is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Inheritance is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Polymorphism is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 48,
+      "question": "Church’s Thesis supports which idea?",
+      "options": {
+        "a": "Both statements about Turing machines and algorithms are correct",
+        "b": "A Turing machine is an algorithm and an algorithm is a Turing machine",
+        "c": "A Turing machine as a general-purpose computer system",
+        "d": "None of these",
+        "e": "Every effectively computable function can be computed by a Turing machine"
+      },
+      "correct_option": "e",
+      "correct_answer": "Every effectively computable function can be computed by a Turing machine",
+      "explanation": {
+        "correct_answer": [
+          "The Church–Turing thesis states that every effectively computable function can be computed by a Turing machine.",
+          "It connects the informal idea of an algorithm with a formal model of computation.",
+          "It is a thesis about the scope of effective computation, not a claim that a machine and an algorithm are literally the same object.",
+          "The listed option b is only a rough textbook paraphrase; for technical accuracy, add the precise thesis as a new option and make it the answer."
+        ],
+        "options": {
+          "a": "Both statements about Turing machines and algorithms are correct is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A Turing machine is an algorithm and an algorithm is a Turing machine is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A Turing machine as a general-purpose computer system is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "None of these is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 49,
+      "question": "What is the purpose of a destructor in OOP?",
+      "options": {
+        "a": "Create class instances",
+        "b": "Handle exceptions",
+        "c": "Free resources when an object is destroyed",
+        "d": "Define default property values"
+      },
+      "correct_option": "c",
+      "correct_answer": "Free resources when an object is destroyed",
+      "explanation": {
+        "correct_answer": [
+          "A destructor is a special method associated with an object's destruction or cleanup.",
+          "It can release resources such as file handles or memory owned by the object.",
+          "A constructor initializes a new object; exception handling deals with exceptional conditions.",
+          "Therefore, freeing or releasing resources is the purpose intended here."
+        ],
+        "options": {
+          "a": "Create class instances is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Handle exceptions is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Define default property values is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 50,
+      "question": "A priority encoder is used to:",
+      "options": {
+        "a": "Convert binary information into a more compact form",
+        "b": "Assign priority to input lines based on their values",
+        "c": "Compare two binary numbers",
+        "d": "Combine multiple input signals into a single output"
+      },
+      "correct_option": "b",
+      "correct_answer": "Assign priority to input lines based on their values",
+      "explanation": {
+        "correct_answer": [
+          "A priority encoder accepts multiple input lines and encodes the highest-priority active input.",
+          "If several inputs are active simultaneously, the priority rule determines which one is represented at the output.",
+          "A basic encoder converts an active input position to a binary code, while a comparator compares numbers.",
+          "Thus the priority encoder assigns precedence among input lines."
+        ],
+        "options": {
+          "a": "Convert binary information into a more compact form is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Compare two binary numbers is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Combine multiple input signals into a single output is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 51,
+      "question": "How many minimum moves are required to solve the Tower of Hanoi problem with 3 disks?",
+      "options": {
+        "a": "3",
+        "b": "7",
+        "c": "15",
+        "d": "63"
+      },
+      "correct_option": "b",
+      "correct_answer": "7",
+      "explanation": {
+        "correct_answer": [
+          "The minimum number of moves for n disks is 2ⁿ−1.",
+          "For three disks, the recurrence gives 2³−1 = 8−1.",
+          "The solution moves smaller disks aside to move the largest disk, then rebuilds the stack.",
+          "The minimum is 7 moves."
+        ],
+        "options": {
+          "a": "3 is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "15 is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "63 is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 52,
+      "question": "Algorithm analysis is primarily concerned with:",
+      "options": {
+        "a": "Determining the best algorithm for a specific problem",
+        "b": "Measuring the time and space efficiency of an algorithm",
+        "c": "Creating new algorithms from scratch",
+        "d": "Solving problems using any available approach"
+      },
+      "correct_option": "b",
+      "correct_answer": "Measuring the time and space efficiency of an algorithm",
+      "explanation": {
+        "correct_answer": [
+          "Algorithm analysis evaluates the resources an algorithm uses as input size grows.",
+          "Time complexity estimates running-time growth, while space complexity estimates memory growth.",
+          "Asymptotic notation such as O, Ω, and Θ describes growth rates.",
+          "The main purpose is to measure time and space efficiency, not simply to write code."
+        ],
+        "options": {
+          "a": "Determining the best algorithm for a specific problem is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Creating new algorithms from scratch is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Solving problems using any available approach is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 53,
+      "question": "In audio/video compression, each frame is divided into small grids called picture elements or:",
+      "options": {
+        "a": "Packets",
+        "b": "Megapixels",
+        "c": "Frame",
+        "d": "Pixels"
+      },
+      "correct_option": "d",
+      "correct_answer": "Pixels",
+      "explanation": {
+        "correct_answer": [
+          "A pixel is a picture element, the smallest addressable unit in a raster image.",
+          "A video frame is represented as a grid of pixels.",
+          "Pixel values encode properties such as color and brightness.",
+          "Packets are units of network data, not image picture elements."
+        ],
+        "options": {
+          "a": "Packets is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Megapixels is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Frame is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 54,
+      "question": "Which SQL aggregate function counts values in a specified column while ignoring NULL values?",
+      "options": {
+        "a": "LEN()",
+        "b": "COUNT()",
+        "c": "NUMBER()",
+        "d": "NUM()"
+      },
+      "correct_option": "b",
+      "correct_answer": "COUNT()",
+      "explanation": {
+        "correct_answer": [
+          "COUNT(column_name) counts non-NULL values in the specified column.",
+          "COUNT(*) counts rows regardless of NULL values in individual columns.",
+          "LEN() is used in some SQL dialects to return string length, not row-value counts.",
+          "Therefore, COUNT() is the relevant aggregate function."
+        ],
+        "options": {
+          "a": "LEN() is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "NUMBER() is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "NUM() is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 55,
+      "question": "Which term describes how devices are interconnected in a network?",
+      "options": {
+        "a": "Topology",
+        "b": "Bandwidth",
+        "c": "Encoding",
+        "d": "Transmission"
+      },
+      "correct_option": "a",
+      "correct_answer": "Topology",
+      "explanation": {
+        "correct_answer": [
+          "Network topology describes how devices and links are arranged.",
+          "Common topologies include star, bus, ring, mesh, and tree.",
+          "Bandwidth measures link capacity; encoding represents information in signals.",
+          "Therefore, topology is the term for the interconnection arrangement."
+        ],
+        "options": {
+          "b": "Bandwidth is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Encoding is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Transmission is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 56,
+      "question": "Which are components of an expert system?",
+      "options": {
+        "a": "Knowledge base",
+        "b": "Inference engine",
+        "c": "User interface",
+        "d": "All of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer": [
+          "An expert system uses a knowledge base to store domain facts and rules.",
+          "An inference engine applies rules to facts to derive conclusions.",
+          "A user interface lets people provide input and view the system's conclusions.",
+          "All three are common components of an expert system."
+        ],
+        "options": {
+          "a": "Knowledge base is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Inference engine is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "User interface is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 57,
+      "question": "The I/O subsystem in an operating system is responsible for:",
+      "options": {
+        "a": "Allocating memory for processes",
+        "b": "Managing the file system",
+        "c": "Managing I/O operations between processes and devices",
+        "d": "Allocating CPU time to processes"
+      },
+      "correct_option": "c",
+      "correct_answer": "Managing I/O operations between processes and devices",
+      "explanation": {
+        "correct_answer": [
+          "The I/O subsystem coordinates communication between processes and input/output devices.",
+          "It provides abstractions and mechanisms such as device drivers, buffering, and request handling.",
+          "Memory allocation, file-system management, and CPU scheduling are related OS responsibilities but are distinct functions.",
+          "Therefore, managing I/O operations between processes and devices is correct."
+        ],
+        "options": {
+          "a": "Allocating memory for processes is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Managing the file system is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Allocating CPU time to processes is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 58,
+      "question": "What is a synonymy relation?",
+      "options": {
+        "a": "A is part of B",
+        "b": "A denotes the same as B",
+        "c": "A is a kind of B",
+        "d": "A is superordinate of B"
+      },
+      "correct_option": "b",
+      "correct_answer": "A denotes the same as B",
+      "explanation": {
+        "correct_answer": [
+          "Synonymy is a semantic relation in which two terms have the same or very similar meaning.",
+          "For example, 'car' and 'automobile' are often treated as synonyms.",
+          "A part-of relation describes meronymy, while an is-a-kind-of relation describes hyponymy.",
+          "Thus A denotes the same as B is the best definition."
+        ],
+        "options": {
+          "a": "A is part of B is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A is a kind of B is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "A is superordinate of B is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 59,
+      "question": "In Huffman coding, which characters are usually assigned shorter codes?",
+      "options": {
+        "a": "Characters with higher frequency",
+        "b": "Characters with lower frequency",
+        "c": "Characters with longer ASCII values",
+        "d": "Characters with shorter ASCII values"
+      },
+      "correct_option": "a",
+      "correct_answer": "Characters with higher frequency",
+      "explanation": {
+        "correct_answer": [
+          "Huffman coding assigns variable-length prefix codes to symbols.",
+          "More frequent characters generally receive shorter codes to reduce the expected encoded length.",
+          "Less frequent characters generally receive longer codes.",
+          "Code length depends on symbol frequencies, not on ASCII numeric values."
+        ],
+        "options": {
+          "b": "Characters with lower frequency is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Characters with longer ASCII values is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Characters with shorter ASCII values is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 60,
+      "question": "In a BST, deleting a node with one child involves:",
+      "options": {
+        "a": "Replace it with its left child",
+        "b": "Replace it with its right child",
+        "c": "Replace it with its parent",
+        "d": "Remove the node and leave the subtree unaltered",
+        "e": "Remove the node and link its only child directly to its parent"
+      },
+      "correct_option": "e",
+      "correct_answer": "Remove the node and link its only child directly to its parent",
+      "explanation": {
+        "correct_answer": [
+          "In a BST, a node with one child can be removed without reorganizing other nodes.",
+          "Connect its only child directly to the deleted node's parent.",
+          "This preserves the relative ordering of keys in the binary search tree.",
+          "The child may be either a left or right child, so the general rule is to link that child to the parent."
+        ],
+        "options": {
+          "a": "Replace it with its left child is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Replace it with its right child is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Replace it with its parent is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Remove the node and leave the subtree unaltered is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 61,
+      "question": "Who introduced the concept of NP-completeness?",
+      "options": {
+        "a": "Stephen Cook",
+        "b": "Richard Karp",
+        "c": "Donald Knuth",
+        "d": "John Nash"
+      },
+      "correct_option": "a",
+      "correct_answer": "Stephen Cook",
+      "explanation": {
+        "correct_answer": [
+          "Stephen Cook's 1971 paper established the NP-completeness of SAT, now called the Cook–Levin theorem.",
+          "SAT asks whether a Boolean formula has a satisfying assignment.",
+          "Richard Karp later showed many other problems NP-complete through reductions.",
+          "Therefore, Stephen Cook is credited with introducing NP-completeness."
+        ],
+        "options": {
+          "b": "Richard Karp is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Donald Knuth is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "John Nash is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 62,
+      "question": "Which language lets users query data and insert, delete, and alter tuples?",
+      "options": {
+        "a": "TCL",
+        "b": "DCL",
+        "c": "DDL",
+        "d": "DML"
+      },
+      "correct_option": "d",
+      "correct_answer": "DML",
+      "explanation": {
+        "correct_answer": [
+          "DML stands for Data Manipulation Language.",
+          "It includes operations such as SELECT, INSERT, UPDATE, and DELETE in common classifications.",
+          "DDL defines database structures; DCL controls privileges; TCL manages transactions.",
+          "Therefore, DML is the language category for querying and modifying tuples."
+        ],
+        "options": {
+          "a": "TCL is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "DCL is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "DDL is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 63,
+      "question": "What is a session in web development?",
+      "options": {
+        "a": "A type of HTTP request",
+        "b": "A way to store data on the client side",
+        "c": "Temporary storage for user-specific data during a browsing session",
+        "d": "A method to encrypt data"
+      },
+      "correct_option": "c",
+      "correct_answer": "Temporary storage for user-specific data during a browsing session",
+      "explanation": {
+        "correct_answer": [
+          "A web session groups user-specific state across multiple HTTP requests.",
+          "Because HTTP is stateless, applications often associate a session identifier with stored server-side data.",
+          "A cookie may carry the session identifier, but the session is not itself simply a type of HTTP request.",
+          "Thus temporary user-specific data during a browsing session is the best answer."
+        ],
+        "options": {
+          "a": "A type of HTTP request is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A way to store data on the client side is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "A method to encrypt data is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 64,
+      "question": "Copying a colleague’s entire project and claiming it as one’s own is called:",
+      "options": {
+        "a": "Phishing",
+        "b": "Plagiarism",
+        "c": "Spamming",
+        "d": "Virus"
+      },
+      "correct_option": "b",
+      "correct_answer": "Plagiarism",
+      "explanation": {
+        "correct_answer": [
+          "Plagiarism is presenting another person's work or ideas as one's own without proper attribution.",
+          "Copying an entire project and claiming authorship is a clear example.",
+          "Phishing is a deceptive attempt to obtain sensitive information; spamming is unsolicited bulk messaging.",
+          "Therefore, the described academic or professional misconduct is plagiarism."
+        ],
+        "options": {
+          "a": "Phishing is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Spamming is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Virus is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 65,
+      "question": "In a pointer-based linked list, which operation can be performed in O(1) time?",
+      "options": {
+        "a": "Inserting at the beginning",
+        "b": "Inserting at the end",
+        "c": "Inserting at a specific position",
+        "d": "Deleting a specific node"
+      },
+      "correct_option": "a",
+      "correct_answer": "Inserting at the beginning",
+      "explanation": {
+        "correct_answer": [
+          "Inserting at the beginning of a linked list requires creating a node and updating a small number of pointers.",
+          "The operation does not require traversing the list when the head pointer is available.",
+          "Appending at the end can require O(n) traversal without a tail pointer.",
+          "Therefore, insertion at the beginning is O(1)."
+        ],
+        "options": {
+          "b": "Inserting at the end is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Inserting at a specific position is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Deleting a specific node is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 66,
+      "question": "Which concept lets a subclass provide a specific implementation of a method already defined in the superclass?",
+      "options": {
+        "a": "Overloading",
+        "b": "Inheritance",
+        "c": "Polymorphism",
+        "d": "Overriding"
+      },
+      "correct_option": "d",
+      "correct_answer": "Overriding",
+      "explanation": {
+        "correct_answer": [
+          "Method overriding occurs when a subclass provides its own implementation of an inherited method.",
+          "The method typically has a compatible signature with the superclass method.",
+          "Overloading uses the same method name with different parameter lists; inheritance is the broader class relationship.",
+          "Therefore, overriding is the term requested."
+        ],
+        "options": {
+          "a": "Overloading is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Inheritance is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Polymorphism is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 67,
+      "question": "Reverse engineering is primarily used for:",
+      "options": {
+        "a": "Creating new software from scratch",
+        "b": "Improving software performance",
+        "c": "Understanding and documenting existing software",
+        "d": "Testing software components"
+      },
+      "correct_option": "c",
+      "correct_answer": "Understanding and documenting existing software",
+      "explanation": {
+        "correct_answer": [
+          "Reverse engineering examines an existing system to understand its structure, behavior, or design.",
+          "It can produce documentation when original design records are missing.",
+          "It may support maintenance or interoperability, but its primary goal is not to create an unrelated product from scratch.",
+          "Therefore, understanding and documenting existing software is correct."
+        ],
+        "options": {
+          "a": "Creating new software from scratch is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Improving software performance is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Testing software components is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 68,
+      "question": "In binary subtraction, if a borrow is taken from a digit whose value is 1, what happens to that digit?",
+      "options": {
+        "a": "It remains unchanged",
+        "b": "It is incremented by 1",
+        "c": "It is decremented by 1",
+        "d": "It becomes 0"
+      },
+      "correct_option": "c",
+      "correct_answer": "It is decremented by 1",
+      "explanation": {
+        "correct_answer": [
+          "In binary subtraction, borrowing one unit from a digit reduces that digit by one.",
+          "A binary digit that was 1 becomes 0 after lending its value to the next position.",
+          "The borrowed value is added to the lower-order position in base-two arithmetic.",
+          "Thus the digit is decremented by 1."
+        ],
+        "options": {
+          "a": "It remains unchanged is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "It is incremented by 1 is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "It becomes 0 is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 69,
+      "question": "What is the default color of the HTML vlink attribute?",
+      "options": {
+        "a": "Green",
+        "b": "Purple",
+        "c": "Blue",
+        "d": "Yellow"
+      },
+      "correct_option": "b",
+      "correct_answer": "Purple",
+      "explanation": {
+        "correct_answer": [
+          "The legacy HTML vlink attribute specified the color of visited links.",
+          "Traditional browser defaults commonly rendered visited links purple.",
+          "Modern pages should use CSS pseudo-classes such as :visited rather than the obsolete vlink attribute.",
+          "For the historical HTML default asked here, the answer is purple."
+        ],
+        "options": {
+          "a": "Green is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Blue is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Yellow is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 70,
+      "question": "Subnetting allows for:",
+      "options": {
+        "a": "Faster data transmission",
+        "b": "Improved error control",
+        "c": "Efficient use of IP addresses",
+        "d": "Increased network security"
+      },
+      "correct_option": "c",
+      "correct_answer": "Efficient use of IP addresses",
+      "explanation": {
+        "correct_answer": [
+          "Subnetting divides a larger IP network into smaller logical networks.",
+          "It helps allocate address ranges more appropriately and limits broadcast domains in IPv4 networks.",
+          "Subnetting alone does not guarantee faster transmission or stronger security.",
+          "Its primary benefit among these choices is efficient use of IP addresses."
+        ],
+        "options": {
+          "a": "Faster data transmission is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Improved error control is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Increased network security is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 71,
+      "question": "Which statement is true for the language {a^p | p is prime}?",
+      "options": {
+        "a": "It is regular but not context-free",
+        "b": "It is neither regular nor context-free, but accepted by a Turing machine",
+        "c": "It is not accepted by a Turing machine",
+        "d": "It is context-free but not regular"
+      },
+      "correct_option": "b",
+      "correct_answer": "It is neither regular nor context-free, but accepted by a Turing machine",
+      "explanation": {
+        "correct_answer": [
+          "The language contains strings whose length is a prime number, written aᵖ for prime p.",
+          "A unary language is regular exactly when its set of accepted lengths is ultimately periodic; prime numbers are not ultimately periodic.",
+          "Every unary context-free language is regular, so this language is not context-free either.",
+          "It is decidable by a Turing machine, which can count the input length and test primality."
+        ],
+        "options": {
+          "a": "It is regular but not context-free is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "It is not accepted by a Turing machine is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "It is context-free but not regular is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 72,
+      "question": "A regular language over alphabet Σ is closed under which operations?",
+      "options": {
+        "a": "Union",
+        "b": "Concatenation",
+        "c": "Kleene star",
+        "d": "All of the mentioned"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the mentioned",
+      "explanation": {
+        "correct_answer": [
+          "Regular languages are closed under union.",
+          "They are also closed under concatenation.",
+          "They are closed under Kleene star, which allows zero or more repetitions.",
+          "All three operations preserve regularity, so 'All of the mentioned' is correct."
+        ],
+        "options": {
+          "a": "Union is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Concatenation is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Kleene star is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 73,
+      "question": "In an AVL tree, the balance factor of a node is the difference between the heights of its:",
+      "options": {
+        "a": "Left and right subtrees",
+        "b": "Left subtree and parent",
+        "c": "Right subtree and parent",
+        "d": "Left and right children"
+      },
+      "correct_option": "a",
+      "correct_answer": "Left and right subtrees",
+      "explanation": {
+        "correct_answer": [
+          "An AVL tree is a self-balancing binary search tree.",
+          "A node's balance factor is commonly defined as height(left subtree) minus height(right subtree), or the reverse by a consistent convention.",
+          "AVL balancing requires the absolute balance factor to be at most 1 at each node.",
+          "The balance factor compares the heights of the left and right subtrees."
+        ],
+        "options": {
+          "b": "Left subtree and parent is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Right subtree and parent is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Left and right children is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 74,
+      "question": "Which could be a disadvantage of open-source software?",
+      "options": {
+        "a": "High-quality software with many features",
+        "b": "Not as customizable",
+        "c": "It may have bugs if not tested as much as proprietary software",
+        "d": "You can edit source code to customize it"
+      },
+      "correct_option": "c",
+      "correct_answer": "It may have bugs if not tested as much as proprietary software",
+      "explanation": {
+        "correct_answer": [
+          "Open-source software makes its source code available under a licence that permits specified forms of use and modification.",
+          "It can be customized by users and communities, which is an advantage rather than the stated disadvantage.",
+          "Like any software, it may contain bugs if testing and review are insufficient.",
+          "Therefore, the possibility of insufficient testing is the plausible disadvantage among the choices."
+        ],
+        "options": {
+          "a": "High-quality software with many features is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Not as customizable is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "You can edit source code to customize it is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 75,
+      "question": "_____ is an agreement between communicating parties on how communication proceeds over a network.",
+      "options": {
+        "a": "Ethernet",
+        "b": "Protocol",
+        "c": "Operating system",
+        "d": "Antivirus"
+      },
+      "correct_option": "b",
+      "correct_answer": "Protocol",
+      "explanation": {
+        "correct_answer": [
+          "A protocol is a set of rules governing communication between devices or software systems.",
+          "It can specify message formats, timing, sequencing, and error handling.",
+          "Ethernet is a specific family of networking technologies; an operating system manages computer resources.",
+          "Therefore, protocol is the general term for the agreement described."
+        ],
+        "options": {
+          "a": "Ethernet is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Operating system is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Antivirus is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 76,
+      "question": "Which simple mechanical toy, invented by Paul Roget in 1828, creates the illusion of movement?",
+      "options": {
+        "a": "Binocular",
+        "b": "Zoetrope",
+        "c": "Thaumatrope",
+        "d": "BOOM"
+      },
+      "correct_option": "c",
+      "correct_answer": "Thaumatrope",
+      "explanation": {
+        "correct_answer": [
+          "A thaumatrope is an optical toy consisting of a disc with different images on opposite sides.",
+          "When the disc spins quickly, persistence of vision makes the images appear combined.",
+          "The thaumatrope was popularized in the nineteenth century and is associated with Paul Roget's 1820s work.",
+          "It is the toy described in the question."
+        ],
+        "options": {
+          "a": "Binocular is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Zoetrope is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "BOOM is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 77,
+      "question": "What is the default value for the type attribute of an HTML unordered list?",
+      "options": {
+        "a": "circle",
+        "b": "disc",
+        "c": "square",
+        "d": "triangle"
+      },
+      "correct_option": "b",
+      "correct_answer": "disc",
+      "explanation": {
+        "correct_answer": [
+          "The default marker for an HTML unordered list is disc in standard browser rendering.",
+          "The type attribute is obsolete in modern HTML; CSS list-style-type is preferred.",
+          "Circle and square are alternative marker styles, not the default.",
+          "Therefore, disc is the expected answer."
+        ],
+        "options": {
+          "a": "circle is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "square is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "triangle is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 78,
+      "question": "Uniform-cost search expands the node with the:",
+      "options": {
+        "a": "Lowest path cost",
+        "b": "Heuristic cost",
+        "c": "Highest path cost",
+        "d": "Average path cost"
+      },
+      "correct_option": "a",
+      "correct_answer": "Lowest path cost",
+      "explanation": {
+        "correct_answer": [
+          "Uniform-cost search expands the frontier node with the lowest accumulated path cost g(n).",
+          "It does not choose a node based on heuristic estimate alone.",
+          "With nonnegative step costs, uniform-cost search finds a least-cost solution when the usual conditions hold.",
+          "Therefore, the node with the lowest path cost is expanded next."
+        ],
+        "options": {
+          "b": "Heuristic cost is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Highest path cost is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Average path cost is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 79,
+      "question": "Which listed protocol is used for retrieving and transferring web content formatted for the Web?",
+      "options": {
+        "a": "HTTP",
+        "b": "SMTP",
+        "c": "FTP",
+        "d": "POP3"
+      },
+      "correct_option": "a",
+      "correct_answer": "HTTP",
+      "explanation": {
+        "correct_answer": [
+          "HTTP is the protocol used to request and transfer web resources.",
+          "A browser uses HTTP or HTTPS to retrieve web pages and related resources.",
+          "SMTP sends email, FTP transfers files, and POP3 retrieves email from a mailbox.",
+          "Therefore, HTTP is the correct web-content protocol."
+        ],
+        "options": {
+          "b": "SMTP is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "FTP transfers files; it is not the general technology for internet voice calls.",
+          "d": "POP3 is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 80,
+      "question": "Which statement is NOT true about IoT?",
+      "options": {
+        "a": "IoT uses microcontrollers",
+        "b": "IoT is fully safe",
+        "c": "IoT uses sensors and actuators",
+        "d": "IoT uses wireless technology"
+      },
+      "correct_option": "b",
+      "correct_answer": "IoT is fully safe",
+      "explanation": {
+        "correct_answer": [
+          "IoT systems commonly use microcontrollers, sensors, actuators, and wireless links.",
+          "Connected devices can face vulnerabilities from weak authentication, outdated firmware, and insecure communication.",
+          "No connected system can be described as fully safe in every circumstance.",
+          "Therefore, 'IoT is fully safe' is the statement that is not true."
+        ],
+        "options": {
+          "a": "IoT uses microcontrollers is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "IoT uses sensors and actuators is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "IoT uses wireless technology is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 81,
+      "question": "Which device translates data or protocols for devices on an internal network?",
+      "options": {
+        "a": "Bridge",
+        "b": "Gateway",
+        "c": "Router",
+        "d": "Modem"
+      },
+      "correct_option": "b",
+      "correct_answer": "Gateway",
+      "explanation": {
+        "correct_answer": [
+          "A gateway connects systems or networks that may use different protocols or data formats.",
+          "It can translate between protocols so devices on an internal network can communicate with other systems.",
+          "A bridge connects network segments at the data-link layer; a router forwards packets between IP networks.",
+          "A modem modulates and demodulates signals, so gateway is the intended answer."
+        ],
+        "options": {
+          "a": "Bridge is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Router is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Modem is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 82,
+      "question": "Upward multiplexing involves:",
+      "options": {
+        "a": "Combining multiple data streams into one",
+        "b": "Distributing data to different physical channels",
+        "c": "Separating data into smaller units",
+        "d": "Reordering data packets"
+      },
+      "correct_option": "a",
+      "correct_answer": "Combining multiple data streams into one",
+      "explanation": {
+        "correct_answer": [
+          "Multiplexing combines multiple input signals or data streams for transmission over a shared channel or higher-capacity path.",
+          "At the receiving side, demultiplexing separates the combined stream.",
+          "Distributing data to distinct channels is not the same as combining streams into one.",
+          "Thus the description of combining multiple data streams is correct."
+        ],
+        "options": {
+          "b": "Distributing data to different physical channels is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Separating data into smaller units is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Reordering data packets is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 83,
+      "question": "Which of the following is a database system?",
+      "options": {
+        "a": "MySQL",
+        "b": "Informix",
+        "c": "SQL Server",
+        "d": "All of the above"
+      },
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer": [
+          "MySQL is a relational database management system.",
+          "Informix is also a database management system.",
+          "Microsoft SQL Server is another relational database management system.",
+          "All three listed products are database systems, so the combined option is correct."
+        ],
+        "options": {
+          "a": "MySQL is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Informix is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "SQL Server is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 84,
+      "question": "What is the main purpose of Data Link Control in the data-link layer?",
+      "options": {
+        "a": "Error correction",
+        "b": "Data encryption",
+        "c": "Data routing",
+        "d": "Data framing"
+      },
+      "correct_option": "d",
+      "correct_answer": "Data framing",
+      "explanation": {
+        "correct_answer": [
+          "Data-link control handles link-level framing and reliable transfer functions, depending on the protocol.",
+          "Framing divides a bit stream into identifiable units called frames.",
+          "Routing is primarily a network-layer function, and encryption is a separate security function.",
+          "Among the given choices, data framing is the expected primary purpose."
+        ],
+        "options": {
+          "a": "Error correction is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Data encryption is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Data routing is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 85,
+      "question": "Debugging is the process of:",
+      "options": {
+        "a": "Creating new software modules",
+        "b": "Removing defects from software",
+        "c": "Analysing software requirements",
+        "d": "Generating test cases"
+      },
+      "correct_option": "b",
+      "correct_answer": "Removing defects from software",
+      "explanation": {
+        "correct_answer": [
+          "Debugging is the process of locating, diagnosing, and correcting defects in software.",
+          "A developer may reproduce a failure, inspect state, and trace the cause before changing code.",
+          "Test-case generation and requirements analysis are related development activities but are not debugging itself.",
+          "Therefore, removing defects from software is the intended answer."
+        ],
+        "options": {
+          "a": "Creating new software modules is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Analysing software requirements is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Generating test cases is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 86,
+      "question": "Which top-down approach divides a higher-level entity into lower-level sub-entities?",
+      "options": {
+        "a": "Aggregation",
+        "b": "Generalization",
+        "c": "Specialization",
+        "d": "All of the above"
+      },
+      "correct_option": "c",
+      "correct_answer": "Specialization",
+      "explanation": {
+        "correct_answer": [
+          "Specialization is a top-down modelling process that divides a general entity or class into more specific subtypes.",
+          "For example, an Employee entity might be specialized into Manager and Engineer.",
+          "Generalization works in the opposite direction by combining similar subtypes into a broader supertype.",
+          "Aggregation represents a whole-part relationship, so specialization is correct."
+        ],
+        "options": {
+          "a": "Aggregation is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Generalization is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "All of the above is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 87,
+      "question": "What is the primary goal of load control in process scheduling?",
+      "options": {
+        "a": "Prevent processes from running concurrently",
+        "b": "Avoid context switching",
+        "c": "Ensure CPU time is distributed among processes",
+        "d": "Maximize virtual memory use"
+      },
+      "correct_option": "c",
+      "correct_answer": "Ensure CPU time is distributed among processes",
+      "explanation": {
+        "correct_answer": [
+          "Process scheduling allocates CPU execution time among runnable processes.",
+          "A scheduling policy balances goals such as responsiveness, throughput, fairness, and waiting time.",
+          "Preventing all concurrency or eliminating context switches is not the primary goal of scheduling.",
+          "Therefore, distributing CPU time among processes is the best answer."
+        ],
+        "options": {
+          "a": "Prevent processes from running concurrently is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Avoid context switching is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Maximize virtual memory use is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 88,
+      "question": "Aggregate functions can be used in which clauses, but cannot be used directly in which clause?",
+      "options": {
+        "a": "WHERE, HAVING",
+        "b": "HAVING, WHERE",
+        "c": "GROUP BY, HAVING",
+        "d": "SELECT, HAVING",
+        "e": "SELECT and HAVING; not directly in WHERE"
+      },
+      "correct_option": "e",
+      "correct_answer": "SELECT and HAVING; not directly in WHERE",
+      "explanation": {
+        "correct_answer": [
+          "SQL aggregate functions include COUNT, SUM, AVG, MIN, and MAX.",
+          "Aggregates can be used in SELECT expressions and in HAVING conditions that filter groups.",
+          "They generally cannot be used directly in WHERE because WHERE filters rows before grouping and aggregation.",
+          "To state this precisely, correct the question to ask: 'Aggregate functions can be used in which clauses, but not directly in which clause?' The answer is SELECT and HAVING, but not WHERE."
+        ],
+        "options": {
+          "a": "Aggregates are not directly used in WHERE; HAVING is the aggregate-filtering clause, so this order does not express the asked pair correctly.",
+          "b": "This reverses the requested order and does not state that SELECT can contain aggregate expressions.",
+          "c": "GROUP BY groups rows but is not the intended pair of clauses that can contain aggregate expressions in the question.",
+          "d": "SELECT, HAVING is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 89,
+      "question": "Which protocol provides an SSH-based file-transfer subsystem for secure file transfers between a client and a server?",
+      "options": {
+        "a": "SFTP",
+        "b": "Telnet",
+        "c": "SCP",
+        "d": "HTTP"
+      },
+      "correct_option": "a",
+      "correct_answer": "SFTP",
+      "explanation": {
+        "correct_answer": [
+          "SFTP is the SSH File Transfer Protocol and runs as a subsystem over SSH.",
+          "It provides secure file operations over an encrypted SSH connection.",
+          "Telnet is an insecure remote-terminal protocol; HTTP is for web resources.",
+          "SCP is also associated with secure copying over SSH, but SFTP is the protocol specifically described as an SSH file-transfer subsystem."
+        ],
+        "options": {
+          "b": "Telnet is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "SCP is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "HTTP transfers web resources and is not the technology meant for internet voice calls."
+        }
+      }
+    },
+    {
+      "question_number": 90,
+      "question": "Which statement is true according to ZigBee standards?",
+      "options": {
+        "a": "ZigBee is designed for low-power, low-data-rate wireless personal-area networks",
+        "b": "ZigBee is a wired Ethernet standard",
+        "c": "ZigBee requires high bandwidth and high power",
+        "d": "ZigBee is an email protocol"
+      },
+      "correct_option": "a",
+      "correct_answer": "ZigBee is designed for low-power, low-data-rate wireless personal-area networks",
+      "explanation": {
+        "correct_answer": [
+          "Zigbee is designed for low-power, low-data-rate wireless personal-area networks.",
+          "It is used in applications such as sensors, home automation, and device control.",
+          "It is not a wired Ethernet standard and does not require high bandwidth or high power.",
+          "Therefore, the low-power, low-data-rate statement is true."
+        ],
+        "options": {
+          "b": "ZigBee is a wired Ethernet standard is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "ZigBee requires high bandwidth and high power is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "ZigBee is an email protocol is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 91,
+      "question": "Assertion (A): FTP is a networking protocol used for transferring files. Reason (R): FTP is used when we want to view some data from a website. Choose the correct assertion-reason option.",
+      "options": {
+        "a": "Both true and reason correctly explains assertion",
+        "b": "Both true but reason does not explain assertion",
+        "c": "Assertion true, reason false",
+        "d": "Assertion false, reason true"
+      },
+      "correct_option": "c",
+      "correct_answer": "Assertion true, reason false",
+      "explanation": {
+        "correct_answer": [
+          "FTP is a networking protocol designed to transfer files between systems.",
+          "Viewing a website's content is normally done with HTTP or HTTPS, not FTP as its primary purpose.",
+          "The assertion is true because FTP transfers files.",
+          "The reason is false, so the correct assertion-reason choice is 'Assertion true, reason false'."
+        ],
+        "options": {
+          "a": "Both true and reason correctly explains assertion is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Both true but reason does not explain assertion is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Assertion false, reason true is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 92,
+      "question": "Acquiring a semaphore and entering a critical section while ensuring mutual exclusion is called:",
+      "options": {
+        "a": "Wait-free synchronization",
+        "b": "Lock-free synchronization",
+        "c": "Critical section synchronization",
+        "d": "Barrier synchronization"
+      },
+      "correct_option": "c",
+      "correct_answer": "Critical section synchronization",
+      "explanation": {
+        "correct_answer": [
+          "A semaphore is a synchronization primitive used to coordinate access to shared resources.",
+          "A wait operation can acquire or decrement a semaphore before a process enters a protected critical section.",
+          "Mutual exclusion ensures only one process or thread at a time accesses a non-shareable critical region.",
+          "The option 'critical section synchronization' is the closest match among the choices, though the question would be more precise if it asked about semaphore-based mutual exclusion."
+        ],
+        "options": {
+          "a": "Wait-free synchronization is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Lock-free synchronization is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Barrier synchronization is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 93,
+      "question": "What is the simplified expression for F(A,B,C,D)=Σ(0,1,2,4,5,6,8,9,10,12,13,14) using a K-map?",
+      "options": {
+        "a": "A·A'B'C'D'+A'B'C'D+A'BC'D+AB'C'D+ABCD",
+        "b": "A'B'C'D'+A'BC'D+AB'C'D+ABC'D'+ABCD",
+        "c": "A'B'C'D'+A'BC'D+ABC'D'+ABCD",
+        "d": "A'B'C'D'+A'BC'D'+A'BCD+ABCD",
+        "e": "C' + D'"
+      },
+      "correct_option": "e",
+      "correct_answer": "C' + D'",
+      "explanation": {
+        "correct_answer": [
+          "The listed minterms include all combinations where C=0, regardless of A and B, plus combinations where D=0 for the listed cases.",
+          "A K-map groups adjacent 1-cells into powers-of-two rectangles to eliminate variables.",
+          "For this minterm set, every combination with C=0 is present, and the remaining minterms with C=1 have D=0.",
+          "The simplified expression is C′ + D′."
+        ],
+        "options": {
+          "a": "A·A'B'C'D'+A'B'C'D+A'BC'D+AB'C'D+ABCD is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A'B'C'D'+A'BC'D+AB'C'D+ABC'D'+ABCD is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A'B'C'D'+A'BC'D+ABC'D'+ABCD is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "A'B'C'D'+A'BC'D'+A'BCD+ABCD is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 94,
+      "question": "In public-key encryption, the key used to encrypt data is called the _____ key, and the key used to decrypt is the _____ key.",
+      "options": {
+        "a": "Encryption, decryption",
+        "b": "Encryption, public",
+        "c": "Public, private",
+        "d": "Private, public"
+      },
+      "correct_option": "c",
+      "correct_answer": "Public, private",
+      "explanation": {
+        "correct_answer": [
+          "In asymmetric cryptography, a public key may be shared openly and is used to encrypt data for the key owner in encryption schemes such as RSA.",
+          "The corresponding private key is kept secret and is used to decrypt the ciphertext.",
+          "Digital signatures reverse the operational roles in a different way: the private key signs and the public key verifies.",
+          "For the encryption/decryption scenario stated, the pair is public key, private key."
+        ],
+        "options": {
+          "a": "Encryption, decryption is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Encryption, public is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Private, public is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 95,
+      "question": "Which SQL statement is used to update data in a database?",
+      "options": {
+        "a": "ALTER",
+        "b": "CHANGE",
+        "c": "UPDATE",
+        "d": "MODIFY"
+      },
+      "correct_option": "c",
+      "correct_answer": "UPDATE",
+      "explanation": {
+        "correct_answer": [
+          "UPDATE changes values in existing rows of a database table.",
+          "A WHERE clause can restrict which rows are modified; without it, all rows may be updated.",
+          "ALTER changes database structure, such as a table definition, rather than row values.",
+          "Therefore, UPDATE is the SQL statement used to update data."
+        ],
+        "options": {
+          "a": "ALTER is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "CHANGE is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "MODIFY is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 96,
+      "question": "An index is clustered if:",
+      "options": {
+        "a": "It is on fields forming a candidate key",
+        "b": "It is on fields including the primary key",
+        "c": "Data records are organized in the same order as index entries",
+        "d": "Data records are not organized in the same order as index entries"
+      },
+      "correct_option": "c",
+      "correct_answer": "Data records are organized in the same order as index entries",
+      "explanation": {
+        "correct_answer": [
+          "A clustered index determines or closely corresponds to the physical/logical order in which table records are stored.",
+          "Because records can be stored in only one order, a table generally has at most one clustered index in systems using this model.",
+          "Being a candidate key or primary key is not the defining property of clustering.",
+          "Therefore, the records are organized in the same order as the index entries."
+        ],
+        "options": {
+          "a": "It is on fields forming a candidate key is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "It is on fields including the primary key is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Data records are not organized in the same order as index entries is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 97,
+      "question": "What is encapsulation in OOP?",
+      "options": {
+        "a": "Inheriting properties from multiple classes",
+        "b": "The process of creating objects",
+        "c": "Bundling data and methods that operate on the data",
+        "d": "Using abstract classes only"
+      },
+      "correct_option": "c",
+      "correct_answer": "Bundling data and methods that operate on the data",
+      "explanation": {
+        "correct_answer": [
+          "Encapsulation bundles data with the methods that operate on that data.",
+          "It also commonly controls access to internal state through access modifiers or public methods.",
+          "Inheritance describes deriving classes; object creation is instantiation.",
+          "Therefore, bundling data and related methods is the best definition of encapsulation."
+        ],
+        "options": {
+          "a": "Inheriting properties from multiple classes is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "The process of creating objects is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Using abstract classes only is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 98,
+      "question": "A web server is:",
+      "options": {
+        "a": "A program that downloads files",
+        "b": "A type of web browser",
+        "c": "A protocol used for secure communication",
+        "d": "A computer or software that stores and delivers web pages"
+      },
+      "correct_option": "d",
+      "correct_answer": "A computer or software that stores and delivers web pages",
+      "explanation": {
+        "correct_answer": [
+          "A web server can refer to software that responds to HTTP requests or the computer running that software.",
+          "It stores, generates, or delivers web pages and other resources to clients.",
+          "A web browser requests and displays content; it is not a web server.",
+          "Therefore, a computer or software that stores and delivers web pages is correct."
+        ],
+        "options": {
+          "a": "A program that downloads files is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "A type of web browser is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "A protocol used for secure communication is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 99,
+      "question": "Which type of queue allows insertion and deletion at both front and rear ends?",
+      "options": {
+        "a": "Circular queue",
+        "b": "Linear queue",
+        "c": "Deque (double-ended queue)",
+        "d": "Priority queue"
+      },
+      "correct_option": "c",
+      "correct_answer": "Deque (double-ended queue)",
+      "explanation": {
+        "correct_answer": [
+          "A deque is a double-ended queue.",
+          "It supports insertion and deletion at both the front and the rear.",
+          "A standard queue usually inserts at the rear and removes from the front.",
+          "Therefore, deque is the structure described."
+        ],
+        "options": {
+          "a": "Circular queue is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Linear queue is not correct here because it does not satisfy the specific condition in the question.",
+          "d": "Priority queue is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    },
+    {
+      "question_number": 100,
+      "question": "RFID is used for:",
+      "options": {
+        "a": "3G connectivity",
+        "b": "Measuring Wi-Fi strength",
+        "c": "Providing Wi-Fi connection",
+        "d": "Object identification"
+      },
+      "correct_option": "d",
+      "correct_answer": "Object identification",
+      "explanation": {
+        "correct_answer": [
+          "RFID stands for Radio-Frequency Identification.",
+          "An RFID reader communicates with tags using radio waves to identify or track tagged objects.",
+          "RFID is not a method for measuring Wi-Fi strength or providing Wi-Fi connectivity.",
+          "Therefore, object identification is the intended use."
+        ],
+        "options": {
+          "a": "3G connectivity is not correct here because it does not satisfy the specific condition in the question.",
+          "b": "Measuring Wi-Fi strength is not correct here because it does not satisfy the specific condition in the question.",
+          "c": "Providing Wi-Fi connection is not correct here because it does not satisfy the specific condition in the question."
+        }
+      }
+    }
+  ]
+}

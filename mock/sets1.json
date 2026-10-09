@@ -1,0 +1,2366 @@
+{
+  "questions": [
+    {
+      "question_number": 1,
+      "question": "Uses packet switching technology to carry voice traffic over an IP network where each packet follows the best path to reach its destination.",
+      "options": ["(a) Email", "(b) HTTP", "(c) VoIP", "(d) SMTP"],
+      "correct_option": "c",
+      "correct_answer": "VoIP",
+      "explanation": {
+        "correct_answer_points": [
+          "VoIP means Voice over Internet Protocol.",
+          "It carries voice as IP packets rather than traditional circuit-switched calls.",
+          "Packet routing can choose paths dynamically across the IP network.",
+          "Email, HTTP and SMTP are not voice-over-IP technologies."
+        ],
+        "options": {
+          "a": "Email is used mainly for asynchronous electronic messages; it does not carry voice as IP packets.",
+          "b": "HTTP is a web communication protocol used to transfer web resources; it is not a voice-calling technology.",
+          "d": "SMTP is used to send email between mail systems; it does not provide VoIP voice transport."
+        }
+      }
+    },
+    {
+      "question_number": 2,
+      "question": "Which of the following refers to the level of data abstraction that describes how data is actually stored?",
+      "options": [
+        "(a) Conceptual level",
+        "(b) Physical level",
+        "(c) File level",
+        "(d) Logical level"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Physical level",
+      "explanation": {
+        "correct_answer_points": [
+          "Physical-level abstraction describes how data is physically stored.",
+          "It deals with storage structures, files, blocks and physical organization.",
+          "Conceptual and logical levels describe what data means and how users view it.",
+          "Remember: physical level = actual storage details."
+        ],
+        "options": {
+          "a": "The conceptual level describes the overall logical structure of the database; it does not describe physical storage details.",
+          "c": "File level is not the standard ANSI/SPARC abstraction level for describing how database data is physically stored.",
+          "d": "The logical/conceptual view describes what data is stored and relationships, not the actual storage structures."
+        }
+      }
+    },
+    {
+      "question_number": 3,
+      "question": "How can you make an asynchronous request to a server in JavaScript?",
+      "options": [
+        "(a) Using “async” keyword",
+        "(b) Using “await” keyword",
+        "(c) Using Fetch API or XMLHttpRequest",
+        "(d) By defining a callback function"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Using Fetch API or XMLHttpRequest",
+      "explanation": {
+        "correct_answer_points": [
+          "Fetch and XMLHttpRequest can initiate asynchronous HTTP/network requests.",
+          "They let JavaScript continue executing while the request is in progress.",
+          "The async and await keywords control Promise-based code but do not themselves perform the network request.",
+          "A callback can handle asynchronous results, but the most direct option given is Fetch/XHR."
+        ],
+        "options": {
+          "a": "async marks a function as returning a Promise; it does not itself send an HTTP request.",
+          "b": "await waits for a Promise result; it is not the API that creates the server request.",
+          "d": "A callback can handle an asynchronous result, but the question asks how to make the server request itself."
+        }
+      }
+    },
+    {
+      "question_number": 4,
+      "question": "Which Internet protocol is responsible for mapping IP addresses to MAC addresses?",
+      "options": ["(a) ARP", "(b) TCP", "(c) ICMP", "(d) DNS"],
+      "correct_option": "a",
+      "correct_answer": "ARP",
+      "explanation": {
+        "correct_answer_points": [
+          "ARP stands for Address Resolution Protocol.",
+          "It maps an IPv4 address to the MAC address of a device on the local network.",
+          "TCP provides reliable transport; ICMP carries control/error messages.",
+          "DNS maps domain names to IP addresses, not IP addresses to MAC addresses."
+        ],
+        "options": {
+          "b": "TCP provides reliable transport between endpoints; it does not resolve an IPv4 address to a MAC address.",
+          "c": "ICMP carries network control and error messages; it is not used for IPv4-to-MAC resolution.",
+          "d": "DNS maps domain names to IP addresses; it does not normally map IP addresses to MAC addresses."
+        }
+      }
+    },
+    {
+      "question_number": 5,
+      "question": "Inter-Process Communication (IPC) is a mechanism used for:",
+      "options": [
+        "(a) Preventing processes from executing concurrently",
+        "(b) Allowing processes to run independently without communication",
+        "(c) Enabling processes to exchange information and synchronize their tasks",
+        "(d) Enabling processes to execute in a random order"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Enabling processes to exchange information and synchronize their tasks",
+      "explanation": {
+        "correct_answer_points": [
+          "IPC lets processes communicate with one another.",
+          "It supports data exchange and synchronization between processes.",
+          "Common IPC mechanisms include pipes, shared memory, message queues and sockets.",
+          "Its purpose is communication, not preventing concurrency or random execution."
+        ],
+        "options": {
+          "a": "IPC is not intended to stop concurrent execution; it lets concurrent processes coordinate when needed.",
+          "b": "Processes may run independently, but IPC specifically exists when they need to exchange data or synchronize.",
+          "d": "IPC does not define a random execution order; scheduling and synchronization determine execution behavior."
+        }
+      }
+    },
+    {
+      "question_number": 6,
+      "question": "Which of the following is a Type 1 language or Type 1 grammar?",
+      "options": [
+        "(a) Regular grammar/Regular language",
+        "(b) Context Free Grammar/Context Free language",
+        "(c) Context Sensitive Grammar/Context Sensitive language",
+        "(d) Recursively Enumerable"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Context Sensitive Grammar/Context Sensitive language",
+      "explanation": {
+        "correct_answer_points": [
+          "Type 1 in the Chomsky hierarchy is a context-sensitive grammar.",
+          "Context-sensitive languages are more powerful than context-free languages.",
+          "Regular grammars are Type 3 and context-free grammars are Type 2.",
+          "Recursively enumerable languages are Type 0."
+        ],
+        "options": {
+          "a": "Regular languages are Type 3 in the Chomsky hierarchy, not Type 1.",
+          "b": "Context-free languages are Type 2, one level below context-sensitive languages.",
+          "d": "Recursively enumerable languages are Type 0, the most general class in the Chomsky hierarchy."
+        }
+      }
+    },
+    {
+      "question_number": 7,
+      "question": "In XML, which attribute is used to uniquely identify an element?",
+      "options": ["(a) id", "(b) class", "(c) name", "(d) tag"],
+      "correct_option": "a",
+      "correct_answer": "id",
+      "explanation": {
+        "correct_answer_points": [
+          "The id attribute identifies a specific XML element.",
+          "An id is intended to be unique within the relevant document.",
+          "class is normally used to group multiple elements.",
+          "name and tag are not the standard answer for unique identification here."
+        ],
+        "options": {
+          "b": "class is normally used to group elements or apply common styling; it is not the unique identifier here.",
+          "c": "name can label or name an element in some contexts, but it is not the standard unique XML identifier in this question.",
+          "d": "tag identifies the element type, such as a tag name; it does not uniquely identify one element."
+        }
+      }
+    },
+    {
+      "question_number": 8,
+      "question": "Which statement best describes the traditional goal of Artificial Intelligence (AI) in terms of human-like intelligence?",
+      "options": [
+        "(a) Playing games on a computer",
+        "(b) Making a machine intelligent",
+        "(c) Putting human intelligence into a computer",
+        "(d) None of these"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Putting human intelligence into a computer",
+      "explanation": {
+        "correct_answer_points": [
+          "Artificial Intelligence aims to make computers perform tasks that normally require human intelligence.",
+          "These tasks include reasoning, learning, perception, language understanding and problem solving.",
+          "AI systems use algorithms and data to model or reproduce intelligent behavior.",
+          "The option about putting human-like intelligence into a computer best matches this traditional textbook description."
+        ],
+        "options": {
+          "a": "Playing games is one application of AI, not the definition of AI itself.",
+          "b": "Making a machine intelligent describes the broad goal of AI, but it is less specific than the traditional definition represented by option (c).",
+          "d": "AI is a well-defined field concerned with intelligent behavior, so “none” is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 9,
+      "question": "Delphi and COCOMO are techniques used to estimate:",
+      "options": [
+        "(a) Software size",
+        "(b) Software reliability",
+        "(c) Software complexity",
+        "(d) Software development cost"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Software development cost",
+      "explanation": {
+        "correct_answer_points": [
+          "COCOMO estimates software development effort/cost using project characteristics.",
+          "Delphi is an expert-judgment estimation technique.",
+          "Both are commonly used for project cost/effort estimation rather than reliability measurement.",
+          "Therefore software development cost is the best option."
+        ],
+        "options": {
+          "a": "Software size can be estimated using measures such as LOC or function points, not specifically these two techniques.",
+          "b": "Software reliability concerns failure behavior and dependability; Delphi and COCOMO are cost-estimation approaches.",
+          "c": "Software complexity measures code/design complexity; it is not the main purpose of Delphi or COCOMO."
+        }
+      }
+    },
+    {
+      "question_number": 10,
+      "question": "EBCDIC is mainly used in which type of computer system?",
+      "options": [
+        "(a) Mainframe computers",
+        "(b) Personal computers",
+        "(c) Super computers",
+        "(d) Mobile devices"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Mainframe computers",
+      "explanation": {
+        "correct_answer_points": [
+          "EBCDIC is an 8-bit character encoding historically associated with IBM systems.",
+          "It is strongly associated with IBM mainframe computers.",
+          "Modern PCs mainly use ASCII/Unicode-derived encodings.",
+          "So mainframe computers is the intended answer."
+        ],
+        "options": {
+          "b": "Personal computers traditionally use character encodings such as ASCII/Unicode rather than EBCDIC as their main legacy encoding.",
+          "c": "Supercomputers are not specifically identified with EBCDIC; EBCDIC is strongly associated with IBM mainframes.",
+          "d": "Mobile devices use modern Unicode-based encodings, not EBCDIC as their primary character encoding."
+        }
+      }
+    },
+    {
+      "question_number": 11,
+      "question": "Convert the Boolean function F(A,B,C)=Σ(0,1,3,5) to its simplified SOP form.",
+      "options": [
+        "(a) a+b+c",
+        "(b) ab+ac",
+        "(c) a+b+c′",
+        "(d) a′b′c",
+        "(e) a′b′ + a′c + b′c"
+      ],
+      "correct_option": "e",
+      "correct_answer": "a′b′ + a′c + b′c",
+      "explanation": {
+        "correct_answer_points": [
+          "The function contains minterms 0, 1, 3 and 5.",
+          "Grouping these minterms on a 3-variable Karnaugh map gives a′b′, a′c and b′c.",
+          "So the simplified Sum of Products (SOP) is a′b′ + a′c + b′c.",
+          "This expression covers exactly the required minterms without adding unwanted minterms."
+        ],
+        "options": {
+          "a": "The listed expression does not represent the required minterms correctly; it is too broad.",
+          "b": "ab + ac covers combinations requiring A=1, so it misses required minterms where A=0.",
+          "c": "a+b+c′ is true for many more input combinations than the four required minterms, so it is not the simplified SOP.",
+          "d": "a′b′c represents only one minterm, so it cannot cover all four required minterms 0, 1, 3 and 5."
+        }
+      }
+    },
+    {
+      "question_number": 12,
+      "question": "Choose the correct option to fill in the blank: ____ is an online platform or website where individuals or businesses regularly publish articles/journals, called posts, on various topics.",
+      "options": ["(a) Browser", "(b) Blog", "(c) Newsgroup", "(d) Web server"],
+      "correct_option": "b",
+      "correct_answer": "Blog",
+      "explanation": {
+        "correct_answer_points": [
+          "A blog is a website or platform where posts/articles are published regularly.",
+          "Blog posts can cover news, opinions, tutorials or many other topics.",
+          "A browser is software used to access websites, not the publishing platform itself.",
+          "A web server hosts content, but the description specifically defines a blog."
+        ],
+        "options": {
+          "a": "A browser is software used to access web content; it is not the publishing platform described.",
+          "c": "A newsgroup is a discussion forum for messages, not specifically a site for regularly publishing authored posts.",
+          "d": "A web server hosts and delivers web resources; it is not the name for the publishing platform itself."
+        }
+      }
+    },
+    {
+      "question_number": 13,
+      "question": "Suppose the word is \"automata\". The total number of states required to recognize the word using a DFA will be ____.",
+      "options": [
+        "(a) 9 states",
+        "(b) 8 states",
+        "(c) 10 states",
+        "(d) The word cannot be recognized using DFA"
+      ],
+      "correct_option": "a",
+      "correct_answer": "9 states",
+      "explanation": {
+        "correct_answer_points": [
+          "The word “automata” has 8 characters.",
+          "A DFA recognizing exactly one fixed word normally needs one state for each prefix plus an accepting state transition structure.",
+          "Thus 8 characters require 9 states including the final accepting state.",
+          "This is the standard fixed-string DFA construction."
+        ],
+        "options": {
+          "b": "A DFA that recognizes exactly one fixed word of length 8 needs a state for each matched prefix plus a final state, giving 9 states.",
+          "c": "10 states are unnecessary for the standard minimal DFA for one fixed word of length 8.",
+          "d": "Every finite language, including a single word such as “automata”, can be recognized by a DFA."
+        }
+      }
+    },
+    {
+      "question_number": 14,
+      "question": "Stack works on the principle of:",
+      "options": [
+        "(a) Middle element first",
+        "(b) First In First Out (FIFO)",
+        "(c) Last In First Out (LIFO)",
+        "(d) Last In Last Out"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Last In First Out (LIFO)",
+      "explanation": {
+        "correct_answer_points": [
+          "A stack follows LIFO: Last In, First Out.",
+          "The most recently pushed item is the first item popped.",
+          "This differs from a queue, which follows FIFO.",
+          "Function-call stacks are a common real-world example."
+        ],
+        "options": {
+          "a": "A stack does not select the middle item first; insertion/removal happens at one end.",
+          "b": "FIFO is the rule for a queue, where the oldest item leaves first.",
+          "d": "“Last In Last Out” is not the standard name for stack behavior; the standard term is LIFO."
+        }
+      }
+    },
+    {
+      "question_number": 15,
+      "question": "Which of the following is not a property of knowledge representation?",
+      "options": [
+        "(a) Representational verification",
+        "(b) Representational adequacy",
+        "(c) Inferential adequacy",
+        "(d) Inferential efficiency"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Representational verification",
+      "explanation": {
+        "correct_answer_points": [
+          "Standard knowledge-representation properties include representational adequacy.",
+          "They also include inferential adequacy and inferential efficiency.",
+          "Acquisitional efficiency is another commonly cited property.",
+          "“Representational verification” is not the standard property listed in the options."
+        ],
+        "options": {
+          "b": "Representational adequacy is a standard knowledge-representation property, so it cannot be the answer.",
+          "c": "Inferential adequacy is a standard property describing the ability to derive new facts from represented knowledge.",
+          "d": "Inferential efficiency is also a standard concern in knowledge representation."
+        }
+      }
+    },
+    {
+      "question_number": 16,
+      "question": "What is the primary goal of the backtracking approach in solving the Hamiltonian cycle problem?",
+      "options": [
+        "(a) To find a cycle with the fewest edges",
+        "(b) To find a cycle with the lowest weight",
+        "(c) To find a cycle that visits every vertex exactly once",
+        "(d) To find a cycle with the maximum number of edges"
+      ],
+      "correct_option": "c",
+      "correct_answer": "To find a cycle that visits every vertex exactly once",
+      "explanation": {
+        "correct_answer_points": [
+          "A Hamiltonian cycle must visit every vertex exactly once and return to the start.",
+          "Backtracking builds a candidate path step by step.",
+          "When a partial path cannot lead to a valid Hamiltonian cycle, it backtracks.",
+          "Therefore the target is a cycle visiting every vertex exactly once."
+        ],
+        "options": {
+          "a": "A Hamiltonian cycle is not defined by having the fewest edges; it must include every vertex once.",
+          "b": "Lowest weight is relevant to weighted optimization problems, not the basic Hamiltonian-cycle definition.",
+          "d": "The goal is not to maximize edges; a Hamiltonian cycle has a fixed number of edges equal to the number of vertices."
+        }
+      }
+    },
+    {
+      "question_number": 17,
+      "question": "Software developed only to detect and remove viruses is called ____.",
+      "options": ["(a) Malware", "(b) Antivirus", "(c) Spyware", "(d) Adware"],
+      "correct_option": "b",
+      "correct_answer": "Antivirus",
+      "explanation": {
+        "correct_answer_points": [
+          "Antivirus software is specifically designed to detect, block and remove malware/viruses.",
+          "Malware is the harmful software category itself, not the removal tool.",
+          "Spyware is a type of malicious software that monitors users.",
+          "Adware primarily displays unwanted advertising."
+        ],
+        "options": {
+          "a": "Malware is the broad category of malicious software, including viruses; it is not the specific protective program.",
+          "c": "Spyware secretly collects information from a system; it is malware, not software designed to remove viruses.",
+          "d": "Adware displays unwanted advertisements and may track behavior; it is not an antivirus utility."
+        }
+      }
+    },
+    {
+      "question_number": 18,
+      "question": "Assertion (A): CSS is an attribute of the table tag and is used to style Tables on a web page. Reason (R): CSS is used to apply styles like font, color, and spacing in an HTML document.",
+      "options": [
+        "(a) Both A and R are correct and R is the correct explanation",
+        "(b) Both A and R are correct but R is not the correct explanation",
+        "(c) A is correct but R is false",
+        "(d) A is false but R is true"
+      ],
+      "correct_option": "d",
+      "correct_answer": "A is false but R is true",
+      "explanation": {
+        "correct_answer_points": [
+          "CSS is not an attribute of the table tag; it is a styling language used with HTML.",
+          "CSS can style tables using selectors and properties.",
+          "Therefore the Assertion is false.",
+          "The Reason is true, so the correct assertion-reason choice is D."
+        ],
+        "options": {
+          "a": "The Assertion is false because CSS is not an attribute of the table tag; it is a styling language. Therefore this “both true” choice is wrong.",
+          "b": "The Assertion is false, so a choice saying both statements are correct cannot be right.",
+          "c": "The Reason is true, so this option incorrectly claims the Reason is false."
+        }
+      }
+    },
+    {
+      "question_number": 19,
+      "question": "The greedy search strategy chooses a node for expansion in ____.",
+      "options": [
+        "(a) Shallowest",
+        "(b) Deepest",
+        "(c) Closest to the goal node",
+        "(d) Minimum heuristic cost"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Minimum heuristic cost",
+      "explanation": {
+        "correct_answer_points": [
+          "Greedy best-first search selects the node with the best heuristic value.",
+          "A common heuristic is an estimate of remaining cost to the goal.",
+          "It does not necessarily choose the shallowest or deepest node.",
+          "Hence minimum heuristic cost is the intended answer."
+        ],
+        "options": {
+          "a": "Shallowest-node expansion describes breadth-first search, not greedy best-first search.",
+          "b": "Deepest-node expansion describes depth-first search.",
+          "c": "Greedy search uses a heuristic estimate; “closest to the goal” is an informal idea, but the formal selection rule here is minimum heuristic value."
+        }
+      }
+    },
+    {
+      "question_number": 20,
+      "question": "The main advantage of the overlay technique in memory management is that it allows:",
+      "options": [
+        "(a) Processes to be loaded into memory as memory",
+        "(b) Processes to share memory",
+        "(c) Large programs to be executed on a system with limited memory",
+        "(d) Processes to communicate directly with each other"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Large programs to be executed on a system with limited memory",
+      "explanation": {
+        "correct_answer_points": [
+          "Overlaying lets only the needed parts of a large program reside in memory at a time.",
+          "This was historically useful when physical memory was smaller than the program.",
+          "Different program modules can reuse the same memory region.",
+          "Thus it allows large programs to run with limited memory."
+        ],
+        "options": {
+          "a": "Overlay does not simply load processes “as memory”; it loads only needed program portions into available memory.",
+          "b": "Sharing memory is a separate memory-management/interprocess concern, not the main purpose of overlays.",
+          "d": "Direct process communication is IPC and is unrelated to the primary benefit of overlays."
+        }
+      }
+    },
+    {
+      "question_number": 21,
+      "question": "Full form of MQTT is ____.",
+      "options": [
+        "(a) Multi-Queue Telemetry Things",
+        "(b) Multiple Queueing Telemetry Things",
+        "(c) Message Queue Telemetry Things",
+        "(d) Message Queue Telemetry Transport"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Message Queue Telemetry Transport",
+      "explanation": {
+        "correct_answer_points": [
+          "MQTT expands to Message Queuing Telemetry Transport.",
+          "It is a lightweight messaging protocol widely used in IoT.",
+          "It normally follows a publish/subscribe communication model.",
+          "The other expansions in the options are incorrect."
+        ],
+        "options": {
+          "a": "This is not the standard expansion of MQTT; the phrase “Multi-Queue” is incorrect.",
+          "b": "“Multiple Queueing” is not part of the official expansion of MQTT.",
+          "c": "The official expansion is Message Queuing Telemetry Transport; “Things” is incorrect here."
+        }
+      }
+    },
+    {
+      "question_number": 22,
+      "question": "The easiest way we can transfer control is when the old backup site sends ____ to the old primary.",
+      "options": [
+        "(a) Redo log",
+        "(b) Primary log",
+        "(c) Undo log",
+        "(d) All of the above"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Redo log",
+      "explanation": {
+        "correct_answer_points": [
+          "A redo log records changes needed to reproduce committed updates.",
+          "Redo information is important during database recovery and failover.",
+          "An undo log serves a different rollback-oriented purpose.",
+          "Therefore redo log is the intended answer."
+        ],
+        "options": {
+          "b": "“Primary log” is not the standard log type named for replaying committed changes during recovery.",
+          "c": "Undo logs support rollback/undo operations; redo logs are used to reproduce updates.",
+          "d": "The question asks for the specific log used to transfer/replay changes, so “all” is not appropriate."
+        }
+      }
+    },
+    {
+      "question_number": 23,
+      "question": "To convert a gray code to its binary equivalent, which technique is generally used?",
+      "options": [
+        "(a) Subtraction method",
+        "(b) Addition method",
+        "(c) Exclusive OR (XOR) operation",
+        "(d) Division method"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Exclusive OR (XOR) operation",
+      "explanation": {
+        "correct_answer_points": [
+          "Gray-to-binary conversion uses cumulative XOR operations.",
+          "The binary MSB equals the Gray MSB.",
+          "Each next binary bit is obtained by XORing the previous binary bit with the current Gray bit.",
+          "So XOR is the key operation."
+        ],
+        "options": {
+          "a": "Subtraction is not the standard operation for Gray-to-binary conversion.",
+          "b": "Ordinary addition is not the rule used to derive successive binary bits from Gray code.",
+          "d": "Division has no role in the standard Gray-to-binary conversion process."
+        }
+      }
+    },
+    {
+      "question_number": 24,
+      "question": "What is the purpose of a Domain Name System server in networking?",
+      "options": [
+        "(a) To encrypt data during transmission",
+        "(b) To convert domain names into IP addresses",
+        "(c) To regulate network traffic flow",
+        "(d) To establish secure connections between devices"
+      ],
+      "correct_option": "b",
+      "correct_answer": "To convert domain names into IP addresses",
+      "explanation": {
+        "correct_answer_points": [
+          "DNS stands for Domain Name System.",
+          "It translates human-readable domain names into IP addresses.",
+          "This lets users use names such as example.com instead of numeric addresses.",
+          "DNS is not primarily an encryption or traffic-regulation protocol."
+        ],
+        "options": {
+          "a": "Encryption protects confidentiality; DNS primarily performs name resolution.",
+          "c": "Traffic regulation is handled by routing, congestion-control, firewalls, QoS and related mechanisms, not DNS itself.",
+          "d": "Secure connections are established with mechanisms such as TLS; DNS alone does not create them."
+        }
+      }
+    },
+    {
+      "question_number": 25,
+      "question": "A popular method of organizing a wireless network topology is?",
+      "options": [
+        "(a) Software",
+        "(b) Network",
+        "(c) Synchronization",
+        "(d) Cluster"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Cluster",
+      "explanation": {
+        "correct_answer_points": [
+          "The source lists “Cluster” as the wireless topology choice.",
+          "Clustered organization groups related nodes around a coordinator or cluster structure.",
+          "The other options are not topology names in this context.",
+          "So the intended source answer is Cluster."
+        ],
+        "options": {
+          "a": "Software is not a wireless network topology.",
+          "b": "“Network” is a general term, not the specific topology choice intended by the source.",
+          "c": "Synchronization is a coordination concept, not a wireless topology name."
+        }
+      }
+    },
+    {
+      "question_number": 26,
+      "question": "Which is not an encryption technique?",
+      "options": ["(a) AES", "(b) DES", "(c) RSA", "(d) FTP"],
+      "correct_option": "d",
+      "correct_answer": "FTP",
+      "explanation": {
+        "correct_answer_points": [
+          "AES, DES and RSA are cryptographic algorithms.",
+          "FTP is a file-transfer protocol.",
+          "FTP by itself does not provide encryption for transferred data.",
+          "Therefore FTP is not an encryption technique."
+        ],
+        "options": {
+          "a": "AES is a symmetric encryption standard used to protect data.",
+          "b": "DES is an older symmetric encryption algorithm.",
+          "c": "RSA is an asymmetric cryptographic algorithm; it is also an encryption technique."
+        }
+      }
+    },
+    {
+      "question_number": 27,
+      "question": "In BFS, vertices are explored level by level, starting from:",
+      "options": [
+        "(a) Deepest level",
+        "(b) Shallowest level",
+        "(c) Middle level",
+        "(d) Highest degree vertex"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Shallowest level",
+      "explanation": {
+        "correct_answer_points": [
+          "BFS means Breadth-First Search.",
+          "It explores all vertices at the current distance before moving farther away.",
+          "Therefore it begins at the shallowest level and progresses outward.",
+          "A queue is typically used to implement this traversal."
+        ],
+        "options": {
+          "a": "Starting at the deepest level describes depth-first behavior, not BFS.",
+          "c": "BFS does not begin at a special middle level; it begins at the source and expands outward by levels.",
+          "d": "Highest degree is not the rule used by BFS; BFS follows queue-based level-order exploration."
+        }
+      }
+    },
+    {
+      "question_number": 28,
+      "question": "Consider the following Python dictionary: D={'SO1':95, 'SO2':96}. For l in D: print(l, end='#'). What is the output?",
+      "options": ["(a) SO1#SO2#", "(b) 95#96#", "(c) SO1,95#SO2,96#"],
+      "correct_option": "a",
+      "correct_answer": "SO1#SO2#",
+      "explanation": {
+        "correct_answer_points": [
+          "Iterating directly over a Python dictionary yields its keys by default.",
+          "The keys here are SO1 and SO2.",
+          "The end parameter adds # after each printed key.",
+          "Therefore the output is SO1#SO2#."
+        ],
+        "options": {
+          "b": "Iterating over a dictionary yields keys, not values, so 95#96# is not produced.",
+          "c": "The loop variable receives only each key, so Python does not print key-value pairs here."
+        }
+      }
+    },
+    {
+      "question_number": 29,
+      "question": "Why do we need Industry 4.0?",
+      "options": [
+        "(a) To detect machine failures",
+        "(b) To prevent machine failures",
+        "(c) To improve safety",
+        "(d) All of the above"
+      ],
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer_points": [
+          "Industry 4.0 promotes connected, automated and data-driven industry.",
+          "It can help predict or detect machine failures.",
+          "Automation and monitoring can improve operational safety.",
+          "Therefore the “all of the above” option is the intended answer."
+        ],
+        "options": {
+          "a": "Detecting machine failures is one Industry 4.0 use, but it is not the only reason for adopting it.",
+          "b": "Preventive maintenance is an important benefit, but Industry 4.0 also targets safety, productivity and connected automation.",
+          "c": "Improving safety is a benefit, but the question asks for the combined set of listed benefits."
+        }
+      }
+    },
+    {
+      "question_number": 30,
+      "question": "What will be the output of the following statement: print(14%3**2*4)?",
+      "options": ["(a) 16", "(b) 64", "(c) 20", "(d) 256"],
+      "correct_option": "c",
+      "correct_answer": "20",
+      "explanation": {
+        "correct_answer_points": [
+          "Exponentiation has higher precedence than modulo and multiplication.",
+          "3**2 evaluates to 9.",
+          "14%9 gives 5, and 5*4 gives 20.",
+          "So the output is 20."
+        ],
+        "options": {
+          "a": "16 would result from a different evaluation; Python first evaluates 3**2, then modulo, then multiplication.",
+          "b": "64 does not follow Python operator precedence for the expression.",
+          "d": "256 is inconsistent with the actual intermediate result 14%9 = 5."
+        }
+      }
+    },
+    {
+      "question_number": 31,
+      "question": "Which function should be used to retrieve the first few rows of a DataFrame?",
+      "options": ["(a) print(n)", "(b) head(n)", "(c) get(n)", "(d) call(n)"],
+      "correct_option": "b",
+      "correct_answer": "head(n)",
+      "explanation": {
+        "correct_answer_points": [
+          "pandas DataFrame.head(n) returns the first n rows.",
+          "It is commonly used for a quick inspection of tabular data.",
+          "print(n), get(n) and call(n) are not the standard DataFrame method for this task.",
+          "Therefore head(n) is correct."
+        ],
+        "options": {
+          "a": "print(n) prints a value; it is not the pandas DataFrame method for selecting the first rows.",
+          "c": "get(n) is not the standard DataFrame method for returning the first n rows.",
+          "d": "call(n) is not the pandas DataFrame method used for this purpose."
+        }
+      }
+    },
+    {
+      "question_number": 32,
+      "question": "Which form of e-marketplace brings together buyers and sellers from multiple industries, often for MRO materials?",
+      "options": [
+        "(a) Horizontal",
+        "(b) Vertical",
+        "(c) Integrated",
+        "(d) Standalone"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Horizontal",
+      "explanation": {
+        "correct_answer_points": [
+          "A horizontal e-marketplace serves buyers and sellers across multiple industries.",
+          "MRO materials can be purchased by organizations from many industries.",
+          "A vertical marketplace focuses on one industry or sector.",
+          "Therefore Horizontal is the intended choice."
+        ],
+        "options": {
+          "b": "A vertical marketplace focuses on a particular industry or sector rather than multiple industries.",
+          "c": "Integrated is not the standard marketplace classification intended here.",
+          "d": "A standalone marketplace is not the multi-industry MRO marketplace described."
+        }
+      }
+    },
+    {
+      "question_number": 33,
+      "question": "Which software life cycle model is based on iterative prototyping?",
+      "options": [
+        "(a) Waterfall model",
+        "(b) Spiral model",
+        "(c) Agile model",
+        "(d) Prototype model"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Spiral model",
+      "explanation": {
+        "correct_answer_points": [
+          "The Spiral model develops software through repeated cycles.",
+          "Each cycle can include prototyping, risk analysis and refinement.",
+          "Waterfall is primarily sequential.",
+          "Hence Spiral is the expected answer for iterative prototyping."
+        ],
+        "options": {
+          "a": "Waterfall is mainly sequential, with limited iteration between phases.",
+          "c": "Agile is iterative and incremental, but the specific model traditionally based around iterative prototyping and risk analysis is Spiral.",
+          "d": "The Prototype model emphasizes building prototypes, but the source’s intended model is Spiral because it combines iteration with risk analysis."
+        }
+      }
+    },
+    {
+      "question_number": 34,
+      "question": "The dining philosophers problem is an example of a synchronization problem in:",
+      "options": [
+        "(a) Process scheduling",
+        "(b) Mutual exclusion",
+        "(c) Memory allocation",
+        "(d) Interrupt handling"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Mutual exclusion",
+      "explanation": {
+        "correct_answer_points": [
+          "The dining philosophers problem is a classic synchronization/concurrency problem.",
+          "Philosophers compete for shared resources such as forks.",
+          "The problem illustrates deadlock and mutual-exclusion issues.",
+          "Thus mutual exclusion is the relevant concept."
+        ],
+        "options": {
+          "a": "Process scheduling decides which process gets CPU time; it is not the central issue demonstrated by dining philosophers.",
+          "c": "Memory allocation deals with assigning memory space, not competing access to shared forks/resources.",
+          "d": "Interrupt handling is unrelated to the classic synchronization problem."
+        }
+      }
+    },
+    {
+      "question_number": 35,
+      "question": "Which of the following conversions is not possible algorithmically?",
+      "options": [
+        "(a) From regular grammar to context-free grammar",
+        "(b) From nondeterministic pushdown automata to deterministic pushdown automata",
+        "(c) From nondeterministic finite-state automata to deterministic finite-state automata",
+        "(d) From nondeterministic Turing machine to deterministic Turing machine"
+      ],
+      "correct_option": "b",
+      "correct_answer": "From nondeterministic pushdown automata to deterministic pushdown automata",
+      "explanation": {
+        "correct_answer_points": [
+          "Nondeterministic finite automata can be converted to deterministic finite automata.",
+          "Nondeterministic Turing machines have equivalent deterministic Turing machines.",
+          "Regular grammars can be related to context-free grammars.",
+          "General nondeterministic pushdown automata cannot be converted to equivalent deterministic PDAs in all cases."
+        ],
+        "options": {
+          "a": "Regular grammars can be represented as context-free grammars, so this conversion is possible.",
+          "c": "An NFA can be converted to an equivalent DFA using subset construction.",
+          "d": "Nondeterministic and deterministic Turing machines have the same computational power and can simulate each other.",
+          "b": "A general nondeterministic pushdown automaton cannot always be converted into an equivalent deterministic pushdown automaton because deterministic PDAs recognize a proper subset of context-free languages."
+        }
+      }
+    },
+    {
+      "question_number": 36,
+      "question": "De Morgan’s theorems are particularly useful in simplifying logic expressions that contain a large number of ___.",
+      "options": [
+        "(a) Variables",
+        "(b) Constants",
+        "(c) Terms",
+        "(d) Operators"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Operators",
+      "explanation": {
+        "correct_answer_points": [
+          "De Morgan’s theorems transform AND/OR combinations using complements.",
+          "They are especially useful when Boolean expressions contain many operators.",
+          "For example, NOT(A AND B) becomes NOT A OR NOT B.",
+          "Thus operators is the intended answer."
+        ],
+        "options": {
+          "a": "De Morgan’s laws transform complements of AND/OR combinations; they are not primarily about reducing the number of variables.",
+          "b": "Constants may occur in logic expressions, but De Morgan’s laws specifically target logical operators and complemented expressions.",
+          "c": "Terms are affected during simplification, but the key transformation is between AND/OR operators under complementation."
+        }
+      }
+    },
+    {
+      "question_number": 37,
+      "question": "Which of the following devices is required to set up a wired LAN?",
+      "options": ["(a) Modem", "(b) NIC", "(c) Repeater", "(d) Firewall"],
+      "correct_option": "b",
+      "correct_answer": "NIC",
+      "explanation": {
+        "correct_answer_points": [
+          "A NIC (Network Interface Card) provides a network interface for a computer.",
+          "It connects the device to the LAN medium.",
+          "A modem is for specific WAN/ISP connections, not required for every wired LAN.",
+          "A repeater and firewall serve different networking roles."
+        ],
+        "options": {
+          "a": "A modem converts between network signaling technologies and is not required for every wired LAN.",
+          "c": "A repeater extends a signal; it can be useful but is not the basic interface every wired LAN device needs.",
+          "d": "A firewall provides security filtering; it is not the required network interface for a wired LAN connection."
+        }
+      }
+    },
+    {
+      "question_number": 38,
+      "question": "Which of the following is an extension of the basic model of a Turing machine?",
+      "options": [
+        "(a) Multi-tape Turing machine",
+        "(b) Multi-head Turing machine",
+        "(c) Nondeterministic Turing machine",
+        "(d) All of the above"
+      ],
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer_points": [
+          "Multi-tape, multi-head and nondeterministic Turing machines are standard extensions/variants.",
+          "They increase convenience or change the machine model without changing Turing computability in the usual sense.",
+          "Each can be studied as an extension of the basic single-tape deterministic model.",
+          "Therefore all of the above is correct."
+        ],
+        "options": {
+          "a": "A multi-tape Turing machine is a standard extension of the basic model.",
+          "b": "A multi-head Turing machine is also an extension of the basic single-tape/single-head model.",
+          "c": "A nondeterministic Turing machine is another formal extension with equivalent computational power."
+        }
+      }
+    },
+    {
+      "question_number": 39,
+      "question": "For a DFA that accepts binary numbers whose decimal equivalent is divisible by 3, what are all the possible remainders?",
+      "options": ["(a) 0", "(b) 0,2", "(c) 0,1,2", "(d) 0,1,2,3"],
+      "correct_option": "c",
+      "correct_answer": "0,1,2",
+      "explanation": {
+        "correct_answer_points": [
+          "A number divisible by 3 has remainder 0 when divided by 3.",
+          "Any integer division by 3 can only produce remainders 0, 1 or 2.",
+          "Remainder 3 is impossible.",
+          "So the possible remainders are 0, 1 and 2."
+        ],
+        "options": {
+          "a": "Remainder 0 is possible, but it is not the only possible remainder for arbitrary binary inputs.",
+          "b": "Remainder 1 is also possible, so the pair 0,2 is incomplete.",
+          "d": "Remainder 3 cannot occur when dividing by 3 because remainders must be less than the divisor."
+        }
+      }
+    },
+    {
+      "question_number": 40,
+      "question": "What is the full form of WSN?",
+      "options": [
+        "(a) Wireless Standard Protocol",
+        "(b) Wireless Sensor Protocol",
+        "(c) Wireless Serial Protocol",
+        "(d) Wireless Single Protocol",
+        "(e) Wireless Sensor Network"
+      ],
+      "correct_option": "e",
+      "correct_answer": "Wireless Sensor Network",
+      "explanation": {
+        "correct_answer_points": [
+          "WSN stands for Wireless Sensor Network.",
+          "A WSN contains distributed sensor nodes that collect measurements from their surroundings.",
+          "The nodes communicate wirelessly and can forward collected data to a central system or other nodes.",
+          "WSNs are commonly used in IoT, environmental monitoring, industrial monitoring and smart systems."
+        ],
+        "options": {
+          "a": "Wireless Standard Protocol is not the expansion of WSN; the abbreviation refers to a network of wireless sensors.",
+          "b": "Wireless Sensor Protocol is not the standard expansion; WSN refers to Wireless Sensor Network.",
+          "c": "Wireless Serial Protocol is unrelated to the standard meaning of WSN.",
+          "d": "Wireless Single Protocol is not the standard expansion of WSN."
+        }
+      }
+    },
+    {
+      "question_number": 41,
+      "question": "Which keyword in C# is used to prevent a class from being inherited by other classes?",
+      "options": ["(a) sealed", "(b) final", "(c) private", "(d) static"],
+      "correct_option": "a",
+      "correct_answer": "sealed",
+      "explanation": {
+        "correct_answer_points": [
+          "In C#, the sealed keyword prevents a class from being inherited.",
+          "A sealed class can still be instantiated and used normally unless other restrictions apply.",
+          "The keyword controls inheritance; it does not mean the class or its objects cannot be used.",
+          "In Java, the equivalent keyword for preventing inheritance is final."
+        ],
+        "options": {
+          "b": "In Java, final prevents a class from being inherited, but C# uses sealed for this purpose.",
+          "c": "private controls member/class accessibility; it is not the keyword used specifically to prevent inheritance.",
+          "d": "static makes a member belong to the class rather than instances; it does not prevent inheritance."
+        }
+      }
+    },
+    {
+      "question_number": 42,
+      "question": "What is the full name of SCADA?",
+      "options": [
+        "(a) Supervisory Control and Document Acquisition",
+        "(b) Supervisory Control and Data Acquisition",
+        "(c) Supervisory Column and Data Assessment",
+        "(d) Supervisory Control and Data Assessment"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Supervisory Control and Data Acquisition",
+      "explanation": {
+        "correct_answer_points": [
+          "SCADA stands for Supervisory Control and Data Acquisition.",
+          "It is used to monitor and control industrial processes.",
+          "SCADA systems collect data from field devices and present it to operators.",
+          "The other expansions are incorrect."
+        ],
+        "options": {
+          "a": "SCADA stands for Supervisory Control and Data Acquisition; “Document” is incorrect.",
+          "c": "“Column” and “Assessment” are not part of the standard expansion.",
+          "d": "The final word should be Acquisition, not Assessment."
+        }
+      }
+    },
+    {
+      "question_number": 43,
+      "question": "The cost estimation technique that involves expert judgment and consensus is called:",
+      "options": [
+        "(a) COCOMO",
+        "(b) Delphi method",
+        "(c) Waterfall model",
+        "(d) Prototype model"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Delphi method",
+      "explanation": {
+        "correct_answer_points": [
+          "The Delphi method gathers expert opinions, often anonymously, over multiple rounds.",
+          "It seeks convergence or consensus among experts.",
+          "COCOMO is a parametric software cost model.",
+          "Therefore Delphi method is correct."
+        ],
+        "options": {
+          "a": "COCOMO estimates effort/cost using an algorithmic model rather than relying mainly on group expert consensus.",
+          "c": "Waterfall is a software life-cycle model, not an estimation technique.",
+          "d": "Prototype model is a development approach, not an expert-consensus cost-estimation method."
+        }
+      }
+    },
+    {
+      "question_number": 44,
+      "question": "When using the parity bit method, how does the receiver determine if an error occurred during transmission?",
+      "options": [
+        "(a) By counting the number of ones in the data",
+        "(b) By comparing the parity bit with the data",
+        "(c) By performing modulo arithmetic",
+        "(d) By comparing the number of ones with the parity bit"
+      ],
+      "correct_option": "d",
+      "correct_answer": "By comparing the number of ones with the parity bit",
+      "explanation": {
+        "correct_answer_points": [
+          "Parity checking counts the number of 1 bits according to the selected parity rule.",
+          "The receiver examines the received data together with the parity bit.",
+          "A mismatch indicates that the expected parity condition is not satisfied.",
+          "Thus comparing the observed number of ones with the parity bit captures the intended check."
+        ],
+        "options": {
+          "a": "Simply counting ones without considering the expected parity rule is incomplete; the receiver must check the parity condition including the parity bit.",
+          "b": "The receiver does not compare the parity bit as an isolated value; it checks parity across the received bits.",
+          "c": "Modulo arithmetic can describe parity mathematically, but it is not the direct procedure stated in the options."
+        }
+      }
+    },
+    {
+      "question_number": 45,
+      "question": "Evaluate the given postfix expression: 3 5 * 6 + 2 3 * -",
+      "options": ["(a) 39", "(b) 15", "(c) 21", "(d) 12"],
+      "correct_option": "b",
+      "correct_answer": "15",
+      "explanation": {
+        "correct_answer_points": [
+          "Postfix expressions are evaluated with a stack.",
+          "3 5 * gives 15; then +6 gives 21.",
+          "2 3 * gives 6; finally 21-6 gives 15.",
+          "Therefore the result is 15."
+        ],
+        "options": {
+          "a": "The stack calculation gives 15, not 39.",
+          "c": "21 is an intermediate value after 3*5+6, before subtracting 2*3.",
+          "d": "12 does not follow the postfix stack operations."
+        }
+      }
+    },
+    {
+      "question_number": 46,
+      "question": "Which of the following is a mapped data type?",
+      "options": ["(a) List", "(b) Sets", "(c) Dictionary", "(d) Boolean"],
+      "correct_option": "c",
+      "correct_answer": "Dictionary",
+      "explanation": {
+        "correct_answer_points": [
+          "A Python dictionary maps keys to values.",
+          "It is therefore a mapped/associative data type.",
+          "Lists and sets are collection types but do not provide the same key-to-value mapping.",
+          "Hence Dictionary is correct."
+        ],
+        "options": {
+          "a": "A list is a sequence type, not a mapping of keys to values.",
+          "b": "A set stores unique elements and is not a key-value mapping.",
+          "d": "Boolean stores True/False values; it is not a mapping type."
+        }
+      }
+    },
+    {
+      "question_number": 47,
+      "question": "Each ___ represents a specific color.",
+      "options": [
+        "(a) Frame",
+        "(b) Character",
+        "(c) Pixel value",
+        "(d) None of the above"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Pixel value",
+      "explanation": {
+        "correct_answer_points": [
+          "In raster images, each pixel stores color information.",
+          "A pixel value encodes the intensity/color components for that location.",
+          "A frame or character is not the basic color unit of an image.",
+          "Therefore Pixel value is correct."
+        ],
+        "options": {
+          "a": "A frame is a complete image or video unit; it contains many pixels rather than representing one specific color.",
+          "b": "A character represents text data, not a color value.",
+          "d": "A specific color in a digital image is represented by pixel values, so “none” is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 48,
+      "question": "In general, a file is basically a collection of all related ___.",
+      "options": [
+        "(a) Rows and columns",
+        "(b) Database",
+        "(c) Fields",
+        "(d) Records"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Records",
+      "explanation": {
+        "correct_answer_points": [
+          "A file is a collection of related records.",
+          "A record contains related fields describing one entity/item.",
+          "Fields are smaller components inside records.",
+          "Therefore records is the intended answer."
+        ],
+        "options": {
+          "a": "Rows and columns describe tabular organization, but the traditional definition of a file is a collection of related records.",
+          "b": "A database contains organized collections of data/files; it is not simply a collection of related fields.",
+          "c": "Fields are individual data attributes within records, not the complete units collected in a file."
+        }
+      }
+    },
+    {
+      "question_number": 49,
+      "question": "A universal Turing machine is a:",
+      "options": [
+        "(a) Single-tape Turing machine",
+        "(b) Two-tape Turing machine",
+        "(c) Reprogrammable Turing machine",
+        "(d) All of the above"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Reprogrammable Turing machine",
+      "explanation": {
+        "correct_answer_points": [
+          "A universal Turing machine can simulate other Turing machines based on their descriptions.",
+          "It is therefore programmable/reprogrammable rather than tied to one fixed computation.",
+          "“Universal” refers to its ability to emulate arbitrary machines of the model.",
+          "Hence reprogrammable Turing machine is correct."
+        ],
+        "options": {
+          "a": "A universal Turing machine is not limited to one tape; universality concerns simulation of other machines.",
+          "b": "It is not defined specifically as a two-tape machine.",
+          "d": "The universal machine is not “all of the above” because universality does not require a particular tape count."
+        }
+      }
+    },
+    {
+      "question_number": 50,
+      "question": "Which statement is used to retrieve data from a database in SQL?",
+      "options": ["(a) SELECT", "(b) UPDATE", "(c) DELETE", "(d) INSERT"],
+      "correct_option": "a",
+      "correct_answer": "SELECT",
+      "explanation": {
+        "correct_answer_points": [
+          "SELECT is the SQL statement used to retrieve data.",
+          "UPDATE changes existing rows.",
+          "DELETE removes rows and INSERT adds rows.",
+          "Therefore SELECT is correct."
+        ],
+        "options": {
+          "b": "UPDATE changes existing rows; it does not retrieve result sets.",
+          "c": "DELETE removes rows from a table.",
+          "d": "INSERT adds new rows to a table."
+        }
+      }
+    },
+    {
+      "question_number": 51,
+      "question": "In HTML, we start a comment using:",
+      "options": ["(a) <I", "(b) ->", "(c) =>", "(d) <!--"],
+      "correct_option": "d",
+      "correct_answer": "<!--",
+      "explanation": {
+        "correct_answer_points": [
+          "HTML comments begin with <!-- and end with -->.",
+          "Comment text is ignored by the browser’s rendering engine.",
+          "The other symbols are not the standard opening delimiter.",
+          "Therefore <!-- is correct."
+        ],
+        "options": {
+          "a": "<I is not the HTML comment opening delimiter.",
+          "b": "-> is not used to begin an HTML comment.",
+          "c": "=> is not an HTML comment delimiter."
+        }
+      }
+    },
+    {
+      "question_number": 52,
+      "question": "How are cookies typically stored on a client’s device?",
+      "options": [
+        "(a) In a plain text file",
+        "(b) In a database",
+        "(c) In encrypted format",
+        "(d) In the browser’s cache"
+      ],
+      "correct_option": "a",
+      "correct_answer": "In a plain text file",
+      "explanation": {
+        "correct_answer_points": [
+          "Traditional web cookies are commonly stored as small name-value data in the browser/client.",
+          "They can persist for a session or for a specified expiration time.",
+          "They are not normally stored as a database on the client.",
+          "Among the supplied choices, plain text file is the intended answer."
+        ],
+        "options": {
+          "b": "A client browser does not normally store each cookie as a conventional database exposed to the user.",
+          "c": "Cookies are not required to be encrypted; sensitive protection depends on mechanisms such as Secure/HttpOnly and HTTPS.",
+          "d": "The browser manages cookies separately; browser cache is a different storage concept."
+        }
+      }
+    },
+    {
+      "question_number": 53,
+      "question": "There are ___ layers in the Zigbee architecture.",
+      "options": ["(a) 4", "(b) 5", "(c) 6", "(d) 7"],
+      "correct_option": "a",
+      "correct_answer": "4",
+      "explanation": {
+        "correct_answer_points": [
+          "The classic Zigbee protocol stack is commonly described using four layers: PHY, MAC, Network and Application.",
+          "IEEE 802.15.4 supplies the PHY and MAC foundations.",
+          "Zigbee adds network and application-related layers above them.",
+          "Therefore the intended answer is 4."
+        ],
+        "options": {
+          "b": "The classic Zigbee stack is commonly described as four layers, so five is not the intended answer here.",
+          "c": "Six is not the standard four-layer Zigbee architecture used by this question.",
+          "d": "Seven is also not the intended layer count."
+        }
+      }
+    },
+    {
+      "question_number": 54,
+      "question": "Assertion (A): It becomes difficult to update and maintain the design of a website using CSS. Reason (R): CSS allows web developers to separate the presentation layer (styles and layout) from the content layer (HTML).",
+      "options": [
+        "(a) Both A and R are correct and R is the correct explanation",
+        "(b) Both A and R are correct but R is not the correct explanation",
+        "(c) A is correct but R is false",
+        "(d) A is false but R is true"
+      ],
+      "correct_option": "d",
+      "correct_answer": "A is false but R is true",
+      "explanation": {
+        "correct_answer_points": [
+          "The Assertion is false because CSS generally makes website design easier to maintain, not harder.",
+          "CSS separates presentation such as colors, fonts and layout from HTML content.",
+          "Changing a shared CSS rule can update the appearance of many elements at once.",
+          "Therefore the Assertion is false while the Reason is true."
+        ],
+        "options": {
+          "a": "This choice requires both statements to be true, but the Assertion incorrectly says CSS makes maintenance difficult.",
+          "b": "The Assertion is false, so a choice that treats both statements as true cannot apply.",
+          "c": "The Reason is true because CSS separates presentation from HTML content, so this choice incorrectly marks the Reason as false."
+        }
+      }
+    },
+    {
+      "question_number": 55,
+      "question": "In the backtracking approach to the 8-Queens problem, once a possible solution is found, the algorithm:",
+      "options": [
+        "(a) Stops and provides the solution",
+        "(b) Continues to search for more solutions",
+        "(c) Iterates through all possibilities",
+        "(d) Rearranges the queens to optimize the solution"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Continues to search for more solutions",
+      "explanation": {
+        "correct_answer_points": [
+          "Backtracking does not have to stop after the first solution when the task is to find solutions generally.",
+          "After a solution, it can backtrack and continue searching for additional valid placements.",
+          "The search prunes invalid partial solutions.",
+          "Thus “continues to search for more solutions” is the intended answer."
+        ],
+        "options": {
+          "a": "If the task is to find all solutions, finding one valid arrangement does not necessarily stop the search.",
+          "c": "The algorithm does not blindly enumerate every possibility; backtracking prunes invalid partial solutions.",
+          "d": "8-Queens is a constraint-satisfaction problem; it does not optimize a numerical queen arrangement."
+        }
+      }
+    },
+    {
+      "question_number": 56,
+      "question": "Which of the following can be used to extract or filter data and information from a data warehouse?",
+      "options": [
+        "(a) Data redundancy",
+        "(b) Data retrieval tools",
+        "(c) Data mining",
+        "(d) Both B and C"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Both B and C",
+      "explanation": {
+        "correct_answer_points": [
+          "Data retrieval tools help query and extract warehouse information.",
+          "Data mining discovers patterns and useful knowledge from stored data.",
+          "Both are valid ways of extracting/filtering or deriving information.",
+          "Therefore Both B and C is the intended option."
+        ],
+        "options": {
+          "a": "Data redundancy means duplicated data; it is a data-quality/storage issue, not a retrieval tool.",
+          "b": "Data-retrieval tools can extract/filter warehouse information, so this option alone is incomplete when data mining is also considered.",
+          "c": "Data mining can discover useful patterns and information, but the source intends both retrieval tools and mining."
+        }
+      }
+    },
+    {
+      "question_number": 57,
+      "question": "Which algorithm can be optimized to meet the deadline and rate requirements of continuous media?",
+      "options": [
+        "(a) Earliest-Deadline-First scheduling",
+        "(b) SCAN-EDF scheduling",
+        "(c) Both EDF and SCAN-EDF scheduling",
+        "(d) None of these"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Both EDF and SCAN-EDF scheduling",
+      "explanation": {
+        "correct_answer_points": [
+          "EDF schedules work according to the nearest deadline.",
+          "SCAN-EDF combines deadline considerations with disk/continuous-media scheduling ideas.",
+          "Both can be used for deadline/rate-sensitive continuous media scheduling.",
+          "Hence the source answer is Both EDF and SCAN-EDF."
+        ],
+        "options": {
+          "a": "EDF is a deadline-based scheduler and can support real-time media requirements, but the source asks for the combined option including SCAN-EDF.",
+          "b": "SCAN-EDF is useful for continuous-media/disk scheduling, but the source treats both algorithms as applicable.",
+          "d": "Both EDF and SCAN-EDF are relevant in the source context, so “none” is incorrect."
+        }
+      }
+    },
+    {
+      "question_number": 58,
+      "question": "The quality of __ remains unchanged even when its size is increased or decreased.",
+      "options": [
+        "(a) Vector graphics",
+        "(b) Drawings",
+        "(c) Photos",
+        "(d) Line arts"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Vector graphics",
+      "explanation": {
+        "correct_answer_points": [
+          "Vector graphics are defined mathematically using paths/shapes rather than fixed pixels.",
+          "Scaling them up or down does not inherently reduce geometric resolution.",
+          "Raster photos become pixelated when enlarged sufficiently.",
+          "Therefore vector graphics is correct."
+        ],
+        "options": {
+          "b": "Ordinary raster-like drawings can lose quality when enlarged; vector graphics retain mathematical shapes.",
+          "c": "Photos are raster images, so enlarging them can reveal pixels and reduce apparent quality.",
+          "d": "Line art can be raster or vector; the defining scalable property in the question is vector representation."
+        }
+      }
+    },
+    {
+      "question_number": 59,
+      "question": "How many inputs are there in a full-adder circuit for each individual binary digit being added or subtracted?",
+      "options": [
+        "(a) 1 input",
+        "(b) 2 inputs",
+        "(c) 3 inputs",
+        "(d) 4 inputs"
+      ],
+      "correct_option": "c",
+      "correct_answer": "3 inputs",
+      "explanation": {
+        "correct_answer_points": [
+          "A full adder adds three one-bit inputs.",
+          "The inputs are A, B and carry-in (Cin).",
+          "It produces sum and carry-out outputs.",
+          "Therefore it has 3 inputs."
+        ],
+        "options": {
+          "a": "A full adder adds two operand bits plus an incoming carry, so one input is insufficient.",
+          "b": "Two inputs are enough for a half adder, but not a full adder because a carry-in is also required.",
+          "d": "A standard full adder has three inputs, not four."
+        }
+      }
+    },
+    {
+      "question_number": 60,
+      "question": "What does ‘https’ stand for in a Web Address?",
+      "options": [
+        "(a) The website is hosted on a local server",
+        "(b) The website is a search engine",
+        "(c) The website uses standard HTTP protocol",
+        "(d) The website is secured using encryption"
+      ],
+      "correct_option": "d",
+      "correct_answer": "The website is secured using encryption",
+      "explanation": {
+        "correct_answer_points": [
+          "HTTPS means HTTP Secure in common usage.",
+          "It uses TLS to protect HTTP communication.",
+          "Encryption helps prevent third parties from reading or modifying protected traffic.",
+          "Thus the intended option is that the website is secured using encryption."
+        ],
+        "options": {
+          "a": "HTTPS is independent of whether the website is hosted locally or remotely.",
+          "b": "HTTPS can be used by search engines, stores, blogs and many other websites; it is not a search-engine indicator.",
+          "c": "HTTPS is HTTP carried over TLS/SSL, providing security; it is more than simply standard HTTP."
+        }
+      }
+    },
+    {
+      "question_number": 61,
+      "question": "What is an entity in DTD?",
+      "options": [
+        "(a) Reference to an external resource",
+        "(b) A mathematical equation",
+        "(c) A special XML tag",
+        "(d) A function in JavaScript"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Reference to an external resource",
+      "explanation": {
+        "correct_answer_points": [
+          "A DTD entity can refer to replacement text or an external entity resource.",
+          "An external entity specifically references an external resource.",
+          "It is not a mathematical equation or JavaScript function.",
+          "Therefore the supplied “reference to an external resource” option is the intended answer."
+        ],
+        "options": {
+          "b": "An XML DTD entity is not a mathematical equation.",
+          "c": "An entity is not a special XML element/tag; it is a named replacement or reference mechanism.",
+          "d": "DTD entities are part of XML/DTD syntax, not JavaScript functions."
+        }
+      }
+    },
+    {
+      "question_number": 62,
+      "question": "Which technique provides the highest level of customization for implementing digital logic circuits?",
+      "options": [
+        "(a) ROM-based design",
+        "(b) PLA-based design",
+        "(c) FPGA-based design",
+        "(d) Gate array-based design"
+      ],
+      "correct_option": "c",
+      "correct_answer": "FPGA-based design",
+      "explanation": {
+        "correct_answer_points": [
+          "FPGA devices are highly programmable and can implement customized digital logic.",
+          "They can be reconfigured after manufacturing.",
+          "ROM and PLA designs are programmable but generally offer less flexibility for complex custom logic.",
+          "Therefore FPGA-based design provides the highest customization among these choices."
+        ],
+        "options": {
+          "a": "ROM-based logic uses stored truth tables but offers less general reconfigurability than an FPGA.",
+          "b": "PLA-based logic is programmable, but an FPGA provides much greater configurable logic resources.",
+          "d": "Gate arrays provide customization at the hardware level, but an FPGA generally offers higher post-manufacturing flexibility."
+        }
+      }
+    },
+    {
+      "question_number": 63,
+      "question": "Auxiliary storage space management in an operating system includes:",
+      "options": [
+        "(a) Allocating memory for CPU registers",
+        "(b) Managing input/output operations between processes and devices",
+        "(c) Managing memory allocation for processes",
+        "(d) Managing the allocation of space on secondary storage devices"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Managing the allocation of space on secondary storage devices",
+      "explanation": {
+        "correct_answer_points": [
+          "Auxiliary storage means secondary storage such as disks/SSDs.",
+          "Its management includes allocating and tracking storage space.",
+          "CPU registers and process memory allocation are separate concerns.",
+          "Therefore secondary-storage space allocation is correct."
+        ],
+        "options": {
+          "a": "CPU registers are managed by the processor architecture, not by auxiliary-storage management.",
+          "b": "This describes I/O management rather than the allocation of disk/secondary-storage space.",
+          "c": "Process memory allocation belongs to main-memory management, not auxiliary storage management."
+        }
+      }
+    },
+    {
+      "question_number": 64,
+      "question": "Which programming paradigm focuses on breaking a program down into smaller procedures or functions?",
+      "options": [
+        "(a) Object-oriented programming",
+        "(b) Procedural programming",
+        "(c) Functional programming",
+        "(d) Imperative programming"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Procedural programming",
+      "explanation": {
+        "correct_answer_points": [
+          "Procedural programming organizes programs around procedures/functions.",
+          "Large tasks are decomposed into smaller routines that operate on data.",
+          "Object-oriented programming instead centers on objects/classes.",
+          "Therefore procedural programming is correct."
+        ],
+        "options": {
+          "a": "OOP organizes programs around objects/classes and their interactions.",
+          "c": "Functional programming emphasizes functions and expressions, often avoiding mutable state.",
+          "d": "Imperative programming is broader and focuses on commands/state changes; the specific procedure-oriented paradigm is procedural programming."
+        }
+      }
+    },
+    {
+      "question_number": 65,
+      "question": "Which of the following is a DML command in SQL?",
+      "options": ["(a) UPDATE", "(b) CREATE", "(c) ALTER", "(d) DROP"],
+      "correct_option": "a",
+      "correct_answer": "UPDATE",
+      "explanation": {
+        "correct_answer_points": [
+          "UPDATE is a DML command because it changes rows in existing tables.",
+          "CREATE, ALTER and DROP are DDL commands.",
+          "DML operates on table data; DDL defines or changes database structure.",
+          "Therefore UPDATE is correct."
+        ],
+        "options": {
+          "b": "CREATE is a DDL command used to define database objects.",
+          "c": "ALTER is DDL used to modify the structure of a database object.",
+          "d": "DROP is DDL used to remove a database object."
+        }
+      }
+    },
+    {
+      "question_number": 66,
+      "question": "Which memory management technique uses fixed-size blocks of memory, allowing processes to be loaded into any available block?",
+      "options": [
+        "(a) Paging",
+        "(b) Segmentation",
+        "(c) Virtual memory",
+        "(d) Relocation"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Paging",
+      "explanation": {
+        "correct_answer_points": [
+          "Paging divides logical memory into fixed-size pages and physical memory into fixed-size frames.",
+          "A page can be placed in any available compatible frame.",
+          "Segmentation uses variable-size logical segments.",
+          "Therefore Paging is correct."
+        ],
+        "options": {
+          "b": "Segmentation uses variable-size logical segments, not fixed-size blocks.",
+          "c": "Virtual memory is a broader memory-management technique; it may use paging but is not itself the fixed-block technique.",
+          "d": "Relocation adjusts addresses when loading/moving a process; it is not the fixed-size block allocation method."
+        }
+      }
+    },
+    {
+      "question_number": 67,
+      "question": "What is the value of the following expression? 3+3.00, 3**3.0",
+      "options": [
+        "(a) [6.0, 27.0]",
+        "(b) (6.0, 9.0)",
+        "(c) (6, 27)",
+        "(d) (6.0, 27.0)"
+      ],
+      "correct_option": "d",
+      "correct_answer": "(6.0, 27.0)",
+      "explanation": {
+        "correct_answer_points": [
+          "The comma creates a tuple containing two expression results.",
+          "3+3.00 evaluates to 6.0 because 3.00 is a float.",
+          "3**3.0 evaluates to 27.0.",
+          "Therefore Python displays (6.0, 27.0)."
+        ],
+        "options": {
+          "a": "The two expressions form a tuple, and their values are 6.0 and 27.0, so the listed bracket form is incorrect.",
+          "b": "3**3.0 equals 27.0, not 9.0.",
+          "c": "The first result is 6.0 because 3.00 is a float, and the exponent result is also 27.0."
+        }
+      }
+    },
+    {
+      "question_number": 68,
+      "question": "Musa’s basic model is used to measure:",
+      "options": [
+        "(a) Software complexity",
+        "(b) Software reliability",
+        "(c) Software performance",
+        "(d) Software size"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Software size",
+      "explanation": {
+        "correct_answer_points": [
+          "Musa’s basic model is associated with software reliability measurement.",
+          "It models failure occurrence over execution/testing time.",
+          "The model is used to estimate reliability-related measures rather than software size.",
+          "Note: the supplied source labels “software size” as the option; that conflicts with the standard Musa model description."
+        ],
+        "options": {
+          "a": "Musa’s model is a software reliability growth model, not a complexity model.",
+          "b": "This expression is not one of the valid simplified forms for the given function.",
+          "c": "Software performance concerns speed/resource behavior; Musa’s basic model estimates reliability/failure behavior."
+        }
+      }
+    },
+    {
+      "question_number": 69,
+      "question": "Applications of AI include ____.",
+      "options": [
+        "(a) Gaming",
+        "(b) Expert systems",
+        "(c) ML and DL",
+        "(d) All of the above"
+      ],
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer_points": [
+          "AI includes game-playing and other intelligent applications.",
+          "Expert systems are classic AI applications.",
+          "Machine learning and deep learning are major modern AI approaches.",
+          "Therefore all of the above is correct."
+        ],
+        "options": {
+          "a": "Gaming is an AI application, but it is only one example.",
+          "b": "Expert systems are AI applications, but they are not the complete set listed in the question.",
+          "c": "Machine learning and deep learning are major AI approaches/applications, but the question includes gaming and expert systems too."
+        }
+      }
+    },
+    {
+      "question_number": 70,
+      "question": "What is the primary purpose of Software Requirements Specification (SRS) documents?",
+      "options": [
+        "(a) To list the programming languages to be used",
+        "(b) To describe the user interface design",
+        "(c) To define the functional and non-functional requirements of the software",
+        "(d) To specify the required hardware components"
+      ],
+      "correct_option": "c",
+      "correct_answer": "To define the functional and non-functional requirements of the software",
+      "explanation": {
+        "correct_answer_points": [
+          "An SRS documents what the software must do.",
+          "It captures functional and non-functional requirements.",
+          "Programming languages, UI design and hardware choices may be specified elsewhere or later.",
+          "Therefore defining functional and non-functional requirements is correct."
+        ],
+        "options": {
+          "a": "SRS may mention constraints, but its primary purpose is not to choose programming languages.",
+          "b": "UI design can be specified separately; SRS primarily defines what the system must do and its constraints/quality requirements.",
+          "d": "Hardware requirements may appear as constraints, but they are not the main purpose of the SRS."
+        }
+      }
+    },
+    {
+      "question_number": 71,
+      "question": "Assertion (A): In Python, every object is assigned a unique identity (ID). Reason (R): The ID remains the same for the lifetime of that object.",
+      "options": [
+        "(a) Both A and R are correct and R is the correct explanation",
+        "(b) Both A and R are correct but R is not the correct explanation",
+        "(c) A is correct but R is false",
+        "(d) A is false but R is true"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Both A and R are correct but R is not the correct explanation",
+      "explanation": {
+        "correct_answer_points": [
+          "Every Python object has an identity that can be obtained using the built-in id() function.",
+          "An object's identity remains associated with that object for its lifetime.",
+          "Both the Assertion and the Reason are therefore true.",
+          "The lifetime property describes how the identity behaves, but it does not explain why Python assigns an identity to every object."
+        ],
+        "options": {
+          "a": "The Reason is true, but it does not explain why every object is assigned an identity, so the explanation relationship is incorrect.",
+          "c": "The Reason is true because an object's identity remains stable during its lifetime.",
+          "d": "The Assertion is true because Python objects have identities, so this choice incorrectly marks it as false."
+        }
+      }
+    },
+    {
+      "question_number": 72,
+      "question": "Software engineering emerged due to:",
+      "options": [
+        "(a) Decline of computer technology",
+        "(b) Need for complex hardware systems",
+        "(c) Challenges posed by software development",
+        "(d) Focus on hardware-only solutions"
+      ],
+      "correct_option": "c",
+      "correct_answer": "Challenges posed by software development",
+      "explanation": {
+        "correct_answer_points": [
+          "Software engineering developed as software systems became larger and harder to build reliably.",
+          "Projects faced cost, schedule, quality and maintenance problems.",
+          "These challenges motivated systematic engineering processes.",
+          "Therefore challenges posed by software development is correct."
+        ],
+        "options": {
+          "a": "Software engineering did not emerge because computer technology declined; computing was expanding rapidly.",
+          "b": "The key problem was managing complex software development, not primarily complex hardware.",
+          "d": "Software engineering exists precisely because software became a major engineering concern, not because of hardware-only solutions."
+        }
+      }
+    },
+    {
+      "question_number": 73,
+      "question": "The minimum number of productions required to generate a language consisting of palindrome strings over Σ={a,b} is:",
+      "options": ["(a) 3", "(b) 7", "(c) 5", "(d) 6"],
+      "correct_option": "c",
+      "correct_answer": "5",
+      "explanation": {
+        "correct_answer_points": [
+          "A compact grammar can generate palindromes using two recursive rules plus base cases.",
+          "For example, S→aSa, S→bSb, S→a, S→b, and optionally ε for even-length palindromes.",
+          "This gives five productions when ε is included as a base case formulation.",
+          "Therefore 5 is the intended answer for the source question."
+        ],
+        "options": {
+          "a": "Three productions are not enough for the usual grammar construction that covers the required palindrome cases.",
+          "b": "Seven productions are more than the intended minimum for the standard compact construction.",
+          "d": "Six productions are not the minimum in the source formulation; five is the intended answer."
+        }
+      }
+    },
+    {
+      "question_number": 74,
+      "question": "A socket is used for:",
+      "options": [
+        "(a) Physical data transmission",
+        "(b) Process-to-process communication",
+        "(c) Data compression",
+        "(d) Network management"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Process-to-process communication",
+      "explanation": {
+        "correct_answer_points": [
+          "A socket is an endpoint for communication between processes.",
+          "It can connect processes on the same or different machines through networking.",
+          "Sockets are widely used by TCP/UDP applications.",
+          "Therefore process-to-process communication is correct."
+        ],
+        "options": {
+          "a": "A socket is a software communication endpoint, not a physical transmission medium/device.",
+          "c": "Data compression changes representation size; a socket provides a communication endpoint.",
+          "d": "Network management is broader than the endpoint-to-endpoint communication provided by a socket."
+        }
+      }
+    },
+    {
+      "question_number": 76,
+      "question": "SFTP is used for:",
+      "options": [
+        "(a) Sending files securely over the Internet",
+        "(b) Sending mail securely over the Internet",
+        "(c) Video conferencing",
+        "(d) Secure chat services"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Sending files securely over the Internet",
+      "explanation": {
+        "correct_answer_points": [
+          "SFTP is SSH File Transfer Protocol.",
+          "It transfers files over an encrypted SSH connection.",
+          "It is designed for secure file transfer, not email or video conferencing.",
+          "Therefore sending files securely over the Internet is correct."
+        ],
+        "options": {
+          "b": "SFTP transfers files securely; it is not primarily a secure email protocol.",
+          "c": "Video conferencing uses real-time media protocols, not SFTP.",
+          "d": "Secure chat uses messaging protocols; SFTP is specifically for file transfer."
+        }
+      }
+    },
+    {
+      "question_number": 77,
+      "question": "In Karnaugh Maps, which term refers to a group of adjacent cells that can be combined to simplify a logic expression?",
+      "options": ["(a) Block", "(b) Cluster", "(c) Pair", "(d) Group"],
+      "correct_option": "d",
+      "correct_answer": "Group",
+      "explanation": {
+        "correct_answer_points": [
+          "A Karnaugh map simplifies Boolean expressions by grouping adjacent cells.",
+          "A valid group contains a power-of-two number of adjacent cells.",
+          "Such groups produce simplified implicants.",
+          "The source uses “Group” as the intended term."
+        ],
+        "options": {
+          "a": "“Block” is a general term, but the standard K-map term for adjacent cells grouped for simplification is a group.",
+          "b": "“Cluster” is not the standard K-map term used for a simplification grouping.",
+          "c": "A pair is a valid group size of two cells, but it is only one possible group size, not the general term."
+        }
+      }
+    },
+    {
+      "question_number": 78,
+      "question": "Which version of IP address is most suitable for IoT?",
+      "options": ["(a) IPv4", "(b) IPv5", "(c) IPv6", "(d) IPv7"],
+      "correct_option": "c",
+      "correct_answer": "IPv6",
+      "explanation": {
+        "correct_answer_points": [
+          "IPv6 provides a vastly larger address space than IPv4.",
+          "IoT can involve enormous numbers of connected devices.",
+          "IPv6 also supports features useful for modern IP networks.",
+          "Therefore IPv6 is the most suitable choice."
+        ],
+        "options": {
+          "a": "IPv4 has a much smaller address space and is harder to scale to the huge number of IoT devices.",
+          "b": "IPv5 was never deployed as the successor addressing protocol for the Internet.",
+          "d": "IPv7 is not the standard deployed IP version for IoT; IPv6 provides the needed address space."
+        }
+      }
+    },
+    {
+      "question_number": 79,
+      "question": "What is the term for defining multiple methods in a class with the same name but different parameters?",
+      "options": [
+        "(a) Overriding",
+        "(b) Overloading",
+        "(c) Inherited",
+        "(d) Inheritance"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Overloading",
+      "explanation": {
+        "correct_answer_points": [
+          "Overloading means multiple methods share the same name but have different parameter lists.",
+          "The compiler/runtime selects the appropriate method based on the call signature.",
+          "Overriding instead replaces inherited behavior with a new implementation.",
+          "Therefore Overloading is correct."
+        ],
+        "options": {
+          "a": "Overriding means redefining an inherited method with the same signature; it is different from changing parameters in the same class.",
+          "c": "“Inherited” describes receiving members from a parent class, not defining same-name methods with different parameters.",
+          "d": "Inheritance is the mechanism of deriving a class from another class; it is not method overloading."
+        }
+      }
+    },
+    {
+      "question_number": 80,
+      "question": "Assertion (A): SMS is the acronym for Smart Message Service. Reason (R): SMS is the most common technique for delivering short, clear, and important messages quickly.",
+      "options": [
+        "(a) Both A and R are true and R is the correct explanation",
+        "(b) Both A and R are true but R is not the correct explanation",
+        "(c) A is true but R is false",
+        "(d) A is false but R is true"
+      ],
+      "correct_option": "d",
+      "correct_answer": "A is false but R is true",
+      "explanation": {
+        "correct_answer_points": [
+          "SMS stands for Short Message Service, so the Assertion's expansion 'Smart Message Service' is incorrect.",
+          "SMS is designed for sending short text messages over mobile communication networks.",
+          "Its widespread use makes it a common method for delivering short messages quickly.",
+          "Therefore the Assertion is false while the Reason is true."
+        ],
+        "options": {
+          "a": "The Assertion is false because SMS means Short Message Service, not Smart Message Service.",
+          "b": "The Assertion is false, so both statements cannot be true.",
+          "c": "The Assertion is false, so this choice incorrectly treats it as true."
+        }
+      }
+    },
+    {
+      "question_number": 81,
+      "question": "Process-to-process communication involves communication between the following:",
+      "options": [
+        "(a) Different network layers",
+        "(b) Different devices on the same network",
+        "(c) Devices using different protocols",
+        "(d) Processes on different devices"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Processes on different devices",
+      "explanation": {
+        "correct_answer_points": [
+          "Process-to-process communication occurs between communicating processes.",
+          "Those processes may reside on different devices across a network.",
+          "Network layers and protocols are mechanisms supporting the communication.",
+          "Therefore processes on different devices is the intended answer."
+        ],
+        "options": {
+          "a": "Different network layers communicate using defined interfaces/services; that is not what process-to-process communication means.",
+          "b": "Different devices can communicate, but process-to-process communication specifically identifies application/process endpoints.",
+          "c": "Protocol differences do not define process-to-process communication."
+        }
+      }
+    },
+    {
+      "question_number": 82,
+      "question": "What are the three main types of DBMS?",
+      "options": [
+        "(a) Relational DBMS, Hierarchical DBMS, and Network DBMS",
+        "(b) Relational DBMS, Object Oriented DBMS, and NoSQL DBMS",
+        "(c) Hierarchical DBMS, Network DBMS, and Object Oriented DBMS",
+        "(d) NoSQL DBMS, Object Oriented DBMS, and Relational DBMS"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Relational DBMS, Hierarchical DBMS, and Network DBMS",
+      "explanation": {
+        "correct_answer_points": [
+          "Traditional DBMS classifications include relational, hierarchical and network models.",
+          "Relational systems organize data into tables.",
+          "Hierarchical systems use tree-like structures and network systems use graph-like record relationships.",
+          "Therefore option A matches the traditional three-type classification used by this question."
+        ],
+        "options": {
+          "b": "This is a modern classification including object-oriented and NoSQL systems, but it does not match the traditional three-type classification expected by the source.",
+          "c": "It omits the relational model, which is one of the traditional main DBMS types.",
+          "d": "It also omits the hierarchical and network models from the traditional classification."
+        }
+      }
+    },
+    {
+      "question_number": 83,
+      "question": "Which type of method has no implementation in the base class and must be overridden by derived classes?",
+      "options": [
+        "(a) Virtual method",
+        "(b) Abstract method",
+        "(c) Sealed method",
+        "(d) Static method"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Abstract method",
+      "explanation": {
+        "correct_answer_points": [
+          "An abstract method declares required behavior without providing a base implementation.",
+          "Derived/concrete classes are expected to provide the implementation.",
+          "A virtual method can have a base implementation, while static/sealed have different meanings.",
+          "Therefore Abstract method is correct."
+        ],
+        "options": {
+          "a": "A virtual method may have an implementation in the base class and can be overridden; it is not necessarily abstract.",
+          "c": "A sealed method prevents further overriding in languages that support it; it does not mean the base method has no implementation.",
+          "d": "A static method belongs to the class and is not the abstract instance-method concept described."
+        }
+      }
+    },
+    {
+      "question_number": 84,
+      "question": "Which type of adder is designed to overcome the propagation delay issues in ripple carry adders and generates the carry signal more efficiently?",
+      "options": [
+        "(a) Ripple carry adder",
+        "(b) Look-ahead carry adder",
+        "(c) Binary adder",
+        "(d) Half adder"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Look-ahead carry adder",
+      "explanation": {
+        "correct_answer_points": [
+          "A ripple-carry adder waits for carry propagation from lower bits to higher bits.",
+          "This creates propagation delay.",
+          "A look-ahead carry adder computes carry information more directly to reduce the delay.",
+          "Therefore Look-ahead carry adder is correct."
+        ],
+        "options": {
+          "a": "Ripple-carry adders pass carry from one stage to the next, causing propagation delay.",
+          "c": "“Binary adder” is a general description, not the specific carry-acceleration design.",
+          "d": "A half adder adds two bits without a carry-in and does not solve ripple-carry delay."
+        }
+      }
+    },
+    {
+      "question_number": 85,
+      "question": "Who is known as the father of AI?",
+      "options": [
+        "(a) Fisher Ada",
+        "(b) Alan Turing",
+        "(c) John McCarthy",
+        "(d) Allen Newell"
+      ],
+      "correct_option": "c",
+      "correct_answer": "John McCarthy",
+      "explanation": {
+        "correct_answer_points": [
+          "John McCarthy coined the term “artificial intelligence.”",
+          "He organized the influential 1956 Dartmouth workshop.",
+          "He made foundational contributions to AI and Lisp.",
+          "Therefore John McCarthy is the expected answer."
+        ],
+        "options": {
+          "a": "Ada Lovelace is associated with early computing and programming, but not with being the father of AI.",
+          "b": "Alan Turing made foundational contributions to computing and AI ideas, but John McCarthy is conventionally credited with the title.",
+          "d": "Allen Newell was a major AI researcher, but the commonly recognized “father of AI” in this context is John McCarthy."
+        }
+      }
+    },
+    {
+      "question_number": 86,
+      "question": "Which of the following refers to the level of data abstraction that describes how data is stored?",
+      "options": [
+        "(a) Conceptual level",
+        "(b) Physical level",
+        "(c) File level",
+        "(d) Logical level"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Physical level",
+      "explanation": {
+        "correct_answer_points": [
+          "The physical level describes how data is actually stored on storage media.",
+          "It includes low-level storage structures and access details.",
+          "The conceptual level describes the overall logical structure of the database.",
+          "Therefore Physical level is correct."
+        ],
+        "options": {
+          "a": "The conceptual level describes logical structure, not physical storage details.",
+          "c": "File level is not the standard database abstraction level used for this definition.",
+          "d": "Logical/conceptual descriptions focus on data structure and relationships rather than physical storage."
+        }
+      }
+    },
+    {
+      "question_number": 87,
+      "question": "In Python, to implement a double-ended queue, the module needs to be imported.",
+      "options": ["(a) counter", "(b) collections", "(c) random", "(d) numpy"],
+      "correct_option": "b",
+      "correct_answer": "collections",
+      "explanation": {
+        "correct_answer_points": [
+          "Python’s collections module provides deque.",
+          "deque supports efficient insertion/removal from both ends.",
+          "counter is also in collections, but “collections” is the module being imported.",
+          "Therefore collections is the correct option."
+        ],
+        "options": {
+          "a": "counter is a class in collections, not the module used to create a double-ended queue.",
+          "c": "random provides random-number utilities and does not implement deque.",
+          "d": "numpy is a numerical-computing library; deque is provided by Python’s collections module."
+        }
+      }
+    },
+    {
+      "question_number": 88,
+      "question": "A threaded binary tree is a binary tree in which:",
+      "options": [
+        "(a) Each node has two children",
+        "(b) Each node has at most one child",
+        "(c) Each node is connected to its parent",
+        "(d) Each node has a thread connecting it to its predecessor or successor"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Each node has a thread connecting it to its predecessor or successor",
+      "explanation": {
+        "correct_answer_points": [
+          "Threaded binary trees use otherwise-null child pointers as threads.",
+          "Threads can point to an inorder predecessor or successor.",
+          "This supports traversal without requiring a separate stack in some implementations.",
+          "Therefore the predecessor/successor thread description is correct."
+        ],
+        "options": {
+          "a": "A threaded binary tree does not require every node to have two children; missing child links may become threads.",
+          "b": "Nodes may have zero, one or two children, so “at most one child” is not the defining property.",
+          "c": "A normal parent link is not what makes a tree threaded; threads point to traversal predecessor/successor."
+        }
+      }
+    },
+    {
+      "question_number": 89,
+      "question": "What is the full form of SQL?",
+      "options": [
+        "(a) Structured Query Language",
+        "(b) Simple Query Language",
+        "(c) Systematic Query Logic",
+        "(d) Standard Query Level"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Structured Query Language",
+      "explanation": {
+        "correct_answer_points": [
+          "SQL stands for Structured Query Language.",
+          "It is used to define, manipulate and query relational data in standard SQL systems.",
+          "The other expansions are not the accepted full form.",
+          "Therefore Structured Query Language is correct."
+        ],
+        "options": {
+          "b": "SQL is not officially expanded as Simple Query Language.",
+          "c": "Systematic Query Logic is not the standard expansion.",
+          "d": "Standard Query Level is not the standard full form."
+        }
+      }
+    },
+    {
+      "question_number": 90,
+      "question": "What is the purpose of error control in the data link layer?",
+      "options": [
+        "(a) To prevent unauthorized access",
+        "(b) To fix errors in the physical layer",
+        "(c) To ensure reliable data transmission",
+        "(d) To manage network congestion"
+      ],
+      "correct_option": "c",
+      "correct_answer": "To ensure reliable data transmission",
+      "explanation": {
+        "correct_answer_points": [
+          "The data-link layer can detect/correct certain transmission errors depending on the protocol.",
+          "Its error-control mechanisms help deliver frames reliably over a link.",
+          "Unauthorized access and network-wide congestion are different concerns.",
+          "Therefore reliable data transmission is correct."
+        ],
+        "options": {
+          "a": "Unauthorized-access prevention is a security function, not the main purpose of data-link error control.",
+          "b": "Error control detects/corrects transmission errors at the data-link level; it does not repair the physical layer itself.",
+          "d": "Congestion management is mainly associated with network/transport mechanisms rather than data-link error control."
+        }
+      }
+    },
+    {
+      "question_number": 91,
+      "question": "Which of the following is not considered a type of e-waste?",
+      "options": [
+        "(a) Television",
+        "(b) Personal electronic devices",
+        "(c) Scanners and copiers",
+        "(d) Newspapers"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Newspapers",
+      "explanation": {
+        "correct_answer_points": [
+          "E-waste refers to discarded electrical and electronic equipment.",
+          "Televisions, personal electronics and scanners/copiers can become e-waste.",
+          "Newspapers are ordinary paper waste, not electronic waste.",
+          "Therefore Newspapers is correct."
+        ],
+        "options": {
+          "a": "Televisions contain electronic components and are a common category of e-waste when discarded.",
+          "b": "Discarded personal electronic devices are e-waste.",
+          "c": "Scanners and copiers contain electronic/electrical components and can become e-waste."
+        }
+      }
+    },
+    {
+      "question_number": 92,
+      "question": "In which year did Intel release the first x86 microprocessor, the 8086, laying the foundation for the x86 architecture widely used in personal computers?",
+      "options": ["(a) 1971", "(b) 1981", "(c) 1986", "(d) 1991", "(e) 1978"],
+      "correct_option": "e",
+      "correct_answer": "1978",
+      "explanation": {
+        "correct_answer_points": [
+          "Intel introduced the 8086 microprocessor in 1978.",
+          "The 8086 is a 16-bit processor and is the starting point of the x86 instruction-set family used in later processors.",
+          "The Intel 4004 was introduced earlier, in 1971, so 1971 does not refer to the 8086.",
+          "Therefore 1978 is the correct release year for the 8086."
+        ],
+        "options": {
+          "a": "1971 refers to Intel's 4004, the first commercial microprocessor, not the 8086.",
+          "b": "1981 is associated with the IBM PC era; the 8086 itself was introduced in 1978.",
+          "c": "1986 is later than the 8086 introduction; the processor was released in 1978.",
+          "d": "1991 is much later than the 8086 introduction and is not its release year."
+        }
+      }
+    },
+    {
+      "question_number": 93,
+      "question": "Which of the following describes e-Commerce?",
+      "options": [
+        "(a) Doing business electronically",
+        "(b) Doing business",
+        "(c) Sale of goods",
+        "(d) All of the above"
+      ],
+      "correct_option": "d",
+      "correct_answer": "All of the above",
+      "explanation": {
+        "correct_answer_points": [
+          "E-commerce means conducting commercial/business activity electronically.",
+          "It can include online buying and selling of goods and services.",
+          "The broad definition therefore covers the listed activities.",
+          "Hence All of the above is the intended answer."
+        ],
+        "options": {
+          "a": "Doing business electronically is the core idea of e-commerce, but the question’s “all” option includes the broader listed descriptions.",
+          "b": "“Doing business” alone is too broad because it does not specify electronic commerce.",
+          "c": "Sale of goods can occur in e-commerce, but e-commerce also includes services and other electronic transactions."
+        }
+      }
+    },
+    {
+      "question_number": 94,
+      "question": "Frame design in the data link layer includes:",
+      "options": [
+        "(a) Deciding the routing path for data packets",
+        "(b) Defining the structure of the data frame",
+        "(c) Assigning IP addresses to devices",
+        "(d) Setting the data transmission rate"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Defining the structure of the data frame",
+      "explanation": {
+        "correct_answer_points": [
+          "Data-link frame design defines the structure/format of a frame.",
+          "It includes fields such as addressing, control and error-detection information depending on the protocol.",
+          "Routing paths belong primarily to the network layer.",
+          "Therefore defining the data-frame structure is correct."
+        ],
+        "options": {
+          "a": "Routing determines the path between networks; frame design defines the structure of the data-link frame.",
+          "c": "IP addressing belongs to the network layer, not frame design.",
+          "d": "Transmission rate is a physical/link performance parameter, not the basic structural definition of a frame."
+        }
+      }
+    },
+    {
+      "question_number": 95,
+      "question": "The concept of monitors was introduced by:",
+      "options": [
+        "(a) Edsger Dijkstra",
+        "(b) Alan Turing",
+        "(c) Tim Berners-Lee",
+        "(d) Linus Torvalds",
+        "(e) C. A. R. Hoare"
+      ],
+      "correct_option": "e",
+      "correct_answer": "C. A. R. Hoare",
+      "explanation": {
+        "correct_answer_points": [
+          "C. A. R. Hoare introduced the monitor concept as a high-level synchronization mechanism.",
+          "A monitor combines shared data with procedures that control access to that data.",
+          "Only one process or thread can execute inside a monitor at a time under the classic monitor model.",
+          "Monitors simplify mutual exclusion and synchronization in concurrent programs."
+        ],
+        "options": {
+          "a": "Edsger Dijkstra made major contributions to concurrency, semaphores and synchronization, but the monitor concept is associated with C. A. R. Hoare.",
+          "b": "Alan Turing was a foundational figure in theoretical computer science and computation, but he did not introduce monitors.",
+          "c": "Tim Berners-Lee created the World Wide Web; monitors are a concurrency-control concept.",
+          "d": "Linus Torvalds created the Linux kernel; the monitor concept predates Linux."
+        }
+      }
+    },
+    {
+      "question_number": 96,
+      "question": "Which divide-and-conquer sorting algorithm can have a worst-case time complexity of O(n²) in its basic form?",
+      "options": [
+        "(a) Quick sort",
+        "(b) Merge sort",
+        "(c) Insertion sort",
+        "(d) Counting sort"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Quick sort",
+      "explanation": {
+        "correct_answer_points": [
+          "Quick sort uses divide and conquer by selecting a pivot and partitioning the array around it.",
+          "With balanced partitions, its average running time is O(n log n).",
+          "A poor pivot choice can create highly unbalanced partitions, producing O(n²) worst-case time.",
+          "Insertion sort also has O(n²) worst-case time, but it is not a divide-and-conquer algorithm."
+        ],
+        "options": {
+          "b": "Merge sort is a divide-and-conquer algorithm, but its worst-case time remains O(n log n) because merging each level takes linear time.",
+          "c": "Insertion sort can have O(n²) worst-case time, but it is based on incremental insertion rather than divide and conquer.",
+          "d": "Counting sort is a non-comparison sorting algorithm with typical complexity O(n + k), where k is the value range."
+        }
+      }
+    },
+    {
+      "question_number": 97,
+      "question": "The aliasing effect on an image can be reduced by using which of the following methods?",
+      "options": [
+        "(a) Decreasing high-frequency components by sharpening",
+        "(b) Increasing high-frequency components by sharpening",
+        "(c) Increasing high-frequency components by blurring",
+        "(d) Decreasing high-frequency components by blurring"
+      ],
+      "correct_option": "d",
+      "correct_answer": "Decreasing the high-frequency components of the image by blurring it",
+      "explanation": {
+        "correct_answer_points": [
+          "Aliasing is associated with high-frequency content being sampled inadequately.",
+          "Low-pass filtering removes/reduces high-frequency components before sampling.",
+          "Blurring acts as a low-pass operation.",
+          "Therefore decreasing high-frequency components by blurring is correct."
+        ],
+        "options": {
+          "a": "Sharpening increases high-frequency components, which can make aliasing artifacts more visible rather than reducing them.",
+          "b": "Increasing high-frequency components does not suppress aliasing; it can make the sampling problem worse.",
+          "c": "The wording says increasing high-frequency components by blurring, but blurring actually decreases high-frequency content."
+        }
+      }
+    },
+    {
+      "question_number": 98,
+      "question": "In MySQL, which type of value should not be enclosed inside quotation marks?",
+      "options": ["(a) DATE", "(b) VARCHAR", "(c) FLOAT", "(d) CHAR"],
+      "correct_option": "c",
+      "correct_answer": "FLOAT",
+      "explanation": {
+        "correct_answer_points": [
+          "Numeric FLOAT values are numeric literals, not strings.",
+          "Quotation marks make a value a string literal.",
+          "DATE, VARCHAR and CHAR are commonly represented as character/date literals where quoting is required in SQL syntax.",
+          "Therefore FLOAT is the intended answer."
+        ],
+        "options": {
+          "a": "DATE values are commonly written as quoted date literals in SQL syntax.",
+          "b": "VARCHAR is a character/string type, so its literal values are normally quoted.",
+          "d": "CHAR is a character/string type, so its literal values are normally quoted."
+        }
+      }
+    },
+    {
+      "question_number": 99,
+      "question": "The term used to describe the maximum amount of data that can be transmitted over a communication channel in a given time period is:",
+      "options": [
+        "(a) Bandwidth",
+        "(b) Data rate",
+        "(c) Latency",
+        "(d) Protocol"
+      ],
+      "correct_option": "b",
+      "correct_answer": "Data rate",
+      "explanation": {
+        "correct_answer_points": [
+          "Data rate is the amount of data transmitted per unit time.",
+          "Bandwidth can also describe channel capacity, but the wording “amount of data ... in a given time period” points to data rate.",
+          "Latency is delay, not throughput.",
+          "Therefore Data rate is correct."
+        ],
+        "options": {
+          "a": "Bandwidth describes the capacity of a communication channel; it is related to possible data transfer but is not exactly the measured amount per unit time in this wording.",
+          "c": "Latency is the delay before data reaches the destination, not the amount transmitted per unit time.",
+          "d": "A protocol is a set of communication rules, not a measure of transmission quantity."
+        }
+      }
+    },
+    {
+      "question_number": 100,
+      "question": "Which characteristics are taken together in chromaticity?",
+      "options": [
+        "(a) Hue and saturation",
+        "(b) Hue and brightness",
+        "(c) Saturation, hue, and brightness",
+        "(d) Saturation and brightness"
+      ],
+      "correct_option": "a",
+      "correct_answer": "Hue and saturation",
+      "explanation": {
+        "correct_answer_points": [
+          "Chromaticity describes color independent of brightness/luminance.",
+          "Hue identifies the basic color family.",
+          "Saturation describes color purity/intensity.",
+          "Therefore hue and saturation are the chromaticity components."
+        ],
+        "options": {
+          "b": "Brightness/luminance describes intensity, not chromaticity itself.",
+          "c": "Brightness is not part of chromaticity; chromaticity is based on hue and saturation.",
+          "d": "Brightness is not a chromaticity component; saturation and hue are."
+        }
+      }
+    }
+  ]
+}
